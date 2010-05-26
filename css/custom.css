@@ -1,0 +1,100 @@
+body {font: normal 11pt helvetica;}
+
+#header{padding-top:10px;}
+#header #logo{font:bold 11pt arial;}
+#header #logo img{vertical-align:middle;}
+#header #address{font:normal 11pt arial;color:#9a9ea4;text-align:right;}
+#header #phone-numbers{font:normal 11pt arial;color:#9a9ea4;text-align:right;}
+#header #phone-numbers table{width:100%;}
+#header #phone-numbers table td{text-align:right;}
+#header #phone-numbers strong{font:bold 11pt arial;color:#1f64d9;}
+
+#menubar{position:absolute;top:80px;z-index:1000;width:950px;height:35px;background:black url('/wp-content/uploads/2010/02/header-bar.jpg') repeat-x center left;-webkit-box-shadow:0px 3px 4px #000;-moz-box-shadow:0px 3px 4px #000;}
+#menubar .nav li{margin-right:15px;font:normal 14pt arial;text-transform:capitalize;}
+#menubar .nav li a{color:#bbb;}
+#menubar .nav li a:hover,
+#menubar .nav li a .current-page{color:#59f;}
+
+#site-content{margin:50px 0;}
+
+.slideshowwidget{width:960px;height:388px;margin-left:-10px;background:black;}
+.slideshowwidget .prev{position:absolute;z-index:10000;top:250px;cursor:pointer;width:70px;height:96px;background:transparent url('/wp-content/uploads/2010/02/big-white-arrow2.png') no-repeat;}
+.slideshowwidget .next{position:absolute;z-index:10000;top:250px;left:+999px;cursor:pointer;width:70px;height:96px;background:transparent url('/wp-content/uploads/2010/02/big-white-arrow1.png') no-repeat;}
+.slideshowwidget .pager{position:absolute;z-index:10000;top:420px;left:+950px;}
+.slideshowwidget .pager a {padding:5px; margin:2px; border:solid 1px white; -webkit-border-radius:10px; background:white;font:normal 6px arial;color:#eee;text-decoration:none;opacity:0.5;}
+.slideshowwidget .pager a.activeSlide{opacity:1.0;}
+
+#vehicle-picker{height:100px;border:solid 1px #aaa;-webkit-border-radius:7px;}
+
+.emailform .header{display:none;}
+.emailform form{border:none!important;background:white;}
+.emailform form table td{border:none;background:white;}
+
+#footer{padding:10px -10px 2px -10px;margin:10px 0;background:#BDBEC0 url(/wp-content/uploads/2010/02/coa-box-grad.jpg) repeat-x;height:auto;}
+#footer .nav{display:none;}
+
+/***********/
+/* Widgets */
+/***********/
+
+/* Quick Find Bar */
+#quick-find{color:black;background-color:white;padding:3px 5px 0 5px;font:normal 9pt arial;height:26px;margin-top:10px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;-webkit-box-shadow:1px 1px 3px #888;}
+#quick-find td img{vertical-align:middle;}
+#quick-find table{width:100%;margin:0;padding:0;}
+#quick-find td a {text-decoration:none;color:#333;}
+
+#inventory-search{color:#999;font:normal 8pt arial;padding-right:10px;border:solid 1px #888;-webkit-border-radius:5px;-webkit-border-top-left-radius:0px;-moz-border-radius:0 5px 5px 5px;background:url(/wp-content/uploads/2010/02/inv-search.png) no-repeat 2px right;-webkit-box-shadow:0px 1px 2px #aaa;}
+
+/* Quick Find Slideout Tab Box */
+#slideout{display:none;background:#BDBEC0;min-height:200px;}
+.tabboxwidget ul.tabs{list-style:none;margin:0 !important;padding:0;border-bottom:1px solid #666;height:30px;}
+.tabboxwidget ul.tabs li{float:left;text-indent:0;padding:0;margin:0 !important;list-style-image:none !important;}
+.tabboxwidget ul.tabs a:first-child{margin:0;}
+.tabboxwidget ul.tabs a{opacity:0.5;background:white;display:block;height:30px;line-height:30px;width:134px;text-align:center;text-decoration:none;color:black;padding:0px;margin:0 5px;position:relative;top:1px;border:solid 1px #999;border-bottom:none;-webkit-border-top-right-radius:7px;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 7px 0 0;}
+.tabboxwidget ul.tabs a:hover{opacity:1;}
+.tabboxwidget ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a{opacity:1;cursor:default !important;color:#000 !important;}
+.tabboxwidget div.panes div.pane{display:none;padding:15px 10px;border:1px solid #999;border-top:0;height:auto;background-color:#fff;-webkit-border-bottom-right-radius:7px;-webkit-border-bottom-left-radius:7px;-moz-border-radius:0 0 7px 7px;-webkit-box-shadow:1px 1px 3px #888;}
+
+/* Showcase Sliders */
+.showcase-slider {border:solid 1px #999; background:white; height:120px; margin:10px -10px; -webkit-border-radius:10px; -moz-border-radius:10px;}
+.showcase-slider .header{text-transform:capitalize;background:#f1f1f1;color:#1f64d9;font:bold 10pt #900;padding:2px 15px; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0;}
+.showcase-slider .scrollable{position:relative;overflow:hidden;height:90px;padding:0;}
+.showcase-slider .scrollable .items{width:30000em;position:absolute;text-align:center;}
+.showcase-slider .scrollable .items a{float:left;text-align:center;margin:2px 0 0 40px;width:143px;text-decoration:none;color:#555;font-size:8pt;}
+.showcase-slider .scrollable .items a .image {display:block;height:68px;overflow:hidden;}
+.showcase-slider .scrollable .items a img {display:block;margin:0 auto;}
+.showcase-slider .scrollable .items a:hover{background:#e4e4e4;-webkit-border-radius:7px;-moz-border-radius:7px;}
+.showcase-slider .scrollable .prev,
+.showcase-slider .scrollable a.next{position:relative;z-index:10000;width:38px;height:95px;cursor:pointer;margin-top:2px;}
+.showcase-slider .scrollable .prev{float:left;  background: url('/wp-content/uploads/2010/02/small-gray-arrow-1.jpg') no-repeat center center; -webkit-border-bottom-left-radius:10px; -moz-border-radius:0 0 0 10px;}
+.showcase-slider .scrollable .next{float:right; background: url('/wp-content/uploads/2010/02/small-gray-arrow-2.jpg')  no-repeat center center; -webkit-border-bottom-right-radius:10px; -moz-border-radius:0 0 10px 0;}
+
+/* News Ticker */
+#news-ticker {background:white;height:140px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;}
+#news-ticker .scrollable{position:relative;overflow:hidden;height:140px;padding:0;}
+#news-ticker .scrollable .items{width:30000em;position:absolute;text-align:center;}
+#news-ticker .scrollable .item {float:left;margin-left:7px;}
+#news-ticker .scrollable .prev,
+#news-ticker .scrollable a.next{position:relative;z-index:10000;width:20px;height:130px;padding:1px;cursor:pointer;}
+#news-ticker .scrollable .next{float:left;  background:transparent url('/wp-content/uploads/2010/02/small-arrow1.png')  no-repeat center center;}
+#news-ticker .scrollable .prev{float:right; background:transparent url('/wp-content/uploads/2010/02/small-arrow2.png') no-repeat center center;}
+
+/* Bump Up Buttons */
+.bumpupbuttonwidget {height:140px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;}
+.bumpupbuttonwidget a {display:block;text-decoration:none;text-align:center;color:#5b5b5b;font:normal 21pt arial;word-spacing:-2px;letter-spacing:-2px;height:30px;padding:10px 0;background:#e7e7e7 url(/wp-content/uploads/2010/02/COA-top8.png) no-repeat 8px -4px;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;opacity:0.95;white-space:nowrap;}
+
+/* Bump Up Menus */
+.bumpupmenuwidget {height:140px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;overflow:hidden;}
+.bumpupmenuwidget h1 {display:block;text-decoration:none;text-align:center;color:#5b5b5b;font:normal 21pt arial;word-spacing:-2px;letter-spacing:-2px;height:30px;padding:10px 0;background:#e7e7e7 url(/wp-content/uploads/2010/02/COA-top8.png) no-repeat 8px -4px;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;opacity:0.95;white-space:nowrap;}
+.bumpupmenuwidget .menu {display:none;}
+.bumpupmenuwidget ul li{margin:0 0 0 10px;list-style-type:none;}
+.bumpupmenuwidget ul li a{text-decoration:none;color:#333;padding:0.2em 0.2em 0.2em 10px;}
+.bumpupmenuwidget ul li a:hover{color:#1f64d9;}
+
+/* Accordion Menus */
+.accordionmenuwidget-pages {border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-webkit-border-bottom-left-radius:7px;-moz-border-radius:7px 0 0 7px;}
+.accordionmenuwidget-pages, 
+.accordionmenuwidget-pages ul{list-style-type:none;margin:0;padding:0;}
+.accordionmenuwidget-pages a {display:block; color:#333; background:#e7e7e7; text-decoration:none; font:normal 9pt arial; padding:0.5em;}
+.accordionmenuwidget-pages ul li a {background:#f5f5f5; padding:0.2em 0.2em 0.2em 25px;}
+.accordionmenuwidget-pages ul li a:hover{color:#1f64d9;}

@@ -1,0 +1,665 @@
+/**************************************
+* BASIC CSS 
+**************************************/
+html{overflow-y:scroll;}/* adds scrollbar and prevents jumping of content */
+body{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:11px;line-height:1.25;background-image:url('/wp-content/uploads/2010/03/bgWDR1.jpg');}
+body.page{padding:0;}
+a,
+a:active{color:#e21c22;outline:0;text-decoration:none;}
+a:hover,
+a:focus{color:#e21c22;outline:0;}
+p,
+.text,
+td,
+.textgridwidget{font-size:11px;font-weight:normal;text-align:left;color:#999;}
+p{margin:0 0 0.5em;}
+h1,h2,h3,h4,h5{color:#999;font-weight:bold;margin-bottom:0.75em;}
+h1{font-size:18px;}
+h2{font-size:16px;color:#e21c22;}
+h3{font-size:14px;}
+h4{font-size:13px;color:#222;}
+h5{font-size:12px;}
+ul,
+ol{color:#999;}
+td li{text-align:left;}
+hr{border:0;color:#999;background-color:#999;height:1px;width:100%;text-align:left;}
+.top{vertical-align:text-top;}
+
+/**************************************
+* General Layout Regions
+**************************************/
+#website{background-color:#fff;}
+#website .page{padding:10px 0 0;}
+#header{padding:0;}
+#header #header-zones{background:url('/wp-content/uploads/2010/03/header-bg.png') no-repeat;border-bottom:1px solid #999;}
+#header a:hover{text-decoration:none!important;}
+#header #logo{font-weight:bold;font-size:12px;}
+#header #logo img{vertical-align:middle;}
+#header #logo span{margin-top:10px;}
+#header #address{color:#999;text-align:right;padding-top:5px;}
+#header #phone-numbers{color:#999;text-align:right;padding-top:5px;}
+#header #phone-numbers table{width:100%;}
+#header #phone-numbers table td{text-align:right;}
+#header #phone-numbers strong{font:bold 11pt;color:#e21c22;}
+#site-content{margin:0;}
+body.page-parent #home-content{position:relative;top:-15px;z-index:30;}
+#home-1.widget-zones{margin:0;}
+#contact-us-page{padding:50px;}
+.entry{padding:0 0 10px;border-bottom:1px solid #999;margin-bottom:5px;}
+#sidebar div{margin: 8px 5px 0px;}
+#footer{padding:5px 0 0;margin:0 0 10px;background:#DCDBE0 url('/wp-content/uploads/2010/03/footer-background.jpg') repeat-x;height:auto;}
+#footer #quick-find-button{font-weight:bold;}
+#footer #logos{display:none;}
+#footer .nav{display:none;}
+#breakout-footer{}
+#breakout-footer .grid_12{display:block;float:none;width:100%;margin:0;}
+
+/**************************************
+* Menubar
+**************************************/
+#menubar{width:960px;height:34px;padding-left:0;position:relative;z-index:50;}
+#menubar .nav li{}
+#menubar .nav li a{display:block;background-image:url('/wp-content/uploads/menubar-nav-bg.png');padding:6px 0 0 7px;height:28px;font-size:12px;}
+#menubar .nav li a:hover,
+#menubar .nav li a .current-page{color:#e21c22;}
+#menubar .nav li.page-item-149 a{background-position:left 0;width:65px;padding-left:11px;}
+#menubar .nav li.page-item-151 a{background-position:-76px 0;width:99px;}
+#menubar .nav li.page-item-153 a{background-position:-182px 0;width:144px;}
+#menubar .nav li.page-item-155 a{background-position:-333px 0;width:81px}
+#menubar .nav li.page-item-157 a{background-position:-421px 0;width:95px;}
+#menubar .nav li.page-item-159 a{background-position:-523px 0;width:65px}
+#menubar .nav li.page-item-161 a{background-position:-595px 0;width:133px}
+#menubar .nav li.page-item-163 a{background-position:-735px 0;width:140px;}
+#menubar .nav li.page-item-165 a{background-position:-735px 0;width:71px;}
+#menubar .nav li.last{background-image:url('/wp-content/uploads/menubar-nav-bg.png');background-position:-814px 0;width:147px;height:34px;}/* menubar overrides */
+#menubar .nav ul li a{font:inherit;}
+.nav li a,
+.nav li a:visited .nav li li a,
+.nav li li a:visited,
+.nav li li a:hover,
+.nav li li a:active{margin:0;position:inherit;float:none;}
+
+/**************************************
+* Footer
+**************************************/
+td#quicklinksWrap{text-align:center;height:205px;background:#1d1d1d url('/wp-content/uploads/2010/03//footer_bg2.jpg') 0 0 repeat-x;}
+div#quicklinks{text-align:left;width:970px;height:195px;margin:0 auto;padding:10px 0 0 0;background:url('/wp-content/uploads/2010/03//quickmenu_line_horizontal.jpg') 0 38px repeat-x;}
+div.quicklinksItem{position:relative;float:left;height:195px;padding:0 20px;background:url('/wp-content/uploads/2010/03//quickmenu_line_vertical.jpg') bottom left no-repeat;}
+div.quicklinksItem div.quicklinksTitle{margin:0 0 14px 0;padding:10px 0 0 0;}
+div.quicklinksItem ul{float:left;margin:0;padding:0;}
+div.quicklinksItem ul li{list-style-type:none;font-size:11px;color:#69696B;margin:0;padding:3px 0 3px 10px;background:url('/wp-content/uploads/quick-find-bullet.png') 0 7px no-repeat;}
+div.quicklinksItem ul a:link,
+div.quicklinksItem ul a:visited{color:#797979;font-weight:normal;text-decoration:none;}
+div.quicklinksItem ul a:hover,
+div.quicklinksItem ul a:focus,
+div.quicklinksItem ul a:active{color:#e21c22;font-weight:normal;text-decoration:none;}
+div.quicklinksItem ul.first{width:190px;}
+div.quicklinksItem ul.last{width:140px;}
+div.quicklinksItem div.img{position:absolute;}
+div#quickmenu{width:330px;}
+div#quicktools{width:288px;}
+div#quicktools ul.first{width:150px;}
+div#quicktools ul.last{width:135px;}
+div#quicktools ul li{background-image:url('/wp-content/uploads/quick-find-bullet.png');}
+div#quickhours{position:relative;width:250px;padding-right:0;}
+div#quickhours div.quicklinksTitle{height:24px;padding:0 0 0 10px;}
+div#quickhours ul{margin:0;padding:0 0 0 10px;}
+div#quickhours ul li{list-style-type:none;font-size:11px;padding:3px 0;background:none;}
+div#quickhours ul li span{display:block;float:left;width:70px;}
+div#quicknews{position:relative;width:250px;padding-right:0;}
+div#quicknews div.quicklinksTitle{}
+div#quicknews div.quicklinksSubtitle{margin:0 0 10px 0;}
+div#quicknews ul li{background-image:url('/wp-content/uploads/quick-find-bullet.png');}
+td#footer{color:#666;text-align:center;padding:20px 0 0 0;background:#1d1d1d;width:100%;}
+td#footer div#footerWrap{text-align:left;width:970px;overflow:hidden;margin:0 auto;padding:0 5px 20px 5px;}
+body.quicklinksbody td#footer div#footerWrap{background:none;}
+td#footer p{margin:0 0 10px 0;color:#666;}
+td#footer a:link,
+td#footer a:visited{color:#666;font-weight:bold;text-decoration:none;}
+td#footer a:hover,
+td#footer a:focus,
+td#footer a:active{color:#444;font-weight:bold;text-decoration:none;}
+td#footer div.footeritem{float:left;height:138px;overflow:hidden;padding:0 20px 0 10px;border-left:1px #232323 solid;}
+td#footer div#footersects.footeritem{width:280px;}
+td#footer div.footeritem div.title{margin:0 0 10px 0;}
+td#footer div.footeritem ul{float:left;margin:0;padding:0;}
+td#footer div.footeritem ul.first{margin-right:20px;}
+td#footer div.footeritem ul li{list-style-type:none;font-size:11px;line-height:16px;margin:0;padding:0 0 0 8px;background:url(/wp-content/uploads/quick-find-bullet.png) 0 5px no-repeat;}
+td#footer div.footeritem a:link,
+td#footer div.footeritem a:visited,
+td#footer div.footeritem a:hover,
+td#footer div.footeritem a:focus,
+td#footer div.footeritem a:active{font-weight:normal;}
+td#footer div#footercontact{padding-right:0;}
+td#footer div#footercontact ul li{color:#666;padding:0;background:none;}
+td#footer div#footercontact ul li.special{width:150px;border-top:1px #333 solid;}
+td#footer div#footerdisclaimersWrap{clear:both;overflow:hidden;padding:20px 0;background:#222;border-top:1px #444 solid;}
+body.quicklinksbody td#footer div#footerdisclaimersWrap{padding-top:0;background:none;border:none;}
+td#footer div#footerdisclaimers{text-align:left;width:970px;overflow:hidden;margin:0 auto;padding:0 5px;}
+body.quicklinksbody td#footer div#footerWrap{-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:transparent none repeat scroll 0 0;}
+body.quicklinksbody td#footer div#footerdisclaimersWrap{-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:transparent none repeat scroll 0 0;border:medium none;padding-top:0;}
+div.quicklinksitem ul a:link,
+div.quicklinksItem ul a:visited{color:#666666;font-weight:normal;text-decoration:none;}
+div.quicklinksitem ul a:hover,
+div.quicklinksItem ul a:visited:hover{color:#e21c22;font-weight:normal;text-decoration:none;}
+td#footer div.footeritem a:link,
+td#footer div.footeritem a:visited,
+td#footer div.footeritem a:hover,
+td#footer div.footeritem a:focus,
+td#footer div.footeritem a:active{font-weight:normal;}
+td#footer a:link,
+td#footer a:visited{color:#666666;font-weight:bold;text-decoration:none;}
+td#footer a:hover{color:#e21c22;font-weight:bold;text-decoration:none;}
+
+/**************************************
+* Slideshow Widget
+**************************************/
+.slideshowwidget{width:960px;height:350px!important;margin-left:-10px;background:#fff;position:relative;z-index:500;overflow:hidden;}/* set all but first banner hidden */
+.slideshowwidget .slideshowwidget-slides{height:350px!important;}
+.slideshowwidget .slideshowwidget-prev,
+.slideshowwidget .slideshowwidget-next{position:absolute!important;width:44px!important;height:90px!important;color:transparent!important;background-color:transparent!important;background-image:url('/wp-content/uploads/2010/03/prev-next-sprite.png')!important;z-index:100!important;cursor:pointer!important;overflow:hidden!important;border:none!important;}/* cont'd on line 291 */
+.slideshowwidget .slideshowwidget-prev{background-position:190px 6px!important;left:5px;top:150px!important;}
+.slideshowwidget .slideshowwidget-next{background-position:00px 6px!important;right:5px;top:150px!important;}
+.slideshowwidget a.slideshowwidget-prev:hover{color:transparent!important;background-position:-184px 2px!important;}
+.slideshowwidget a.slideshowwidget-next:hover{color:transparent!important;background-position:-115px 2px!important;}
+.slideshowwidget .slideshowwidget-prev span,
+.slideshowwidget .slideshowwidget-next span{display:none;}
+.slideshowwidget .pager{width:960px;}
+.slideshowwidget .pager .pages{position:absolute;right:10px;bottom:-348px;}
+.slideshowwidget .pager .pages a{display:block!important;float:left!important;height:15px!important;width:15px!important;font-size:9px!important;text-align:left!important;line-height:15px!important;color:#222!important;text-decoration:none!important;margin:0 1px!important;border:none!important;opacity:0.8!important;background:url('/wp-content/uploads/2010/03/slideshowwidget-pager-circle.png') no-repeat!important;}
+.slideshowwidget .pager .pages a.activeSlide,
+.slideshowwidget .pager .pages a:hover{opacity:1.0!important;color:#e21c22!important;}/* unknown */
+#vehicle-picker{height:100px;border:solid 1px #aaa;-webkit-border-radius:7px;}
+
+/**************************************
+* Showroom Widget
+**************************************/
+.dt-showcase{width:750px;margin:5px auto;}
+.dt-showcase .vehicle{background:#eee;padding:10px;color:#e21c22;}
+.dt-showcase p{margin:5px 10px;}
+.dt-showcase .models{padding:10px;}
+.dt-showcase .model{float:left;width:180px;height:100px;text-align:center;}
+.dt-showcase .photo{color:#999;}
+.dt-showcase .fuel-economy{margin-right:80px;margin-top:-10px;}
+.dt-showcase .photo-gallery-button{margin-left:180px;margin-top:10px;width:82px;height:21px;color:transparent!important;background:url(/wp-content/uploads/IMAGE-GALLERY.jpg) no-repeat center center;}
+.dt-showcase .inquiry{margin:25px;}
+.dt-showcase .inquiry label{display:block;width:4em;margin-right:5px;text-align:right;float:left;}
+.dt-showcase .inquiry input{vertical-align:top;}
+.dt-showcase .inquiry .buttons{float:right;margin-right:50px;}
+.dt-showcase .multiselect{margin:5px 10px;width:250px;white-space:nowrap;overflow:auto;border:solid 1px #ccc;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.dt-showcase .multiselect .item{padding:2px 5px;font-size:9pt;text-align:left;}
+.dt-showcase .multiselect .item:hover{background:#eee;}
+.dt-showcase .multiselect .item:active{background:#ccc;}
+.dt-showcase .options{font-weight:bold;color:#009;}
+.dt-showcase .options li{float:left;width:40%;display:inline-block;margin:0 0 0 10px;color:999;font-weight:normal;}
+.dt-showcase .options li:before{content:'\2022 ';}
+.dt-showcase .equipment{font-weight:bold;color:#009;}
+.dt-showcase .equipment li{float:left;width:40%;display:inline-block;margin:0 0 0 10px;color:999;font-weight:normal;}
+.dt-showcase .equipment li:before{content:'\2022 ';}
+.dt-showcase .vehicle{display:inline-block;position:relative;margin:5px;text-align:center;background:white;}
+.dt-showcase .vehicle .trims{position:absolute;left:30px;border:1px solid #aaa;padding:10px;background:#eee;z-index:2;text-align:left;-webkit-border-radius:5px;-moz-border-radius:5px;opacity:.95;-moz-opacity:0.95;}
+.dt-showcase .vehicle .trims a{text-decoration:none;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;padding-left:8px;color:#333;}
+.dt-showcase .detail{padding:0!important;}
+.dt-showcase .detail h1{color:#e21c22!important;font-size:14px;font-weight:bold;padding:5px;margin-bottom:0;}
+.dt-showcase .detail .vehicle-info{border:none!important;background:url("http://assets2.dealertrend.com/images/themes/vehicle_inventory/bird_dog/details-info.png") top center no-repeat!important;float:left;width:360px!important;height:300px!important;font:bold 10pt arial;color:#999;padding:25px 2px 10px!important;margin:0!important;}
+.dt-showcase .detail .vehicle-info .msrp{margin-top:10%;}
+.dt-showcase .detail .vehicle-info label{width:180px!important;}
+.dt-showcase .detail .photos{background:url("http://assets2.dealertrend.com/images/themes/vehicle_inventory/bird_dog/details-photo.png") no-repeat!important;width:412px!important;height:320px!important;margin:0 0 10px;border:none!important;}
+.dt-showcase .detail .photos ol{list-style-type:none;margin:0!important;}
+.dt-showcase .detail .photos ol li{float:left;}
+.dt-showcase .detail .photos .exterior-colors,
+.dt-showcase .detail .photos .interior-colors{display:inline-block!important;margin:0 10px 10px!important;float:left!important;width:auto!important;}
+.dt-showcase .detail .photos .exterior-images{position:relative;width:150px;vertical-align:middle;}
+.dt-showcase .detail .photos .exterior-images .file{display:none;position:absolute;}
+.dt-showcase .detail .photos .exterior-images .file:first-child{display:block;}
+.dt-showcase .detail .vehicle-info .opt-buttons a.button-facebook{width:132px;height:39px;background:transparent url(/wp-content/uploads/btn-facebook.jpg) center center no-repeat;color:transparent!important;}
+.dt-showcase .detail .vehicle-info .opt-buttons a.button-twitter{width:132px;height:39px;background:transparent url(/wp-content/uploads/btn-twitter.jpg) center center no-repeat;color:transparent!important;}
+.dt-showcase .detail .vehicle-info .opt-buttons a.button-test-drive{width:132px;height:39px;background:transparent url(/wp-content/uploads/btn-book-test-drive.jpg) center center no-repeat;color:transparent!important;}
+.dt-showcase .detail .vehicle-info .opt-buttons a.button-trade-in{width:132px;height:39px;background:transparent url(/wp-content/uploads/btn-trade-evaluation.jpg) center center no-repeat;color:transparent!important;}
+.dt-showcase .detail .vehicle-info .opt-buttons a.button-tell-a-friend{width:132px;height:39px;background:transparent url(/wp-content/uploads/btn-send-friend.jpg) center center no-repeat;color:transparent!important;}
+.dt-showcase .detail .vehicle-info .opt-buttons a.button-loan-calculator{width:132px;height:39px;background:transparent url(/wp-content/uploads/btn-calculate.jpg) center center no-repeat;color:transparent!important;}
+.dt-showcase .name{color:#999;font-size:11px;}
+
+/**************************************
+* Quick find Widget
+**************************************/
+#quick-find{color:#999;background-color:white;padding:3px 5px 0 5px;font:normal 9pt arial;height:26px;margin-top:10px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;-webkit-box-shadow:1px 1px 3px #888;}
+#quick-find td img{vertical-align:middle;}
+#quick-find table{width:100%;margin:0;padding:0;}
+#quick-find td a{text-decoration:none;color:#333;}
+#slideout{display:none;background:#DCDBE0;min-height:200px;margin-bottom:5px;}
+.frm-btn-new-test-drive,
+.frm-btn-used-test-drive{color:#e21c22;cursor:pointer;padding:5px 5px 2px;float:left;}
+hr.blue{border-bottom:1px solid #e21c22;}
+.frm-btn-new-test-drive.active,
+.frm-btn-used-test-drive.active{color:#999;}
+.frm-btn-new-test-drive:hover,
+.frm-btn-used-test-drive:hover{text-decoration:underline;}
+.new-test-drive,
+.used-test-drive{padding:0 10%;}
+.new-test-drive{display:block;}
+.used-test-drive{display:none;}
+#inventory-search{color:#999;font:normal 8pt arial;padding-right:10px;border:solid 1px #888;-webkit-border-radius:5px;-webkit-border-top-left-radius:0px;-moz-border-radius:0 5px 5px 5px;background:url(/wp-content/uploads/2010/02/inv-search.png) no-repeat 2px right;-webkit-box-shadow:0px 1px 2px #aaa;}
+
+/**************************************
+* Widgets showcase slider
+**************************************/
+.showcase-slider{border:solid 1px #999;background:white;height:114px!important;margin:3px -10px 2px!important;overflow:hidden;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.showcase-slider .showcaseslider-tabs{display:none!important;border:none;height:inherit;line-height:16px;position:relative;top:-2px;list-style:none;float:right;margin:0;padding:0;}
+.showcase-slider .showcaseslider-tabs li{border:none;margin:0 5px!important;text-align:center;list-style:none;display:inline-block;margin:0;padding:0;}
+.showcase-slider .showcaseslider-tabs li a{display:block;background-image:url('/wp-content/uploads/2010/03/tab-inverted.png');background-repeat:no-repeat;height:19px;width:75px;color:#fff;border:none;font-size:12px;}
+.showcase-slider .showcaseslider-tabs li .current{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;}
+.showcase-slider .header{text-transform:uppercase;background:#f1f1f1;color:#e21c22;font-size:14px;font-weight:bold;height:22px;padding:2px 15px;position:relative;}
+.showcase-slider .header ul.showcaseslider-tabs a:hover,
+.showcase-slider .header ul.showcaseslider-tabs li a.current:hover{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;text-decoration:underline;}
+.showcase-slider .scrollable{position:relative;overflow:hidden;height:90px;padding:0;}
+.showcase-slider .scrollable .items{width:30000em;position:absolute;text-align:center;}
+.showcase-slider .scrollable .items a{float:left;text-align:center;margin:2px 0 0 40px;width:143px;text-decoration:none;color:#555;font-size:8pt;}
+.showcase-slider .scrollable .items a .image{display:block;height:68px;overflow:hidden;}
+.showcase-slider .scrollable .items a img{display:block;margin:0 auto;}
+.showcase-slider .scrollable .items a:hover{background:#e4e4e4;}
+.showcase-slider .scrollable .item{position:relative!important;}
+.showcase-slider .scrollable .item .trims,
+#showcase-flyout .showcase-pane .vehicle .trims{display:none;background:none repeat scroll 0 0 rgba(220,220,220,0.9)!important;border:solid 1px #aaa;position:absolute!important;top:0!important;left:30px;text-align:left!important;padding:2px 10px!important;position:relative;top:-80px;padding:5px;text-align:left;width:150px!important;-webkit-border-radius:5px;-moz-column-count:2;-webkit-column-count:2;}
+.showcase-slider .scrollable .item .trims br,
+#showcase-flyout .showcase-pane .vehicle .trims br{display:none;}
+.showcase-slider .scrollable .item .trims a,
+#showcase-flyout .showcase-pane .vehicle .trims a{display:block;float:none!important;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;padding:0 5px 1px 10px!important;margin:0!important;text-align:left!important;font-size:10px!important;width:auto!important;color:#333!important;}
+.showcase-slider .scrollable .item .trims a:hover{color:#e21c22!important;-moz-border-radius:0!important;-webkit-border-radius:0!important;text-decoration:underline;background-color:transparent;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;}
+.showcase-slider .scrollable a.prev,
+.showcase-slider .scrollable a.next{position:relative;z-index:50;width:38px;height:90px!important;cursor:pointer;margin-top:0!Important;}
+.showcase-slider .scrollable .prev{float:left;background:url('/wp-content/uploads/2010/02/small-gray-arrow-1.jpg') no-repeat center center;-webkit-border-bottom-left-radius:10px!important;-moz-border-radius-bottomleft:10px!important;}
+.showcase-slider .scrollable .next{float:right;margin-top:-90px;background:url('/wp-content/uploads/2010/02/small-gray-arrow-2.jpg') no-repeat center center;-webkit-border-bottom-right-radius:10px!important;-moz-border-radius-bottomright:10px!important;}
+.showcase-slider .scrollable .prev{float:left;background:url('/wp-content/uploads/2010/02/small-gray-arrow-1.jpg') no-repeat center center !important;-webkit-border-bottom-left-radius:10px;-moz-border-radius:0 0 0 10px;}
+.showcase-slider .scrollable .next{float:right;background:url('/wp-content/uploads/2010/02/small-gray-arrow-2.jpg') no-repeat center center !important;-webkit-border-bottom-right-radius:10px;-moz-border-radius:0 0 10px 0;}
+
+/**************************************
+* Widgets showcase flyout
+**************************************/
+#showcase-flyout{overflow:hidden;width:840px;height:95px;z-index:100;border:1px solid #999;border-top:0;background:#fff;-moz-border-radius-bottomleft:12px;-webkit-border-bottom-left-radius:12px;-moz-border-radius-bottomright:12px;-webkit-border-bottom-right-radius:12px;-webkit-box-shadow:1px 1px 3px #888;box-shadow:2px 2px 10px #666;-webkit-box-shadow:2px 2px 10px #666;-moz-box-shadow:2px 2px 10px #666;}
+#showcase-flyout .showcase-tabs{display:none!important;position:relative;height:19px;background:#f1f1f1;color:white;text-align:left;border-color:#eee;overflow:hidden;}
+#showcase-flyout .showcase-tabs ul{display:inline-block;text-align:left;padding:0;margin:0;list-style:none;}
+/* not applied from the looks of it ul.tabs li seems to be the formatt but looking for .tabs ul */
+#showcase-flyout .showcase-tabs li{position:absolute;top:-1px;left:110px;float:none;display:inline-block;padding:0;margin:0;list-style:none;}
+#showcase-flyout .showcase-tabs li:first-child{left:25px;}
+#showcase-flyout .showcase-tabs li a,
+#showcase-flyout .tabs li a.current:hover{border:none;padding:0;margin:0;display:block;height:19px;line-height:22px;width:75px;color:#fff;background-image:url('/wp-content/uploads/2010/03/tab-inverted.png');background-repeat:no-repeat;-moz-border-radius:0;opacity:1.0!important;}
+#showcase-flyout .showcase-tabs li a.current,
+#showcase-flyout .tabs li a:hover{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;}
+#showcase-flyout .showcase-prev{position:absolute;top:0;left:0;width:20px;height:97px;margin:0 0 1px 1px;z-index:200;-moz-border-radius-bottomleft:12px;-webkit-border-bottom-left-radius:12px;background:url('/wp-content/uploads/small-gray-arrow-1.jpg') no-repeat center center;}
+#showcase-flyout .showcase-next{position:absolute;top:0;right:0;width:20px;height:97px;margin:0 1px 1px 0;z-index:200;-moz-border-radius-bottomright:12px;-webkit-border-bottom-right-radius:12px;background:url('/wp-content/uploads/small-gray-arrow-2.jpg') no-repeat center center;}
+#showcase-flyout .disabled{opacity:0.3;}
+#showcase-flyout .showcase-pane{border:none;padding:0;margin:0;}
+#showcase-flyout .showcase-pane .items{position:relative;display:block;clear:both;overflow:hidden;width:30000em;height:100px;padding:0;margin:0 15px;border:none;}
+#showcase-flyout .showcase-pane .items .vehicle{position:relative;float:left;width:163px;text-align:center;}
+#showcase-flyout .showcase-pane .items .vehicle .trims{position:relative;top:10px!important;border:solid 1px #999;background:#eee;border-radius:7px;padding:10px;z-index:190;text-align:left;}
+#showcase-flyout .showcase-pane .items .vehicle .trims a{width:100px!important;}
+#showcase-flyout .name,
+#showcase-slider .name,
+#showcase-flyout .showcase-pane .vehicle .trims{display:none;position:absolute;top:5px;width:auto;}
+
+/**************************************
+* News Ticker
+**************************************/
+#news-ticker{background:white;height:140px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;}
+#news-ticker .scrollable{position:relative;overflow:hidden;height:140px;padding:0;}
+#news-ticker .scrollable .items{width:30000em;position:absolute;text-align:center;}
+#news-ticker .scrollable .item{float:left;margin-left:7px;text-align:center;}
+#news-ticker .scrollable .prev,
+#news-ticker .scrollable a.next{position:relative;z-index:50;width:20px;height:130px;padding:1px;cursor:pointer;}
+#news-ticker .scrollable .sliderwidget-prev{position:absolute;width:20px;height:40px;right:0px;top:38px;z-index:100;}
+#news-ticker .scrollable .sliderwidget-next{position:absolute;width:20px;height:40px;left:0px;top:38px;z-index:100;}
+#news-ticker .scrollable .sliderwidget-next{float:left;background:transparent url('/wp-content/uploads/2010/02/small-arrow1.png') no-repeat center center;}
+#news-ticker .scrollable .sliderwidget-prev{float:right;background:transparent url('/wp-content/uploads/2010/02/small-arrow2.png') no-repeat center center;}
+#news-ticker .scrollable .item,
+#news-ticker .scrollable .item img{width:136px!important;}
+.slider .scrollable .items .item p{text-align:center;}
+.slider .scrollable .items .item a{color:#777;}
+.slider .scrollable .items .item a img,
+.slider .scrollable .items .item a:hover img,
+.slider .scrollable .items .item a:visited img,
+.slider .scrollable .items .item a:active img{border:none;}
+
+/**************************************
+* Bump up Button
+**************************************/
+.bumpupbuttonwidget{height:140px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;}
+.bumpupbuttonwidget a{display:block;text-decoration:none;text-align:center;color:#5b5b5b;font-size:18px;font-weight:normal;height:30px;padding:10px 0;background:#E8E8E8 url(/wp-content/uploads/COA-top8.png) no-repeat 8px -4px;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;opacity:0.95;white-space:nowrap;}
+.bumpupmenuwidget{height:140px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;overflow:hidden;background:url(/wp-content/uploads/whatsInStore.jpg) bottom left no-repeat;}
+.bumpupmenuwidget h1{display:block;text-decoration:none;text-align:center;color:#5b5b5b;font-size:18px;font-weight:normal;height:30px;margin:0;padding:20px 0 0;background:#E8E8E8 url(/wp-content/uploads/COA-top8.png) no-repeat 8px -4px;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;border-bottom:1px solid #666;white-space:nowrap;}
+.bumpupmenuwidget .menu{display:none;padding-top:8px;}
+.bumpupmenuwidget ul li{margin:0 0 2px 10px;list-style-type:none;}
+.bumpupmenuwidget ul li a{text-decoration:none;color:#333;padding:0.2em 0.2em 0.2em 10px;}
+.bumpupmenuwidget ul li a:hover{color:#e21c22;}
+
+/**************************************
+* Accordion Menus
+**************************************/
+.accordionmenuwidget-pages{}
+.accordionmenuwidget-pages,
+.accordionmenuwidget-pages ul{list-style-type:none;margin:0;padding:0;position:relative;background-color:#F4F4F4;}
+.accordionmenuwidget-pages > li{}
+.accordionmenuwidget-pages > li > a{display:block;padding:5px;color:#626262;font-weight:bold;border-top:1px solid #999;background-color:#eee;background-image:url('/wp-content/uploads/2010/03/sidebar-title-borderbottom.png');background-repeat:no-repeat;background-position:center bottom;}
+.accordionmenuwidget-pages > li > a.activeParent{}
+.accordionmenuwidget-pages li > ul{margin:0 10px;padding:5px 0 5px 16px;display:none;}
+.accordionmenuwidget-pages li > ul li{margin-bottom:1px;}
+.accordionmenuwidget-pages li > ul li > a{display:block;padding:2px;color:#626262;font-weight:bold;font-size:10px;}
+.accordionmenuwidget-pages li > ul li > a:hover,
+.accordionmenuwidget-pages li > ul li.current_page_item > a{color:#e21c22;}
+body.page-id-232 .accordionmenuwidget-pages > li > ul.activeParent{display:block;background-color:rgb(244,244,244);background-image:url("/wp-content/uploads/menu-arrow.png");background-position:left -280px;background-repeat:no-repeat;}
+
+/**************************************
+* FORMS
+**************************************/
+select,
+input,
+textarea,
+input[type="checkbox"]{font-size:11px;background-color:#fff;border:1px solid #cacaca;color:#333;}
+.wrap{float:left;}
+.form-item{margin:0 0 5px 10px;clear:both;}
+.form-item .description{font-size:9px;color:#999;}
+.form-item label{display:block;float:left;width:60px;color:#999;text-align:right;margin-right:10px;}
+.form-block{display:block;color:#999;}
+.form-item br{display:none;}
+.form-block{display:block;margin:0 0 5px 10px;clear:both;}
+.form-block textarea{padding:5px 2px;}
+.form-submit{display:block;padding-left:80px;}
+.mmf-list-item-label{color:#999;}/* checkbox labels */
+#quick-contact-form{background-color:#F4F4F4;border:1px solid #DDDDDD;padding:5px;width:650px;margin:10px auto 0;}
+#quick-contact-form h2,
+#quick-contact-form h2{margin-left:25px;padding:5px 0;color:#e21c22;font-size:11px;background-color:#f4f4f4;}
+#quick-contact-form .form-item label{float:left;width:40px;margin-right:5px;}
+#quick-contact-form .form-item input{float:left;}
+#contact-form .form-block{margin-bottom:5px;}
+#contact-form .form-block label{display:block;float:left;width:60px;text-align:right;padding-right:10px;}
+#contact-form .form-block select,
+#contact-form .form-block input{float:left;}
+#contact-form .form-block select{margin-bottom:5px;}
+#partsRequest,
+#serviceAppointment,
+#tireRequest,
+#contactFinance{background-color:#F4F4F4;border:1px solid #DDDDDD;padding:10px;}
+#contactFinance{width:90%;margin:0 auto;}
+#contactFinance .form-item{float:left;clear:none;}
+
+/**************************************
+* Wizard Form
+**************************************/
+.step{border:1px solid #999;}
+ul#steps{list-style-type:none;clear:both;margin:0 0 10px;}
+ul#steps li{float:left;display:block;color:#ccc;font-size:16px;font-weight:bold;margin-right:10px;width:110px;}
+ul#steps li.current{color:#999;}
+ul#steps li span{font-size:11px;display:block;}
+#tradeEstimate{}
+#tradeEstimate br,
+#tradeEstimate .form-item br{display:none;}
+#tradeEstimate legend{display:block;background-color:#999;color:#fff;margin:0 0 10px;width:100%;font-size:14px;}
+#tradeEstimate legend span{padding:3px;}
+#tradeEstimate p{margin-left:10px;}
+#tradeEstimate p#step-0commands,
+#tradeEstimate p#step-1commands,
+#tradeEstimate p#step-2commands,
+#tradeEstimate p#step-3commands,
+#tradeEstimate p#step-4commands,
+#tradeEstimate p#step-5commands{margin-left:0!important;}
+#tradeEstimate .wrap .form-item{float:none;}
+#tradeEstimate .form-item{margin:0 10px 5px;float:left;clear:none;}
+#tradeEstimate #step-2 .mmf-list-item{float:left;width:130px;}
+#tradeEstimate #step-3 .form-item{width:130px;}
+#tradeEstimate #step-3 .form-item select{width:120px;}
+#tradeEstimate #step-4 .form-item{width:218px;}
+#tradeEstimate #step-5 .form-item{width:40%;}
+#tradeEstimate .next,
+#tradeEstimate .prev{display:block;padding:5px;background-color:rgba(226,28,34,0.7);color:#fff;font-size:12px;}
+#tradeEstimate a.next:hover,
+#tradeEstimate a.prev:hover{background-color:rgba(226,28,34,1.0);}
+#tradeEstimate .prev{float:left;}
+#tradeEstimate .next{float:right;}
+#tradeEstimate > p{margin-left:0!important;margin-top:10px;}
+#tradeEstimate > p > input{display:block;padding:5px;background-color:rgba(226,28,34,1.0);color:#fff;font-size:12px;cursor:pointer;}
+
+/**************************************
+* Flash App Pages
+**************************************/
+/*
+body.page-id-206{}
+body.page-id-206 #site-content > .grid_12{margin:0!Important;}
+body.page-id-206 #site-content > .grid_12 > #post-206{padding:0 0 0 10px;}
+*/
+#FlashID{display:block;margin:-10px 0 -10px -20px;}
+
+/**************************************
+* Clear
+* - should be in grid 960 css file but added anyway 
+**************************************/
+.clear{clear:both;height:0;}
+
+/**************************************
+* OTHER ?!??!#HR!@)#*
+**************************************/
+.emailform .header{display:none!important;}
+.emailform form{border:none!important;background:white!important;}
+.emailform form table td{border:none!important;background:white!important;}
+#div_contact{background-color:#F4F4F4;border:1px solid #999;padding-left:25px;padding-top:15px;width:893px;}
+#div_contact select{font-size:11px;color:#999;}
+#div_contact select option{padding:2px;color:#999;border:none;}
+.white td{color:#ffffff;}
+.contactTitle td:first-child{color:#e21c22;}
+td.emailRight{text-align:right !important;padding-right:5px;}
+.contactTitle{height:30px;}
+
+/**************************************
+* Email Window
+**************************************/
+#emailWindow{display:none;position:absolute;z-index:500;border:solid 1px black;background:white;width:360px;height:360px;padding:10px;}
+#emailWindow .staff-name{display:none;}
+#emailWindow .staff-email{display:none;}
+#emailWindow .button{float:left;}
+#emailWindow #close-window{float:right;}
+.combo-search .combo{width:90px!important;}
+/* Showcase */
+body.page-id-43 #site-content > .grid_10{margin-left:0;}
+/* margin fix */ 
+body.page-id-43 .entry > p{display:none;}
+/* empty paragraph tag removal */
+body.page-id-43 .dt-showcase{width:800px;margin:0 auto;}
+/* width fix */ 
+body.page-id-43 .dt-showcase .detail .pane{-moz-border-radius:0;border-left:none;border-right:none;border-bottom:none;}
+body.page-id-43 .dt-showcase .detail .tabs{left:-1px;}
+.search-sliders .slider-container label{display:none!important;}
+
+/**************************************
+* Bios'
+**************************************/
+.staff{width:720px;}
+.staff .person{float:left;width:230px;height:260px;font:normal 11px arial;color:#999;background:url(http://www.woodridgeford.com/wp-content/uploads/2010/03/bioBg2.jpg) no-repeat;margin:5px;}
+.staff .person p br{display:none;}
+.staff .person .photo{float:left;margin-right:10px;padding:0;}
+.staff .person .name{font-size:14px;}
+.staff .person .title{font-size:11px;}
+.staff .person .phone{font-size:13px;color:#e21c22;}
+.staff .person .email{display:block;padding:15px 0;}
+.staff .person .toggle{display:block;}
+.staff .person .bio-text{display:none;clear:both;font-size:9px;color:#e21c22;background:url(http://www.woodridgeford.com/wp-content/uploads/2010/03/bioBg.jpg) no-repeat;margin-top:18px;padding-top:4px;}
+.mmf-response-output.mmf-mail-sent-ng,
+.mmf-response-output.mmf-mail-sent-ok{background:#090;color:white;}
+#boxBio{width:720px;}
+#containerBio{width:220px;height:260px;background-image:url(/wp-content/uploads/2010/03/bioBg2.jpg);background-repeat:no-repeat;margin:10px;float:left;}
+.picBio{width:100px;float:left;margin-right:10px;}
+.nameBio{font-size:14px;color:#999;margin-bottom:0px;}
+.titleBio{font-size:11px;color:#999;}
+.phoneBio{font-size:13px;color:#e21c22;}
+.emailBio{padding-bottom:15px;}
+.textBio{display:none;font-size:9px;color:#e21c22;background-image:url(/wp-content/uploads/2010/03/bioBg.jpg);background-repeat:no-repeat;margin-top:18px;padding-top:4px;}
+
+/*************************************/
+/* Parts - Tire Center
+/*************************************/
+.tireSavingMenu{margin:0 0 10px;padding:0;border-bottom:1px solid #888;border-top:1px solid #888;list-style-type:none;}
+.tireSavingMenu li{float:left;}
+.tireSavingMenu li a{display:block;width:80px;text-align:center;padding:5px 0 5px 10px;}
+.tireSavingMenu li a:hover{text-decoration:underline;}
+.tireSavingMenu li.selected a{color:#999!important;font-weight:bold;}
+.tabcontent{display:none;}
+.tireSavingTips{list-style-type:none;margin:0;padding:0;}
+.tireSavingTips h4.toggle{margin:5px 0;cursor:pointer;line-height:22px;}
+.tireSavingTips h4.toggle a{display:block;color:#222;padding:4px;background-color:#eee;}
+.tireSavingTips h4.toggle a:hover{background-color:#ccc;}
+.collapsed{display:none;}
+.collapsible{height:auto;padding:10px;margin-bottom:5px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;}
+.tire101{float:right;width:220px;padding:5px 10px 10px;margin:10px ;background-color:#fff;border:1px solid #888;-moz-box-shadow:3px 3px 2px #888;-webkit-box-shadow:3px 3px 2px #888;box-shadow:3px 3px 2px #888;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.tire101 h4{margin:0 0 5px;}
+.tire101 ul{margin:0;padding:0 0 0 18px;}
+.flashcontent{display:none;background-color:#fff;border:1px solid #888;padding:5px 10px;-moz-box-shadow:3px 3px 2px #888;-webkit-box-shadow:3px 3px 2px #888;box-shadow:3px 3px 2px #888;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.boxClose{position:absolute;display:block;top:-10px;right:-20px;background:url(/wp-content/uploads/boxClose.png) top left no-repeat transparent;height:40px;width:40px;cursor:pointer;}
+.stepimg{float:right;margin-left:15px;}
+#FlashID-tire101{margin:0 auto;}
+
+/*************************************/
+/* Parts - Over the counter
+/*************************************/
+ul.overcounterWrap{list-style-type:none;margin:0 auto;padding:0;}
+ul.overcounterWrap li{margin:0;padding:0;float:left;position:relative;/* Set the absolute positioning base coordinate */width:90px;height:90px;}
+ul.overcounterWrap li img{width:80px;/* Set the small thumbnail size */-ms-interpolation-mode:bicubic;/* IE Fix for Bicubic Scaling */margin:0;position:absolute;left:0;top:0;cursor:pointer;z-index:5;}
+ul.overcounterWrap li img.imgHov{/* Image used as background on hover effect */}
+ul.overcounterWrap li .description{display:none;position:absolute;top:20px;width:200px;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.8);border:1px solid #999;-moz-border-radius:5px;-webkit-border-radius:5px;color:#fff;font-size:10px;z-index:2;}
+ul.overcounterWrap li .description h4{color:#fff;margin:0 0 5px;font-size:12px;}
+ul.overcounterWrap li .description ul{margin:0;padding:0 0 0 20px;}
+ul.overcounterWrap li .description ul li{margin:0 0 5px;padding:0;height:auto;width:auto;color:#ccc}
+ul.overcounterWrap li .description p{position:absolute;right:10px;bottom:3px;}
+ul.overcounterWrap li .pright{padding:10px 10px 20px 30px;}
+ul.overcounterWrap li .pleft{padding:10px 30px 20px 10px;}
+
+/*************************************/
+/* Parts - accessories
+/*************************************/
+ul.accessoriesWrap{list-style-type:none;margin:0 auto;padding:0;}
+ul.accessoriesWrap li{margin:0;padding:0;float:left;position:relative;/* Set the absolute positioning base coordinate */width:90px;height:90px;}
+ul.accessoriesWrap li img{width:80px;/* Set the small thumbnail size */-ms-interpolation-mode:bicubic;/* IE Fix for Bicubic Scaling */margin:0;position:absolute;left:0;top:0;cursor:pointer;z-index:5;}
+ul.accessoriesWrap li img.imgHov{/* Image used as background on hover effect */}
+ul.accessoriesWrap li .description{display:none;position:absolute;top:20px;width:200px;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.8);border:1px solid #999;-moz-border-radius:5px;-webkit-border-radius:5px;color:#fff;font-size:10px;z-index:2;}
+ul.accessoriesWrap li .description h4{color:#fff;margin:5px;font-size:12px;}
+ul.accessoriesWrap li .description p{margin:0 5px 5px;color:#ccc;}
+ul.accessoriesWrap li .pright{padding:10px 10px 20px 30px;}
+ul.accessoriesWrap li .pleft{padding:10px 30px 20px 10px;}
+
+/*************************************/
+/* Parts - apparel 
+/*************************************/
+ul.apparelWrap{list-style-type:none;margin:0 auto;padding:0;}
+ul.apparelWrap li{margin:0;padding:0;float:left;position:relative;/* Set the absolute positioning base coordinate */width:90px;height:90px;}
+ul.apparelWrap li img{width:80px;/* Set the small thumbnail size */-ms-interpolation-mode:bicubic;/* IE Fix for Bicubic Scaling */margin:0;position:absolute;left:0;top:0;cursor:pointer;z-index:5;}
+ul.apparelWrap li img.imgHov{/* Image used as background on hover effect */}
+ul.apparelWrap li .description{display:none;position:absolute;top:20px;width:200px;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.8);border:1px solid #999;-moz-border-radius:5px;-webkit-border-radius:5px;color:#fff;font-size:10px;z-index:2;}
+ul.apparelWrap li .description h4{color:#fff;margin:5px;font-size:12px;}
+ul.apparelWrap li .description p{margin:0 5px 5px;color:#ccc;}
+ul.apparelWrap li .pright{padding:10px 10px 20px 30px;}
+ul.apparelWrap li .pleft{padding:10px 30px 20px 10px;}
+
+/*************************************/
+/* Parts - I love my Honda
+/*************************************/ 
+.loveHonda{}
+.loveHonda .loveHondaForm img{padding-left:25px;}
+.loveHonda .fimg{float:right;margin:10px;}
+.loveHonda #article-slider{display:block;height:215px;width:780px;margin:10px auto 10px;position:relative;overflow:hidden;background-image:url(/wp-content/uploads/contentSlider-bg.png);background-color:#eee;-moz-border-radius:8px;-webkit-border-radius:8px;}
+.loveHonda .article-group{position:absolute;top:6px;left:40px;width:678px;height:200px;overflow:hidden;background-color:#fff;-moz-box-shadow:2px 2px 2px #999;-webkit-box-shadow:2px 2px 2px #999;border:1px solid #999;-moz-border-radius:5px;-webkit-border-radius:5px;padding:0 10px;}
+.loveHonda .article-group h3{padding-top:10px;}
+.loveHonda #article-slider #controls{position:absolute;top:0;width:780px;z-index:15;}
+.loveHonda #article-slider #controls br{display:none;}
+.loveHonda #article-slider #controls a{display:block;}
+.loveHonda #article-slider #controls a span{display:none;}
+.loveHonda #article-slider #controls a:active{border:none;}
+.loveHonda #article-slider #controls a#prev:hover,
+#article-slider #controls a#next:hover{}
+.loveHonda #article-slider #controls a#prev,
+#article-slider #controls a#next{width:30px;height:215px;color:#fff;text-decoration:none;}
+.loveHonda #controls #prev{float:left;background-image:url(/wp-content/uploads/contentSlider-left.png);border-right:1px solid #666;-moz-border-radius-topleft :8px;-webkit-border-top-left-radius:8px;-moz-border-radius-bottomleft:8px;-webkit-border-bottom-left-radius:8px;}
+.loveHonda #controls #next{float:right;background-image:url(/wp-content/uploads/contentSlider-right.png);border-left:1px solid #666;-moz-border-radius-topright :8px;-webkit-border-top-right-radius:8px;-moz-border-radius-bottomright:8px;-webkit-border-bottom-right-radius:8px;}
+.loveHonda .submissionForm{display:none;width:600px;background-color:#fff;border:5px solid #999;padding:10px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.loveHonda .submissionForm .form-item{display:inline-block;}
+.loveHonda .submissionForm label{float:left;width:90px;}
+.loveHonda .submissionForm select{width:121px;}
+.loveHonda .submissionForm input[type="file"]{font-size:11px;background-color:#fff;border:1px solid #cacaca;color:#333;}
+
+/*************************************/
+/* Service - Recommended service
+/*************************************/
+.recommendedService{width:800px;}
+.tabwrap{width:800px;display:block;height:57px;}
+div.p1,
+div.p2,
+div.p3{float:left;display:block;width:250px;height:55px;padding:3px;font-size:16px;cursor:pointer;color:#222;background-color:#fff;border-bottom:1px solid #e21c22;}
+div.p1.active,
+div.p2.active,
+div.p3.active{color:#fff;background-color:#e21c22;border:1px solid #e21c22;-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-topright :4px;-webkit-border-top-right-radius:4px;}
+div.p1 span,
+div.p2 span,
+div.p3 span{font-size:10px;}
+.recommendedService table{width:90%;background-color:#fff;border-bottom:none;display:none;}
+.recommendedService table.enabled{z-index:5;display:table;}
+.recommendedService table td{padding:2px;vertical-align:top;}
+.recommendedService table td ul{margin:5px;list-style-type:none;}
+.recommendedService table td.section div{border-bottom:1px solid #e21c22;font-style:italic;color:#000;font-size:14px;letter-spacing:1px;margin-top:10px;}
+.recommendedService table td.subsection{background-color:#eee;color:#e21c22;font-weight:bold;font-size:16px;}
+.recommendedService table td.price{font-size:16px;font-weight:bold;text-align:right;}
+.recommendedService table td.price sup,
+.recommendedService table td.price div{font-size:8px;}
+.recommendedService table td.price p{font-size:16px;font-weight:bold;text-align:right;}
+.recommendedService .footnotes{display:none;position:absolute;right:360px;background-color:#fff;border:1px solid #e21c22;padding:8px;width:300px;z-index:100;}
+.recommendedService .footnotes p{font-size:9px;color:#222;line-height:1.55;}
+
+/*************************************/
+/* Inventory tweaks
+/*************************************/
+.bird_dog .listings .search .quick-combo-search{display:inline-block;padding:10px 0 10px 5px;text-align:left;}
+.bird_dog .listings .search .quick-combo-search select{font-size:11px;}
+.bird_dog .listings .search .quick-combo-search label{vertical-align:middle;display:inline-block;text-transform:uppercase;float:left;padding:3px 3px 0 0;}
+.bird_dog .listings .search .quick-combo-search .combo{position:relative;display:inline-block;vertical-align:middle;width:90px;height:16px;font:normal 11px arial;text-align:left;white-space:nowrap;background:#eee url(http://assets1.dealertrend.com/images/themes/vehicle_inventory/bird_dog/down_arrow.gif) center right no-repeat;padding:1px 12px 1px 2px;border:solid 1px #ccc;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;list-style:none;cursor:pointer;}
+.bird_dog .listings .search .quick-combo-search .combo .options{display:none;position:absolute;top:16px;left:-1px;z-index:8888;min-width:106px;overflow:hidden;background:white;padding:2px 4px;border:solid 1px #ccc;border-radius:0px 0px 4px 4px;-moz-border-radius:0px 0px 4px 4px;-webkit-border-radius:0px 0px 4px 4px;list-style:none;}
+.bird_dog .listings .search .quick-combo-search .combo .options a{display:block;text-decoration:none;color:black;margin-bottom:5px;}
+.bird_dog .listings .search .quick-combo-search .combo .options a:hover{color:#1D4A9F;}
+.dt-showcase .equipment,
+.dt-showcase .options,
+.bird_dog .detail .vehicle-desc,
+.bird_dog .detail .equipment .title,
+.bird_dog .listings .vehicles a .vehicle-desc,
+.bird_dog .listings .vehicles a .price-details .price,
+.bird_dog .listings .vehicles a .price-details .was,
+.bird_dog .listings .vehicles a .price-details .now{color:#e21c22!important;font-size:11px!important;}
+.bird_dog .listings .search .grad.toggle{height:23px;}
+.bird_dog .detail .vehicle-desc{font-size:14px;}
+.bird_dog .listings .search .grad.toggle > div{padding-left:40px;background:url(/wp-content/uploads/quick-find-arrow.jpg) scroll no-repeat 0 0 transparent;height:25px;line-height:20px;}
+.bird_dog .listings .search .grad.toggle img{display:none;}
+.bird_dog .listings .search .advanced{background:#e21c22!important;}
+.bird_dog .listings .quick_links > a:hover{background:#e21c22!important;}
+.bird_dog .detail .tab-box .tabs a.current,
+.bird_dog .detail .tab-box .tabs a.current:hover,
+.bird_dog .detail .tab-box .tabs li.current a{background-image:none!important;}
+.bird_dog .listings .vehicles .vehicle:hover{background:white url(/wp-content/uploads/vehicle-grad-hover.jpg) repeat-x bottom left!important;border:1px solid #999;margin:-1px -1px 0px -1px;}
+.bird_dog .listings .vehicles .vehicle .vehicle-desc .drive_train,
+.bird_dog .listings .vehicles .vehicle .vehicle-desc .trim_code{display:none;}
+.bird_dog .ui-state-default,
+.bird_dog .ui-widget-content .ui-state-default,
+.bird_dog .ui-widget-content .ui-state-focus,
+.bird_dog .ui-widget-content .ui-state-hover{background:url(/wp-content/uploads/slider-grabbie.png) repeat-x scroll 50% 50% #F6F6F6!important;}
+.bird_dog .detail .thumbnails .next{background:url(/wp-content/uploads/village-thumbnails-end.jpg) no-repeat scroll 0 0 transparent!important;}
+.bird_dog .detail .thumbnails .prev{background:url(/wp-content/uploads/village-thumbnails-begin.jpg) no-repeat scroll 0 0 transparent!important;}
+.bird_dog .detail .fuel_economy{background:url(/wp-content/uploads/village-tab-hash-pattern.jpg) no-repeat scroll center top white!important;}
+
+/*************************************/
+/* Image Gallery
+/*************************************/
+.pikachoose{width:780px;margin:0 auto 25px auto;}
+.pikachoose ul{padding-left:0;width:160px;margin:0;float:left;}
+.pikachoose ul li{float:left;border:1px solid #dddddd;padding:2px;background:#ffffff;margin:0 6px 4px 0;position:relative;overflow:hidden;-moz-box-shadow:3px 3px 3px #666;-webkit-box-shadow:3px 3px 3px #666;box-shadow:3px 3px 3px #666;}
+.pikachoose ul li div img{position:relative;cursor:pointer;}
+.pika_main{width:610px;display:block;position:relative;float:left;margin-right:10px;}
+.pika_main_img{position:absolute;top:2px;left:2px;}
+.pika_back_img{position:relative;top:0px;}
+.pika_subdiv{position:relative;border:1px solid #dddddd;padding:2px;width:600px;background:#ffffff;-moz-box-shadow:3px 3px 3px #666;-webkit-box-shadow:3px 3px 3px #666;box-shadow:3px 3px 3px #666;}
+.pika_subdiv img,
+.pika_subdiv a img{border:none;}
+.pika_navigation a{font-size:12px;text-decoration:none;cursor:pointer;}
+.pika_navigation a:hover{text-decoration:underline;}
+.pika_navigation{padding-top:10px;clear:both;text-align:center;}

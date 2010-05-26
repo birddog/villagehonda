@@ -1,0 +1,94 @@
+
+/* 
+	root element for the scrollable. 
+	when scrolling occurs this element stays still. 
+*/
+div.scrollable {
+	
+	/* required settings */
+	position:relative;
+	overflow:hidden;	 	
+	width: 918px;	
+	height:125px;	
+	/* custom decorations */
+	padding:0px;	
+}
+
+/* 
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+div.scrollable div.items {	
+	/* this cannot be too large */
+	width:30000em;	
+	position:absolute;
+	clear:both;		
+	
+	/* decoration */
+	margin-left:0px;
+}
+
+/* single scrollable item */
+div.scrollable div.items div {
+	float:left;
+	
+	/* custom decoration */
+	text-align:center;
+	width:181px;
+	padding:0px;
+	font-size:30px;
+	background-color: transparent;
+	margin-right: 5px;	
+}
+div.scrollable .items a{
+  font:bold 12px helvetica;
+  color: white;
+	line-height: 30px;
+}
+
+/* active item */
+div.scrollable div.items div.active {
+}
+
+/* this makes it possible to add next button beside scrollable */
+div.scrollable {
+	float:left;	
+}
+
+div.scrollable a.prev {
+	display:block;
+	width:11px;
+	height:22px;
+	background:url(images/left.gif) no-repeat;
+	float:left;
+	margin:28px 5px 28px 5px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+div.scrollable a.next{
+	display:block;
+	width:11px;
+	height:22px;
+	background:url(images/right.gif) no-repeat;
+	float:right;
+	margin:28px 5px 28px 5px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+
+/* mouseover state */
+div.scrollable a.prev:hover, 
+div.scrollable a.next:hover, 
+div.scrollable a.prevPage:hover, 
+div.scrollable a.nextPage:hover {
+	background-position:0px -22px;		
+}
+
+/* disabled navigational button */
+div.scrollable a.disabled {
+	visibility:hidden !important;		
+}

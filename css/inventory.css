@@ -1,0 +1,184 @@
+.grad{background-image:url(gradient-bar.png);}
+
+/* Bread Crumbs */
+.breadcrumbs{text-align:left;height:23px;background:transparent url(http://assets1.dealertrend.com/images/ui/crumb-bg.png) repeat-x;overflow:hidden;}
+.breadcrumbs .start{display:block;float:left;background:transparent url(http://assets1.dealertrend.com/images/ui/crumbs-start.gif) no-repeat;height:24px;width:13px;}
+.breadcrumbs a{display:block;float:left;padding:3px 6px 0;text-decoration:none;background:transparent url(http://assets1.dealertrend.com/images/ui/crumb-bg.png);height:18px;color:black;overflow:hidden;white-space:nowrap;}
+.breadcrumbs a:hover{color:blue;}
+.breadcrumbs .end{clear:right;height:24px;}
+.breadcrumbs .separator{display:block;float:left;background:transparent url(http://assets1.dealertrend.com/images/ui/crumb-divide.gif) no-repeat;height:24px;width:12px;}
+
+/* Search */
+.listings{color:#999;border-left:1px solid #999;border-right:1px solid #999;border-bottom:1px solid #999;}
+.listings .breadcrumbs{border-top:1px solid #999;}
+.listings select{color:#999;}
+
+/* Quick Links and Makes/Models Lists */
+.makes_models{display:none!important;}
+
+/* Combo Dropdown Filters */
+.listings .search .combo-search{width:432px;padding:10px 0 10px 5px;text-align:left;font-size:11px;}
+.listings .search .combo-search label{vertical-align:middle;display:inline-block;}
+.listings .search .combo-search .combo{position:relative;display:inline-block;padding:1px 6px 0px 7px;margin:4px 1px;background-color:#d0d0d0;border:1px solid #999;border-top:1px solid #eee;border-left:1px solid #eee;text-decoration:none;color:#565656;cursor:pointer;vertical-align:middle;-webkit-border-radius:6px;-moz-border-radius:6px;}
+.listings .search .combo-search .combo .options{position:absolute;top:-1px;left:-1px;opacity:0.0;z-index:8888;width:10em;height:1em;overflow:hidden;background:#eee;padding:2px 4px;-webkit-box-shadow:2px 2px 5px rgba(0,0,0,0.8);border:solid 1px #555;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.listings .search .combo-search .combo .options a{display:block;text-decoration:none;color:black;padding:5px;}
+.listings .search .combo-search .combo .options a:hover{background:rgba(200,200,200,0.8);}
+.listings .search .combo-search .combo .options:hover{opacity:1.0;overflow:visible;height:auto;}
+
+.listings .search{border-top:none;}
+.listings .search label{vertical-align:middle;display:inline-block;color:#999;}
+.listings .search .searchbox{padding:10px 0 10px 0;}
+.listings .search .search-form div.text-search{display:block;text-align:right;}
+.listings .search .search-form label{float:right;margin:3px 5px 0 0;}
+.listings .search .search-form input.text-search{padding:0;font-size:11px;float:right;margin-right:5px;}
+.listings .search .search-form a.submit{float:right;width:58px;height:15px;overflow:visible;font-size:11px;color:#fff;padding:0;border:none;background-color:transparent;position:relative;text-decoration:none;}
+.listings .search .search-form a.submit:hover{text-decoration:none;}
+.listings .search .search-form a.submit img{padding:0;margin:2px 0 0;position:absolute;top:0;left:0;cursor:hand;cursor:pointer;}
+.listings .search .search-form a.submit span{font-size:9px;position:absolute;top:4px;left:6px;letter-spacing:1px;}
+
+/* advanced search options */
+.advanced{border-top:1px solid #999;}
+.advanced .title{cursor:hand;cursor:pointer;width:758px;height:21px;color:#999;}
+.advanced .title img{padding:2px 0 0 2px;vertical-align:text-bottom;}
+
+/* Sliders */
+.search-sliders{background-color:#1d4a9f;background-image:none;margin:0 auto;text-align:center;}
+.search-sliders .slider-container{float:left;width:130px;margin:2px 10px;text-align:center;}
+.search-sliders .slider-container label{display:block;color:#fff;}
+.search-sliders .slider-container .slider{display:block;width:120px;margin:2px 10px 0 8px;vertical-align:middle;}
+.search-sliders .slider-container .values{display:block;color:#fff;}
+.search-sliders .quick_links{float:left;width:250px;margin-left:20px;padding:5px 5px 0 10px;}
+.search-sliders .quick_links a{color:#fff;font-size:10px;padding-right:5px;text-decoration:none;}
+.search-sliders .quick_links a:hover{text-decoration:underline;}
+
+/* sort bar */
+.sort_bar{height:21px;line-height:21px;text-align:right;padding:0 10px;border-top:1px solid #999;}
+.sort_bar select{font-size:11px;}
+
+/* Paginagion */
+.listings .pager{border-top:1px solid #999;padding:0 10px;line-height:28px;border-bottom:1px solid #999;}
+.listings .pager .status{display:inline-block;margin-right:.4em;float:left;line-height:1.25;}
+.listings .pager .pages{display:inline-block;float:right;}
+.listings .pager .pages .page{}
+.listings .pager .pages .page.page:hover{background:#fff;}
+.listings .pager .pagination{}
+.listings .pager .pagination a{text-decoration:none;color:#999;padding:5px 10px;}
+.listings .pager .pagination a:hover,
+.listings .pager .pagination a:active{background-color:#eee;color:#222;}
+.listings .pager .pagination span.current{}
+.listings .pager .pagination span.disabled{}
+
+/* Inventory Listings */
+.listings a.odd,
+.listings a.even{display:block;clear:both;text-decoration:none;color:#999;margin:0;border-bottom:solid 1px #999;overflow:hidden;background: url(/wp-content/uploads/2010/03/vehicle-grad.jpg) bottom left repeat-x;}
+.listings .vehicles a .headline{display:block;padding:4px 10px;margin:2px 0 0;color:#1D4A9F;font-weight:bold;text-align:center;border-top:1px solid #999;border-bottom:1px solid #999;text-transform:uppercase;}
+.listings .vehicles a .img,
+.listings .vehicles a .vehicle-desc,
+.listings .vehicles a .icons{float:left;margin:5px;height:75px;vertical-align:middle;}
+.listings .vehicles a img.thumbnail{float:left;border:1px solid #999;height:75px;}
+.listings .vehicles a div.vehicle-desc{color:#039;text-align:left;font-size:12px;font-weight:bold;padding-right:10px;position:relative;border-right:1px solid #999;}
+.listings .vehicles a div.vehicle-desc .stock-num{position:absolute;bottom:0;left:0;font-size:11px;color:#999;font-weight:normal;}
+.listings .vehicles a div.vehicle-desc .details{color:#999;}
+.listings .vehicles a .icons{width:149px;border-right:1px solid #999;overflow:hidden;}
+.listings .vehicles a .icons img{width:40px;padding-top:10px;}
+.listings .vehicles a .price-details{text-align:center;line-height:16px;padding-top:20px;}
+.listings .vehicles a .price-details .price{font-size:16px;color:#1D4A9F;font-weight:bold;}
+.listings .vehicles a .specs{display:block;margin:10px 0;}
+.listings .vehicles a .specs span{display:block;}
+.listings .disclaimer{padding:5px;text-align:center;}
+
+/* Inventory Detail Page */
+.detail{border:1px solid #999;width:800px;position:relative;}
+.detail .headline{height:21px;line-height:21px;color:#1D4A9F;text-align:center;font-weight:bold;border-top:1px solid #999;border-bottom:1px solid #999;margin-bottom:5px;}
+.detail .vehicle_desc{padding:5px;color:#1D4A9F;font-size:14px;font-weight:bold;position:relative;}
+.detail .vehicle_desc .price{position:absolute;right:5px;top:5px;}
+.detail .photos{float:left;width:424px;margin:0;text-align:center;}
+.detail .photos .photo{display:block;background-image:url(/wp-content/uploads/2010/03/details-photo.png);background-repeat:no-repeat;height:320px;margin:0;}
+.detail .photos .photo img{margin:10px 0 0;width:400px;}
+.detail .vehicle_info{float:left;background-image:url(/wp-content/uploads/2010/03/details-info.png);background-repeat:no-repeat;width:368px;height:320px;color:#999;font-weight:bold;}
+.detail .vehicle_info .info-item{display:block;margin:0 0 5px;}
+.detail .vehicle_info .info-item:first-child{margin-top:25px;}
+.detail .vehicle_info .info-item label{float:left;width:170px;text-align:right;padding-right:5px;}
+.detail .vehicle_info .vehicle-buttons{margin-top:20px;}
+.detail .vehicle_info .vehicle-buttons a{margin:0 20px;}
+.detail .thumbnails{height:70px;width:424px;overflow:hidden;background-image:url(/wp-content/uploads/2010/03/bg-thumbnails.png);background-repeat:no-repeat;margin:0 0 5px;position:relative;}
+.detail .thumbnails .thumbnail-wrap{width:350px;margin-left:36px;}
+.detail .thumbnails .thumbnail{padding:0;margin:0;float:left;}
+.detail .thumbnails .thumbnail img{height:55px;width:75px;margin:7px 5px 5px 5px;padding:0;border:1px solid #999;}
+.detail .thumbnails .begin{position:absolute;top:1px;left:3px;width:36px;height:70px;cursor:pointer;background-image:url(/wp-content/uploads/2010/03/thumbnails-begin.png);background-repeat:no-repeat;}
+.detail .thumbnails .end{position:absolute;top:1px;right:0;width:36px;height:70px;cursor:pointer;background-image:url(/wp-content/uploads/2010/03/thumbnails-end.png);background-repeat:no-repeat;}
+.detail > .mileage{position:absolute;top:401px;right:10px;width:360px;heigth:70px;text-align:center;background-image:url(/wp-content/uploads/2010/03/tab-hash-pattern.png);background-repeat:no-repeat;background-position:right top;}
+.detail > .mileage .city,
+.detail > .mileage .highway,
+.detail > .mileage img{float:left;margin:10px 10px 0;}
+.detail > .mileage .city{margin-left:100px;}
+.detail > .mileage span{font-weight:bold;font-size:24px;}
+.detail .forms{margin:5px;}
+.detail .forms .links{position:relative;height:25px;overflow:hidden;}
+.detail .forms .links a{display:inline-block;height:25px;background-image:url(/wp-content/uploads/2010/03/tab-mid.png);background-repeat:repeat-x;text-decoration:none;color:#999;text-align:center;z-index:40;}
+.detail .forms .links a span:first-child{background-image:url(/wp-content/uploads/2010/03/tab-left.png);background-repeat:no-repeat;background-position:left top;padding:5px 0 5px 20px;white-space:nowrap;width:auto;}
+.detail .forms .links a span{display:inline-block;background-image:url(/wp-content/uploads/2010/03/tab-right.png);background-repeat:no-repeat;background-position:right top;width:19px;padding:5px;}
+.detail .forms .links a.current{background-image:url(/wp-content/uploads/2010/03/tab-active-mid.png);z-index:55;}
+.detail .forms .links a.current span:first-child{background-image:url(/wp-content/uploads/2010/03/tab-active-left.png);}
+.detail .forms .links a.current span{background-image:url(/wp-content/uploads/2010/03/tab-active-right.png);}
+.detail .forms .form{min-height:100px;border:solid 1px #ccc;color:#999;background-color:#F2F2F2;padding:12px;z-index:50;}
+.detail .forms .form form{background:#F2F2F2!important;}
+.detail .forms .form .header{display:block;}
+.detail .forms .form .inline-item{float:left;margin-right:5px;margin-bottom:5px;}
+.detail .forms .form .inline-item label{display:block;color:#999;}
+.detail .forms .form .block-item{display:block;margin-bottom:5px;}
+.detail .forms .form .block-item label{display:block;color:#999;}
+.detail .forms .form .block-item label.inline{display:inline;}
+.detail .forms .disclaimer{color:#999;padding:5px 0;}
+
+/* -------------------------
+jQuery UI CSS
+Used for the sliders
+------------------------- */
+/* Component containers */
+.ui-widget{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;font-size:1.1em;}
+.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;font-size:1em;}
+.ui-widget-content{border:1px solid #dddddd;background:#eeeeee 50% top repeat-x;color:#333333;}
+.ui-widget-content a{color:#333333;}
+.ui-widget-header{border:1px solid #eee;background:#eee 50% 50% repeat-x;color:#ffffff;font-weight:bold;}
+.ui-widget-header a{color:#ffffff;}
+/* Interaction states */
+.ui-state-default,.ui-widget-content .ui-state-default{border:1px solid #cccccc;background:url(slider-grabbie.png) #f6f6f6 50% 50% repeat-x;font-weight:bold;color:#1c94c4;outline:none;}
+.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited{color:#1c94c4;text-decoration:none;outline:none;}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus{border:1px solid #fbcb09;background:#fdf5ce 50% 50% repeat-x;font-weight:bold;color:#c77405;outline:none;}
+.ui-state-hover a,.ui-state-hover a:hover{color:#c77405;text-decoration:none;outline:none;}
+.ui-state-active,.ui-widget-content .ui-state-active{border:1px solid #fbd850;background:#ffffff 50% 50% repeat-x;font-weight:bold;color:#eb8f00;outline:none;}
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{color:#eb8f00;outline:none;text-decoration:none;}
+/* Interaction Cues */
+.ui-state-highlight,.ui-widget-content .ui-state-highlight{border:1px solid #fed22f;background:#ffe45c 50% top repeat-x;color:#363636;}
+.ui-state-highlight a,.ui-widget-content .ui-state-highlight a{color:#363636;}
+.ui-state-error,.ui-widget-content .ui-state-error{border:1px solid #cd0a0a;background:#b81900 50% 50% repeat;color:#ffffff;}
+.ui-state-error a,.ui-widget-content .ui-state-error a{color:#ffffff;}
+.ui-state-error-text,.ui-widget-content .ui-state-error-text{color:#ffffff;}
+.ui-state-disabled,.ui-widget-content .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none;}
+.ui-priority-primary,.ui-widget-content .ui-priority-primary{font-weight:bold;}
+.ui-priority-secondary,.ui-widget-content .ui-priority-secondary{opacity:.7;filter:Alpha(Opacity=70);font-weight:normal;}
+/* Corner radius */
+.ui-corner-tl{-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;}
+.ui-corner-tr{-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;}
+.ui-corner-bl{-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;}
+.ui-corner-br{-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;}
+.ui-corner-top{-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;}
+.ui-corner-bottom{-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;}
+.ui-corner-right{-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;}
+.ui-corner-left{-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;}
+.ui-corner-all{-moz-border-radius:4px;-webkit-border-radius:4px;}
+/* Slider */
+.ui-slider{position:relative;text-align:left;}
+.ui-slider .ui-slider-handle{position:absolute;z-index:2;width:1.2em;height:1.2em;cursor:default;}
+.ui-slider .ui-slider-range{position:absolute;z-index:1;font-size:.7em;display:block;border:0;background-image:url(slider-grad.jpg);}
+.ui-slider-horizontal{height:.8em;}
+.ui-slider-horizontal .ui-slider-handle{top:-.3em;margin-left:-.6em;}
+.ui-slider-horizontal .ui-slider-range{top:0;height:100%;}
+.ui-slider-horizontal .ui-slider-range-min{left:0;}
+.ui-slider-horizontal .ui-slider-range-max{right:0;}
+.ui-slider-vertical{width:.8em;height:100px;}
+.ui-slider-vertical .ui-slider-handle{left:-.3em;margin-left:0;margin-bottom:-.6em;}
+.ui-slider-vertical .ui-slider-range{left:0;width:100%;}
+.ui-slider-vertical .ui-slider-range-min{bottom:0;}
+.ui-slider-vertical .ui-slider-range-max{top:0;}
