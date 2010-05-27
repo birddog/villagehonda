@@ -430,8 +430,10 @@ jQuery(function($) {
           .css({ position: "absolute", cursor: "pointer", opacity:0,
             top:elTop, left:elLeft,width:elWidth, height:elHeight,zIndex:100
           }).click(function(){
-            // document.location = ($('#' + this.id + ' a').attr('href'));
-            $('#' + this.id + ' a').click()
+            if ($('#' + this.id + ' a').attr('target') == '_blank')
+              window.open($('#' + this.id + ' a').attr('href'), $('#' + this.id + ' a').html());
+            else
+              document.location = ($('#' + this.id + ' a').attr('href'));
           });
 
         //el.css('opacity','0.0');
