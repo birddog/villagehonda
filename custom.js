@@ -429,7 +429,10 @@ jQuery(function($) {
           .attr('id', name + '_clone')
           .css({ position: "absolute", cursor: "pointer", opacity:0,
             top:elTop, left:elLeft,width:elWidth, height:elHeight,zIndex:100
-          }).click(function(){document.location = ($('#' + this.id + ' a').attr('href'));});
+          }).click(function(){
+            // document.location = ($('#' + this.id + ' a').attr('href'));
+            $('#' + this.id + ' a').click()
+          });
 
         //el.css('opacity','0.0');
 
