@@ -436,8 +436,6 @@ jQuery(function($) {
               document.location = ($('#' + this.id + ' a').attr('href'));
           });
 
-        //el.css('opacity','0.0');
-
         el.hover(function(){ cPos = $('.bumpupbuttonwidget#'+name).position().top; newDivs[name].css({top:cPos, height:'140px'}); });
         newDivs[name].hover(
           function(){ cPos = $('.bumpupbuttonwidget#'+name).position().top; $(this).stop().css('top',cPos).animate({opacity:1.0, top:cPos-70, height:'210px'}, "fast"); },
