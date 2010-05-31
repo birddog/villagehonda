@@ -627,7 +627,6 @@ div.p3 span{font-size:10px;}
 .bird_dog .listings .vehicles a .price-details .price,
 .bird_dog .listings .vehicles a .price-details .was,
 .bird_dog .listings .vehicles a .price-details .now{color:#e21c22!important;font-size:11px!important;}
-.bird_dog .listings .search .grad.toggle{height:23px;}
 .bird_dog .detail .vehicle-desc{font-size:14px;}
 .bird_dog .listings .search .grad.toggle{height:25px;line-height:22px;}
 .bird_dog .listings .search .grad.toggle .toggle-icon{width:40px;height:25px;background:url(/wp-content/uploads/quick-find-arrow.jpg) scroll no-repeat 0 0 transparent;float:left;}
@@ -663,3 +662,17 @@ div.p3 span{font-size:10px;}
 .pika_navigation a{font-size:12px;text-decoration:none;cursor:pointer;}
 .pika_navigation a:hover{text-decoration:underline;}
 .pika_navigation{padding-top:10px;clear:both;text-align:center;}
+
+/**********************************************/
+/* Lightbox
+/**********************************************/
+#lightbox{background-color:#eee;padding:10px;border-bottom:2px solid #666;border-right:2px solid #666;border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;}
+#lightboxDetails,
+#lightboxDetails a{font-size:0.8em;padding-top:0.4em;color:black;}
+#lightboxCaption{float:left;}
+#keyboardMsg{float:right;}
+#closeButton{top:5px;right:5px;}
+#lightbox img{border:none;clear:both;}
+#overlay img{border:none;}
+#overlay{background-image:url(/wp-content/themes/dt-bird-dog/javascripts/lightbox/overlay.png);}
+* html #overlay{background-color:#333;back\ground-color:transparent;background-image:url(/wp-content/themes/dt-bird-dog/javascripts/lightbox/blank.gif);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/wp-content/themes/dt-bird-dog/javascripts/lightbox/overlay.png",sizingMethod="scale");}
