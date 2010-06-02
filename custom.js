@@ -1013,9 +1013,6 @@ function fadeBack(doFade) {
 	indexUpdate();
 }
 
-//------------------------------------------
-// Xapa User controls
-//------------------------------------------
 function popupClick() {
 		if (delayingPopup == false) {
 			if (animating == true) {
