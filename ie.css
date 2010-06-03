@@ -1,0 +1,28 @@
+/******************************************/
+/*		IE fixes for forms								 */
+/******************************************/
+fieldset{position:relative!important;padding:35px 10px 10px!important;background-color:#f4f4f4!important;}
+fieldset legend {position:absolute; top:-1px;border-top:1px solid #ddd!important;}
+
+.preownedtestdrive .txt-area, 
+.newtestdrive .txt-area,
+.contactus .txt-area {width:605px;}
+.contactusSmall .txt-area {width:290px;}
+.staffEmail .txtarea {width:310px;}
+
+.form-group {width:auto!important;}
+select {width:150px!important;margin-right:12px!important;}
+
+#tradeEstimate .next, #tradeEstimate .prev {background-color:#555;color:#fff;}
+#step-5 .form-group {width:350px;}
+#step-5 .form-group label{width:350px;}
+#step-5 .form-group textarea{width:320px;}
+.btnsubmit {
+	background-color:#790000;
+	color:#FFFFFF;
+	display:block;
+	font-size:12px;
+	padding:5px;
+	margin-top:5px;
+	border:1px solid #ddd;
+}
