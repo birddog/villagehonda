@@ -73,6 +73,16 @@ function dt_css_includes() {
         echo "<link rel=\"stylesheet\" href=\"".trim($stylesheet)."\" type=\"text/css\" media=\"screen\" charset=\"utf-8\"/>\n";
     }
   }
+  
+  if (file_exists(DT_THEME_PATH.'ie.css')) {
+    echo "\n<!--[if IE]>\n";
+    echo "<link rel=\"stylesheet\" href=\"/wp-content/themes/dt-bird-dog/ie.css\" type=\"text/css\" media=\"screen\" charset=\"utf-8\"/>\n";
+    echo "<![endif]-->\n";
+  }
+
+  if (file_exists(DT_THEME_PATH.'print.css')) {
+    echo "<link rel=\"stylesheet\" href=\"/wp-content/themes/dt-bird-dog/print.css\" type=\"text/css\" media=\"print\" charset=\"utf-8\"/>\n";
+  }
 }
 
 # Include JS
