@@ -355,7 +355,192 @@ select,
 input,
 textarea,
 input[type="checkbox"]{font-size:11px;background-color:#fff;border:1px solid #cacaca;color:#333;}
-.wrap{float:left;}
+/* form names */
+.preownedtestdrive, .newtestdrive,
+.contactus{width:658px;}
+.contactusSmall {width:325px;}
+.collisionCenter {width:390px;}
+.tradein, .tireRequest, 
+.partsRequest, .serviceAppointment{width:768px;}
+
+/* default style */
+.form {
+	position:relative;
+	background-color:#f4f4f4;
+	border:1px solid #ddd;
+	padding:0 10px 10px;
+	font-size:10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.form p {margin:0 0 5px;color:#222;font-size:10px;}
+.form fieldset {     	
+	padding:10px 10px 0;
+	border:1px solid #ddd;
+	background-color:#eee;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.form fieldset fieldset {background-color:#fff;padding-bottom:10px;}
+.form fieldset legend {
+	background-color:#fff;	
+	color:#790000;
+	border:1px solid #ddd;
+	border-top:none;
+	font-weight:bold;
+	letter-spacing:1px;
+	padding:5px;
+	margin-top:-1px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	-moz-border-radius-topleft:0;
+	-webkit-border-top-left-radius:0;
+	-moz-border-radius-topright:0;
+	-webkit-border-top-right-radius	:0;	
+	z-index:1000;
+}
+.form .form-group {
+	position:relative;
+	float:left;	
+	margin-bottom:8px;
+	width:315px;
+}
+.contactusSmall .form-group {width:300px;}
+.partsRequest .form-group, 
+.serviceAppointment .form-group {width:240px;}
+.form .form-group br {
+	display:none!important;	
+}
+.form label {
+	display:inline-block;
+	width:	150px;
+	text-align:right;
+	font-weight:bold;
+	font-size:10px;
+	vertical-align:middle;
+}
+.collisionCenter label {width:110px;}
+.contactus label {width:100px;}
+.contactusSmall label, .staffEmail label, 
+.partsRequest label, .serviceAppointment label {width:90px;}
+.form .wpcf7-checkbox .wpcf7-list-item  .wpcf7-list-item-label {color:#888;vertical-align:middle;}
+
+.form select {width:143px;}
+.form  input, select {font-size:11px;vertical-align:middle;}
+
+
+/* form validation */
+span.wpcf7-not-valid-tip {
+	position:absolute!important;
+	top:0!important;
+	right:19px!important;
+	background:none repeat scroll 0 0 #E25E4C!important;
+	color:#fff;
+	font-size:11px!important;
+	padding:3px!important;
+	z-index:100!important;
+	width:137px!important;
+}
+.wpcf7-response-output {
+	margin-top:10px;
+	padding:5px;
+	border:1px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	color:#222;
+}
+
+div.wpcf7-mail-sent-ok {
+	background-color:#398f14!important;
+}
+
+div.wpcf7-mail-sent-ng {
+	background-color:#ff0000!important;
+}
+
+div.wpcf7-spam-blocked {
+	background-color:#ffa500!important;
+}
+
+div.wpcf7-validation-errors {
+	background-color:#f7e700!important;
+}
+.wpcf7-display-none {
+	display: none;
+}
+
+img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+}
+
+/* trade in */
+#step-2 .form-group {
+	width:100%;	
+}
+#step-2 .form-group .wpcf7-list-item {float:left;}
+#step-2 .form-group .wpcf7-list-item-label {color:#999;}
+#step-4 .form-group label , #step-5 .form-group label {display:block;width:auto;text-align:left;}
+#step-5 .form-group {width:358px;}
+.form-group .description {
+	color:#777;
+	font-size:10px;
+	text-align:right;
+	padding-right:20px;
+}
+ul#steps {
+	clear:both;
+	list-style-type:none;
+	margin:0;
+	padding:5px;
+	background-color:#fff;
+	border:1px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+}
+ul#steps li.current {
+	color:#790000;
+}
+ul#steps li span {
+	display:block;
+	font-size:10px;
+}
+ul#steps li {
+	color:#CCCCCC;
+	display:block;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	margin-right:10px;
+	width:110px;
+}
+#tradeEstimate .next {
+	float:right!important;
+}
+#tradeEstimate .next, #tradeEstimate .prev {
+	background-color:rgba(121, 0, 0, 0.7);
+	color:#FFFFFF;
+	display:block;
+	float:left;
+	font-size:12px;
+	padding:5px;
+	margin-top:5px;
+	border:1px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;		
+}
+.btnsubmit {
+	background-color:rgba(121, 0, 0, 0.7);
+	color:#FFFFFF;
+	display:block;
+	font-size:12px;
+	padding:5px;
+	margin-top:5px;
+	border:1px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+}
+/*.wrap{float:left;}
 .form-item{margin:0 0 5px 10px;clear:both;}
 .form-item .description{font-size:9px;color:#999;}
 .form-item label{display:block;float:left;width:60px;color:#999;text-align:right;margin-right:10px;}
@@ -364,7 +549,7 @@ input[type="checkbox"]{font-size:11px;background-color:#fff;border:1px solid #ca
 .form-block{display:block;margin:0 0 5px 10px;clear:both;}
 .form-block textarea{padding:5px 2px;}
 .form-submit{display:block;padding-left:80px;}
-.mmf-list-item-label{color:#999;}/* checkbox labels */
+.mmf-list-item-label{color:#999;}
 #quick-contact-form{background-color:#F4F4F4;border:1px solid #DDDDDD;padding:5px;width:650px;margin:10px auto 0;}
 #quick-contact-form h2,
 #quick-contact-form h2{margin-left:25px;padding:5px 0;color:#e21c22;font-size:11px;background-color:#f4f4f4;}
@@ -385,7 +570,7 @@ input[type="checkbox"]{font-size:11px;background-color:#fff;border:1px solid #ca
 /**************************************
 * Wizard Form
 **************************************/
-.step{border:1px solid #999;}
+/*.step{border:1px solid #999;}
 ul#steps{list-style-type:none;clear:both;margin:0 0 10px;}
 ul#steps li{float:left;display:block;color:#ccc;font-size:16px;font-weight:bold;margin-right:10px;width:110px;}
 ul#steps li.current{color:#999;}
@@ -416,7 +601,7 @@ ul#steps li span{font-size:11px;display:block;}
 #tradeEstimate .prev{float:left;}
 #tradeEstimate .next{float:right;}
 #tradeEstimate > p{margin-left:0!important;margin-top:10px;}
-#tradeEstimate > p > input{display:block;padding:5px;background-color:rgba(226,28,34,1.0);color:#fff;font-size:12px;cursor:pointer;}
+#tradeEstimate > p > input{display:block;padding:5px;background-color:rgba(226,28,34,1.0);color:#fff;font-size:12px;cursor:pointer;}*/
 
 /**************************************
 * Flash App Pages
