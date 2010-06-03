@@ -827,7 +827,7 @@ div.p3 span{font-size:10px;}
 .bird_dog .ui-widget-content .ui-state-hover{background:url(/wp-content/uploads/slider-grabbie.png) repeat-x scroll 50% 50% #F6F6F6!important;}
 .bird_dog .detail .thumbnails .next{background:url(/wp-content/uploads/village-thumbnails-end.jpg) no-repeat scroll 0 0 transparent!important;}
 .bird_dog .detail .thumbnails .prev{background:url(/wp-content/uploads/village-thumbnails-begin.jpg) no-repeat scroll 0 0 transparent!important;}
-.bird_dog .detail .fuel-economy,
+.bird_dog .detail .fuel_economy,
 .detail .fuel-economy {
   padding-top: 10px!important;
 	background-image:url(/wp-content/uploads/village-tab-hash-pattern.jpg) !important;
