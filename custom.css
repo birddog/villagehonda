@@ -192,13 +192,11 @@ td#footer a:hover{color:#e21c22;font-weight:bold;text-decoration:none;}
 .dt-showcase .multiselect .item:active{background:#ccc;}
 .dt-showcase .options{font-weight:bold;color:#009;}
 .dt-showcase .options li{float:left;width:40%;display:inline-block;margin:0 0 0 10px;color:999;font-weight:normal;}
-.dt-showcase .options li:before{content:'\2022 ';}
 .dt-showcase .equipment{font-weight:bold;color:#009;}
 .dt-showcase .equipment li{float:left;width:40%;display:inline-block;margin:0 0 0 10px;color:999;font-weight:normal;}
-.dt-showcase .equipment li:before{content:'\2022 ';}
 .dt-showcase .vehicle{display:inline-block;position:relative;margin:5px;text-align:center;background:white;}
-.dt-showcase .vehicle .trims{position:absolute;left:30px;border:1px solid #aaa;padding:10px;background:#eee;z-index:2;text-align:left;-webkit-border-radius:5px;-moz-border-radius:5px;opacity:.95;-moz-opacity:0.95;}
-.dt-showcase .vehicle .trims a{text-decoration:none;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;padding-left:8px;color:#333;}
+/*.dt-showcase .vehicle .trims{position:absolute;left:30px;border:1px solid #aaa;padding:10px;background:#eee;z-index:2;text-align:left;-webkit-border-radius:5px;-moz-border-radius:5px;opacity:.95;-moz-opacity:0.95;}
+.dt-showcase .vehicle .trims a{text-decoration:none;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;padding-left:8px;color:#333;}*/
 .dt-showcase .detail{padding:0!important;}
 .dt-showcase .detail h1{color:#e21c22!important;font-size:14px;font-weight:bold;padding:5px;margin-bottom:0;}
 .dt-showcase .detail .vehicle-info{border:none!important;background:url("http://assets2.dealertrend.com/images/themes/vehicle_inventory/bird_dog/details-info.png") top center no-repeat!important;float:left;width:360px!important;height:300px!important;font:bold 10pt arial;color:#999;padding:25px 2px 10px!important;margin:0!important;}
@@ -254,18 +252,18 @@ hr.blue{border-bottom:1px solid #e21c22;}
 .showcase-slider .header ul.showcaseslider-tabs li a.current:hover{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;text-decoration:underline;}
 .showcase-slider .scrollable{position:relative;overflow:hidden;height:90px;padding:0;}
 .showcase-slider .scrollable .items{width:30000em;position:absolute;text-align:center;}
-.showcase-slider .scrollable .items a{float:left;text-align:center;margin:2px 0 0 40px;width:143px;text-decoration:none;color:#555;font-size:8pt;}
+/*.showcase-slider .scrollable .items a{float:left;text-align:center;margin:2px 0 0 40px;width:143px;text-decoration:none;color:#555;font-size:8pt;}
 .showcase-slider .scrollable .items a .image{display:block;height:68px;overflow:hidden;}
 .showcase-slider .scrollable .items a img{display:block;margin:0 auto;}
-.showcase-slider .scrollable .items a:hover{background:#e4e4e4;}
+.showcase-slider .scrollable .items a:hover{background:#e4e4e4;}*/
 .showcase-slider .scrollable .item{position:relative!important;}
-.showcase-slider .scrollable .item .trims,
+/*.showcase-slider .scrollable .item .trims,
 #showcase-flyout .showcase-pane .vehicle .trims{display:none;background:none repeat scroll 0 0 rgba(220,220,220,0.9)!important;border:solid 1px #aaa;position:absolute!important;top:0!important;left:30px;text-align:left!important;padding:2px 10px!important;position:relative;top:-80px;padding:5px;text-align:left;width:150px!important;-webkit-border-radius:5px;-moz-column-count:2;-webkit-column-count:2;}
 .showcase-slider .scrollable .item .trims br,
 #showcase-flyout .showcase-pane .vehicle .trims br{display:none;}
 .showcase-slider .scrollable .item .trims a,
 #showcase-flyout .showcase-pane .vehicle .trims a{display:block;float:none!important;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;padding:0 5px 1px 10px!important;margin:0!important;text-align:left!important;font-size:10px!important;width:auto!important;color:#333!important;}
-.showcase-slider .scrollable .item .trims a:hover{color:#e21c22!important;-moz-border-radius:0!important;-webkit-border-radius:0!important;text-decoration:underline;background-color:transparent;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;}
+.showcase-slider .scrollable .item .trims a:hover{color:#e21c22!important;-moz-border-radius:0!important;-webkit-border-radius:0!important;text-decoration:underline;background-color:transparent;background-image:url("/wp-content/uploads/red_arrow_scroller.png");background-position:left 3px;background-repeat:no-repeat;}*/
 .showcase-slider .scrollable a.prev,
 .showcase-slider .scrollable a.next{position:relative;z-index:50;width:38px;height:90px!important;cursor:pointer;margin-top:0!Important;}
 .showcase-slider .scrollable .prev{float:left;background:url('/wp-content/uploads/2010/02/small-gray-arrow-1.jpg') no-repeat center center;-webkit-border-bottom-left-radius:10px!important;-moz-border-radius-bottomleft:10px!important;}
@@ -292,9 +290,41 @@ hr.blue{border-bottom:1px solid #e21c22;}
 #showcase-flyout .showcase-pane{border:none;padding:0;margin:0;}
 #showcase-flyout .showcase-pane .items{position:relative;display:block;clear:both;overflow:hidden;width:30000em;height:100px;padding:0;margin:0 15px;border:none;}
 #showcase-flyout .showcase-pane .items .vehicle{position:relative;float:left;width:163px;text-align:center;}
-#showcase-flyout .showcase-pane .items .vehicle .trims{position:relative;top:10px!important;border:solid 1px #999;background:#eee;border-radius:7px;padding:10px;z-index:190;text-align:left;}
+/*#showcase-flyout .showcase-pane .items .vehicle .trims{position:relative;top:10px!important;border:solid 1px #999;background:#eee;border-radius:7px;padding:10px;z-index:190;text-align:left;}
 #showcase-flyout .showcase-pane .items .vehicle .trims a{width:100px!important;}
-#showcase-flyout .showcase-pane .vehicle .trims{display:none;position:absolute;top:5px;width:auto;}
+#showcase-flyout .showcase-pane .vehicle .trims{display:none;position:absolute;top:5px;width:auto;}*/
+
+/* trim hover */
+.dt-showcase .trims, .showcase-slider .trims, #showcase-flyout .trims {
+	display:none;
+	position:absolute!important;
+	top:0!important;
+	left:70px;	
+	background:none repeat scroll 0 0 #ccc!important;
+	border:solid 1px #aaa;
+	text-align:left!important;
+	padding:0 10px!important;
+	z-index:400;
+	white-space:nowrap;
+	width:300px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-moz-column-count:2;
+	-webkit-column-count:2;	
+}
+.dt-showcase .trims a, .showcase-slider .trims a, #showcase-flyout .trims a{
+	display:block;
+	font-size:10px!important;	
+	color:#666!important;
+	background-image:url("/wp-content/uploads/green_arrow_scroller.png");
+	background-position:left 5px!important;
+	background-repeat:no-repeat!important;
+	padding:2px 0 0 10px!important;
+}
+.dt-showcase .trims br, .showcase-slider .trims br, #showcase-flyout .trims br {
+	display:none;	
+}
+
 
 /**************************************
 * News Ticker
