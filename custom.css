@@ -360,6 +360,7 @@ input[type="checkbox"]{font-size:11px;background-color:#fff;border:1px solid #ca
 .collisionCenter {width:390px;}
 .tradein, .tireRequest, 
 .partsRequest, .serviceAppointment{width:768px;}
+.staffEmail {width:345px;}
 
 /* default style */
 .form {
@@ -634,7 +635,7 @@ td.emailRight{text-align:right !important;padding-right:5px;}
 /**************************************
 * Email Window
 **************************************/
-#emailWindow{display:none;position:absolute;z-index:500;border:solid 1px black;background:white;width:360px;height:360px;padding:10px;}
+#emailWindow{display:none;position:absolute;z-index:500;}
 #emailWindow .staff-name{display:none;}
 #emailWindow .staff-email{display:none;}
 #emailWindow .button{float:left;}
