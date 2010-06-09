@@ -514,7 +514,12 @@ jQuery(function($) {
       return false;
     });
     current.children().children('.toggle-bio').click(function(){
-      current.children('p.bio-text').toggle();
+		var location = $(this).position();
+		
+        current.children('p.bio-text').css({
+										   top: location.top + 12, 
+										   left: location.left
+										   }).toggle();
       return false;
     });
   });
