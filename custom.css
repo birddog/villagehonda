@@ -31,7 +31,7 @@ hr{border:0;color:#999;background-color:#999;height:1px;width:100%;text-align:le
 #website{background-color:#fff;}
 #website .page{padding:10px 0 0;}
 #header{padding:0;}
-#header #header-zones{background:url('/wp-content/uploads/2010/03/header-bg.png') no-repeat;border-bottom:1px solid #999;}
+#header #header-zones{background:url('/wp-content/uploads/2010/03/header-bg.png') no-repeat;border-bottom:1px solid #999;height:77px;}
 #header a:hover{text-decoration:none!important;}
 #header #logo{font-weight:bold;font-size:12px;}
 #header #logo img{vertical-align:middle;}
