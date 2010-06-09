@@ -174,7 +174,7 @@ td#footer a:hover{color:#e21c22;font-weight:bold;text-decoration:none;}
 /**************************************
 * Showroom Widget
 **************************************/
-.dt-showcase{width:750px;margin:5px auto;}
+.dt-showcase{margin:5px auto;}
 .dt-showcase .vehicle{background:#eee;padding:10px;color:#e21c22;}
 .dt-showcase p{margin:5px 10px;}
 .dt-showcase .models{padding:10px;}
