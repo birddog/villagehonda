@@ -863,7 +863,7 @@ div.p3 span{font-size:10px;}
 .bird_dog .listings .vehicles a .vehicle-desc,
 .bird_dog .listings .vehicles a .price-details .price,
 .bird_dog .listings .vehicles a .price-details .was,
-.bird_dog .listings .vehicles a .price-details .now{color:#e21c22!important;font-size:11px!important;}
+.bird_dog .listings .vehicles a .price-details .now{color:#e21c22!important;font-size:12px!important;}
 .bird_dog .detail .vehicle-desc{font-size:14px;}
 .bird_dog .listings .search .grad.toggle{height:25px;line-height:22px;}
 .bird_dog .listings .search .grad.toggle .toggle-icon{width:40px;height:25px;background:url(/wp-content/uploads/quick-find-arrow.jpg) scroll no-repeat 0 0 transparent;float:left;}
@@ -888,6 +888,7 @@ div.p3 span{font-size:10px;}
 	background-repeat: no-repeat !important;
 	background-position: right top !important;
 }
+.listings .search .go-button {display:none;}
 
 /*************************************/
 /* Image Gallery
