@@ -459,7 +459,7 @@ input[type="checkbox"]{font-size:11px;background-color:#fff;border:1px solid #ca
 .form textarea {font-size:11px;padding:2px;margin:0;}
 .contactusSmall textarea {width:300px;}
 .preownedtestdrive textarea, .newtestdrive textarea,
-.contactus textarea, . {width:600px;}
+.contactus textarea{width:600px;}
 .partsRequest textarea, .contactFinance textarea, .contactFleet textarea { width:705px;}
 .collisionCenter textarea {360px;}
 
