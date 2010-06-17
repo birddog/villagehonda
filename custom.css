@@ -893,7 +893,18 @@ div.p3 span{font-size:10px;}
 	background-repeat: no-repeat !important;
 	background-position: right top !important;
 }
-.listings .search .go-button {display:none;}
+.listings .search .go-button {
+	display:none;
+	background-image:url(/wp-content/uploads/GoButton.png);
+	background-color:#2DB34A;
+	border:none;
+	width:23px;
+	height:21px;
+	text-indent:-1000em;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+
+}
 .listings .search .advanced .search-sliders .go-button {display:inline-block;}
 
 
