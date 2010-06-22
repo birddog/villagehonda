@@ -769,9 +769,9 @@ if($('#slideout-showcase .vehicle').length){
 
 		var vhover = $this.parent().find('#vhover-' + index);
 
-		$this.unbind().add(vhover).hover(function() {
+		$this.add(vhover).hover(function() {
 			vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, 'fast');
-		}, function(){
+		 }, function(){
 			vhover.stop(true).animate({ opacity: 0.0 }, 150, function(){
 				$(this).hide();
 			});
