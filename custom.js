@@ -754,7 +754,7 @@ jQuery(function($) {
     $('.bird_dog .detail .photos .photo').attr('rel','lightbox');
   }
 
-	if($('slideout-showcase .vehicle').length){
+	if($('#slideout-showcase .vehicle').length){
 		var vehicle = $('#slideout-showcase .vehicle');
 	
 		vehicle.each(function(index) {
