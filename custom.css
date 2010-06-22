@@ -294,7 +294,58 @@ hr.blue{border-bottom:1px solid #e21c22;}
 #showcase-flyout .showcase-pane .items .vehicle .trims a{width:100px!important;}
 #showcase-flyout .showcase-pane .vehicle .trims{display:none;position:absolute;top:5px;width:auto;}*/
 
-/* trim hover */
+/***************
+/*	showcase hover
+/***************/
+.showcase-pane {position:relative;}
+.vehicle .name {
+	font-weight:bold;
+	font-size:12px;
+}
+.vhover {
+	display:none;
+	position:absolute!important;
+	width:167px!important;
+	background:url(vhover-bg.png) no-repeat	0 0 transparent!important;
+	z-height:2001;
+}
+.vhover .vehicle {padding:0;margin:0!important;text-align:left;float:none !important;}
+.vhover .bot {
+	position:absolute;
+	bottom:-20px;
+	height:20px;
+	width:188px!important;
+	background:url(vhover-bg.png) no-repeat	0 bottom transparent!important;
+}
+.vhover .image {
+	text-align:center;
+	margin:10px 0 0 19px;
+}
+.vhover .name {
+	color:#E21C22;
+	text-align:center;
+	font-weight:bold;
+	font-size:12px;
+	margin-left:5px;
+}
+.vhover .actions {
+	width:138px;
+	height:70px;
+	margin:5px auto 0;
+	padding:12px 0 0;
+	text-align:center;
+	border-top:1px solid #eee;
+}
+.vhover .actions a {
+	display:block;
+	height:19px;
+	width:94px;
+	margin:0 auto 5px;
+}
+
+/***************
+/*	trim hover
+/***************/
 .dt-showcase .trims, .showcase-slider .trims, #showcase-flyout .trims {
 	display:none;
 	position:absolute!important;
