@@ -760,6 +760,8 @@ jQuery(function($) {
 	if($('#showcase-slideout .vehicle').length){
 		var vehicle = $('#showcase-slideout .vehicle');
 		vehicle.each(function(index, value) {
+			console.log(value, value == this);
+
 			var $this = $(this);
 			var position = $this.position();
 			var slideoutHeight = $('#slideout').height();
