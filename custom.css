@@ -471,7 +471,7 @@ input[type="checkbox"]{font-size:11px;background-color:#fff;border:1px solid #ca
 .form fieldset fieldset {background-color:#fff;padding-bottom:10px;}
 .form fieldset legend {
 	background-color:#fff;	
-	color:#790000;
+	color:#E21C22;
 	border:1px solid #ddd;
 	border-top:none;
 	font-weight:bold;
@@ -591,7 +591,7 @@ ul#steps {
 	-webkit-border-radius: 5px;	
 }
 ul#steps li.current {
-	color:#790000;
+	color:#E21C22;
 }
 ul#steps li span {
 	display:block;
