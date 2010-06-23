@@ -312,7 +312,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	display:none;
 	position:absolute!important;
 	width:167px!important;
-	background:url(/wp-content/uploads/vhover-bg.png) no-repeat	0 0 transparent!important;
+	background:url(/wp-content/uploads/vhover-bg.png) no-repeat 0 0 transparent!important;
 	z-height:2001;
 	overflow:hidden;
 }
@@ -328,7 +328,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	height:20px;
 	width:188px!important;
 	overflow:hidden;
-	background:url(/wp-content/uploads/vhover-bg.png) no-repeat	0 bottom transparent!important;
+	background:url(/wp-content/uploads/vhover-bg.png) no-repeat 0 bottom transparent!important;
 }
 .vhover .image {
 	text-align:center;
@@ -342,7 +342,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	margin-left:5px;
 }
 .vhover .trims {
-	display:block;
+	display:block!important;
 	font-size:11px;
 	white-space:normal;
 	z-index:0;
@@ -365,7 +365,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 /***************
 /*	trim hover
 /***************/
-.dt-showcase .trims, .showcase-slider .trims, #showcase-flyout .trims {
+/*.dt-showcase .trims, .showcase-slider .trims, #showcase-flyout .trims {
 	display:none;
 	position:absolute!important;
 	top:0!important;
@@ -394,7 +394,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 .dt-showcase .trims br, .showcase-slider .trims br, #showcase-flyout .trims br {
 	display:none;	
 }
-
+*/
 
 /**************************************
 * News Ticker
