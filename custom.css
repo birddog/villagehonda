@@ -313,6 +313,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	width:167px!important;
 	background:url(/wp-content/uploads/vhover-bg.png) no-repeat	0 0 transparent!important;
 	z-height:2001;
+	overflow:hidden;
 }
 .vhover .vehicle {padding:0;margin:0!important;text-align:left;float:none !important;}
 .vhover .bot {
