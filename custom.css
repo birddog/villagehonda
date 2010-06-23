@@ -329,7 +329,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 }
 .vhover .vehicle .image {
 	text-align:center;
-	margin-left:19px;
+	margin:-5px 0 0 19px;
 }
 .vhover .vehicle .name {
 	color:#E21C22;
