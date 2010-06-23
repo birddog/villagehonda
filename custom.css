@@ -318,7 +318,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	padding:0 0 27px;
 }
 .vhover .bot{background:url(/wp-content/uploads/vhover-bg-bot.png) no-repeat 0 bottom transparent!important;}
-.vhover .mid{background:url(/wp-content/uploads/vhover-bg-mid.png) repeat-y 0 0 transparent!important;}
+.vhover .mid{background:url(/wp-content/uploads/vhover-bg-mid.png) repeat-y 0 0 transparent!important;margin-top:10px;}
 
 #showcase-slideout .vhover .vehicle {
 	padding:0!important;
