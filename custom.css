@@ -333,14 +333,14 @@ hr.blue{border-bottom:1px solid #e21c22;}
 }
 .vhover .vehicle .image {
 	text-align:center;
-	margin:5px 0 0 10px;
+	margin:10px 0 0 20px;
 }
 .vhover .vehicle .name {
 	color:#E21C22;
 	text-align:center;
 	font-weight:bold;
 	font-size:12px;
-	margin-left:5px;
+	margin-left:20px;
 }
 .vhover .vehicle .trims {
 	display:block;
