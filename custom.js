@@ -754,23 +754,26 @@ jQuery(function($) {
     $('.bird_dog .detail .photos .photo').attr('rel','lightbox');
   }
 
+//============================= //
+//			Showcase Hover v2					  //
+//============================= //
 	if($('#showcase-slideout .vehicle').length){
 		var vehicle = $('#showcase-slideout .vehicle');
 		vehicle.each(function(index, value) {
 			var $this = $(this);
 			var position = $this.position();
 			var clone = $this.clone();
-			var parentheight = $this.parent().parent().parent().height();
 			var delay = 500;
 	
+			// Create hover element
 			$('#showcase-slideout .showcase-pane').append('<div id="vhover-' + index + '" class="vhover"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div><div class="bot">&nbsp;</div></div>');
 			clone.prependTo('#vhover-' + index +'');
 
+			// Cache hover element in variable
 			var vhover = $this.parent().find('#vhover-' + index);
-			vhover.each(function(){
-				$(this).css({top: position.top, left: position.left }).hide();
-			});
-	
+			vhover.css({top: position.top, left: position.left }).hide();
+
+			// Bind hover effect to both hovered element and .vehicle
 			$this.add(vhover).hover(function() {
 				vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, 'fast');
 			 }, function(){
