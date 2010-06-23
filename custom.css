@@ -342,6 +342,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	display:block;
 	margin:10px 0 10px 20px;
 }
+.vhover .vehicle .trims a {padding-left:20px; background:url(/wp-content/uploads/red_arrow_scroller.png) no-repeat left 0 transparent;}
 .vhover .actions {
 	width:138px;
 	height:70px;
