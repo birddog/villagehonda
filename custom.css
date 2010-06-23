@@ -316,15 +316,15 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	background:url(/wp-content/uploads/vhover-bg-top.png) no-repeat 0 top transparent!important;
 	z-index:2001;
 	padding:15px 0 27px;
-	overflow:hidden;
 }
 .vhover .bot{background:url(/wp-content/uploads/vhover-bg-bot.png) no-repeat 0 bottom transparent!important;}
-.vhover .mid{background:url(/wp-content/uploads/vhover-bg-mid.png)  repeat-y 0 0 transparent!important;}
+.vhover .mid{background:url(/wp-content/uploads/vhover-bg-mid.png) repeat-y 0 0 transparent!important;}
 
 .vhover .vehicle {
 	padding:0!important;
 	margin:0!important;
-	text-align:left;float:none !important;
+	text-align:left;
+	float:none !important;
 	background:none repeat scroll 0 0 transparent;
 }
 .vhover .vehicle .image {
