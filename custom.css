@@ -298,6 +298,10 @@ hr.blue{border-bottom:1px solid #e21c22;}
 /*	showcase hover
 /***************/
 .showcase-pane {position:relative;}
+.vehicle {
+	float:left!important;
+	display:block!important;
+}
 .vehicle .name {
 	font-weight:bold;
 	font-size:12px;
