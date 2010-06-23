@@ -302,6 +302,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	float:left!important;
 	display:block!important;
 	padding:5px!important;
+	position:relative;
 }
 .vehicle .name {
 	font-weight:bold;
