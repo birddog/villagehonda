@@ -343,9 +343,12 @@ hr.blue{border-bottom:1px solid #e21c22;}
 }
 .vhover .trims {
 	display:block!important;
-	font-size:11px;
-	white-space:normal;
-	z-index:0;
+	font-size:11px!important;
+	white-space:normal!important;
+	z-index:0!important;
+	min-width:inherit!important;
+	position:inherit!important;
+	top:0!important;
 }
 .vhover .actions {
 	width:138px;
