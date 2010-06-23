@@ -756,7 +756,7 @@ jQuery(function($) {
 
 	if($('#showcase-slideout .vehicle').length){
 		var vehicle = $('#showcase-slideout .vehicle');
-		vehicle.each(function(index) {
+		vehicle.each(function(index, value) {
 			var $this = $(this);
 			var position = $this.position();
 			var clone = $this.clone();
@@ -766,7 +766,9 @@ jQuery(function($) {
 			clone.prependTo('#vhover-' + index +'');
 
 			var vhover = $this.parent().find('#vhover-' + index);
-			vhover.css({top: position.top, left: position.left }).hide();
+			vhover.each(function(){
+				$(this).css({top: position.top, left: position.left }).hide();
+			});
 	
 			$this.add(vhover).hover(function() {
 				vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, 'fast');
