@@ -776,7 +776,7 @@ jQuery(function($) {
 			clone.prependTo('#vhover-' + index +'');
 
 			// Cache hover element in variable
-			var vhover = $this.parent().find('#vhover-' + index);
+			var vhover = $('#website').find('#vhover-' + index);
 			vhover.css({top: position.top, left: position.left }).hide();
 
 			// Bind hover effect to both hovered element and .vehicle
