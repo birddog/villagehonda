@@ -754,28 +754,29 @@ jQuery(function($) {
     $('.bird_dog .detail .photos .photo').attr('rel','lightbox');
   }
 
-	var vehicle = $('#slideout-showcase .vehicle');
-
-	vehicle.each(function(index) {
-		var $this = $(this);
-		var position = $this.position();
-		var clone = $this.clone();
-		var delay = 500;
-
-		$('#slideout-showcase .showcase-pane').append('<div id="vhover-' + index + '" class="vhover"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="btn-contact.png" width="94" height="19" /></a></div><div class="bot">&nbsp;</div></div>');
-		clone.prependTo('#vhover-' + index +'');
-		$('#slideout-showcase #vhover-' + index).css({top: position.top, left: position.left }).hide();
-
-		var vhover = $this.parent().find('#vhover-' + index);
-
-		$this.add(vhover).hover(function() {
-			vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, 'fast');
-		 }, function(){
-			vhover.stop(true).animate({ opacity: 0.0 }, 150, function(){
-				$(this).hide();
+	if($('#showcase-slideout .vehicle').length){
+		var vehicle = $('#showcase-slideout .vehicle');
+		vehicle.each(function(index) {
+			var $this = $(this);
+			var position = $this.position();
+			var clone = $this.clone();
+			var delay = 500;
+	
+			$('#showcase-slideout .showcase-pane').append('<div id="vhover-' + index + '" class="vhover"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="btn-contact.png" width="94" height="19" /></a></div><div class="bot">&nbsp;</div></div>');
+			clone.prependTo('#vhover-' + index +'');
+			$('#showcase-slideout #vhover-' + index).css({top: position.top, left: position.left }).hide();
+	
+			var vhover = $this.parent().find('#vhover-' + index);
+	
+			$this.add(vhover).hover(function() {
+				vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, 'fast');
+			 }, function(){
+				vhover.stop(true).animate({ opacity: 0.0 }, 150, function(){
+					$(this).hide();
+				});
 			});
 		});
-	});
+	}
 
 }); 
 
