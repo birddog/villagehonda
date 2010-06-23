@@ -767,7 +767,6 @@ jQuery(function($) {
 		vehicle.each(function(index, value) {
 			var $this = $(this);
 			var position = $this.position();
-			var slideoutHeight = $('#slideout').height();
 			var clone = $this.clone();
 			var delay = 500;
 	
@@ -776,7 +775,7 @@ jQuery(function($) {
 			clone.prependTo('#vhover-' + index +'');
 
 			// Cache hover element in variable
-			var vhover = $('#website').find('#vhover-' + index);
+			var vhover = $('#website #vhover-' + index);
 			vhover.css({top: position.top, left: position.left }).hide();
 
 			// Bind hover effect to both hovered element and .vehicle
