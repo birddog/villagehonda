@@ -225,7 +225,7 @@ td#footer a:hover{color:#e21c22;font-weight:bold;text-decoration:none;}
 #quick-find td img{vertical-align:middle;}
 #quick-find table{width:100%;margin:0;padding:0;}
 #quick-find td a{text-decoration:none;color:#333;}
-#slideout{display:none;background:#DCDBE0;min-height:200px;margin-bottom:5px;}
+#slideout{display:none;background:#DCDBE0;margin-bottom:5px;}
 .frm-btn-new-test-drive,
 .frm-btn-used-test-drive{color:#e21c22;cursor:pointer;padding:5px 5px 2px;float:left;}
 hr.blue{border-bottom:1px solid #e21c22;}
