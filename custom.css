@@ -318,7 +318,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	overflow:hidden;
 }
 .vhover .vehicle {
-	padding:0!important;
+	padding:0 0 20px!important;
 	margin:0!important;
 	text-align:left;float:none !important;
 	background:none repeat scroll 0 0 transparent;
@@ -344,6 +344,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 }
 .vhover .vehicle .trims {
 	display:block;
+	margin:10px 0 10px 20px;
 }
 .vhover .actions {
 	width:138px;
