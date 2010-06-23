@@ -306,7 +306,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	display:none;
 	position:absolute!important;
 	width:167px!important;
-	background:url(vhover-bg.png) no-repeat	0 0 transparent!important;
+	background:url(/wp-content/uploads/vhover-bg.png) no-repeat	0 0 transparent!important;
 	z-height:2001;
 }
 .vhover .vehicle {padding:0;margin:0!important;text-align:left;float:none !important;}
@@ -315,7 +315,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	bottom:-20px;
 	height:20px;
 	width:188px!important;
-	background:url(vhover-bg.png) no-repeat	0 bottom transparent!important;
+	background:url(/wp-content/uploads/vhover-bg.png) no-repeat	0 bottom transparent!important;
 }
 .vhover .image {
 	text-align:center;

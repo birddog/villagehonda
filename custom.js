@@ -758,11 +758,11 @@ jQuery(function($) {
 		var vehicle = $('#showcase-slideout .vehicle');
 		vehicle.each(function(index) {
 			var $this = $(this);
-			var position = $this.position();
+			var position = $this.offset();
 			var clone = $this.clone();
 			var delay = 500;
 	
-			$('#showcase-slideout .showcase-pane').append('<div id="vhover-' + index + '" class="vhover"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="btn-contact.png" width="94" height="19" /></a></div><div class="bot">&nbsp;</div></div>');
+			$('#showcase-slideout .showcase-pane').append('<div id="vhover-' + index + '" class="vhover"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div><div class="bot">&nbsp;</div></div>');
 			clone.prependTo('#vhover-' + index +'');
 			$('#showcase-slideout #vhover-' + index).css({top: position.top, left: position.left }).hide();
 	
