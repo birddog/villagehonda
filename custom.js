@@ -758,7 +758,7 @@ jQuery(function($) {
 		var vehicle = $('#showcase-slideout .vehicle');
 		vehicle.each(function(index) {
 			var $this = $(this);
-			var position = $this.offset();
+			var position = $this.position();
 			var clone = $this.clone();
 			var delay = 500;
 	
