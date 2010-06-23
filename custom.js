@@ -762,6 +762,7 @@ jQuery(function($) {
 		vehicle.each(function(index, value) {
 			var $this = $(this);
 			var position = $this.position();
+			var slideoutHeight = $('#slideout').height();
 			var clone = $this.clone();
 			var delay = 500;
 	
