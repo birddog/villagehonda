@@ -316,7 +316,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	height:322px;
 	background:url(/wp-content/uploads/vhover-bg-top.png) no-repeat 0 top transparent!important;
 	z-index:2001;
-	padding:0;
+	padding:15px 0 27px;
 	overflow:hidden;
 }
 .vhover .bot{background:url(/wp-content/uploads/vhover-bg-bot.png) no-repeat 0 bottom transparent!important;}
