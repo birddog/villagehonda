@@ -1423,7 +1423,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			// Take showcase and display off screen to obtain size and positions
 			base.$el.css({left:'-10000px'}).show();
 
-			// Loop through items to make clonese and set events
+			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
 				var $this = $(this); // .vehicle
 				var position = $this.position();
@@ -1432,10 +1432,10 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				base.createvHoverElement(base.$el, clone, index, base.options);
 
 				// Cache hover element in variable
-				var vhover = $this.parent().find('#vhover-' + showcase.attr('id') + index);
+				var vhover = $this.parent().find('#vhover-' + base.$el.attr('id') + index);
 				vhover.hide();
 
-				base.hoverEffect($this, vhover, index, position, base.options);
+				base.hoverEffect($this, vhover, index, base.options);
 
 				// Reset base to default state
 				base.$el.css({left: base.options.defaultLeft, display: baseDisplay });	
@@ -1450,7 +1450,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				return clone.prependTo('#vhover-' + index +' .mid');
 		}
 
-		base.hoverEffect = function ($this, vhover, index, position, options) {
+		base.hoverEffect = function ($this, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
 				$this.add(vhover).bind('mouseenter', function() {
 					vhover.stop(true).css({opacity: 0.0, top: $this.position().top, left: $this.position().left }).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
