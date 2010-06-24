@@ -1442,7 +1442,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
-			if($('.vhover').length = 0){
+			if(!$('.vhover').length){
 				// Create hover element
 				$('body').append('<div id="vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
 
