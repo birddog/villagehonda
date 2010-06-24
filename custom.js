@@ -1424,7 +1424,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			base.$el.css({left:'-10000px'}).show();
 
 			vehicle.each(function(index, value) {
-				var $this = $(this);
+				var $this = $(this); // .vehicle
 				var position = $this.position();
 				var clone = $this.clone();
 				
@@ -1432,7 +1432,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 				// Cache hover element in variable
 				var vhover = $this.parent().find('#vhover-' + index);
-				vhover.css({top: position.top, left: position.left }).hide();
+				vhover.hide();
 
 				base.hoverEffect($this, vhover, index, position, base.options);
 
@@ -1442,17 +1442,21 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
+			if($('.vhover').length != 0){
 				// Create hover element
 				$('body').append('<div id="vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
 
 				clone.find('br:last').remove();
 				return clone.prependTo('#vhover-' + index +' .mid');
+			} else {
+				return false;
+			}
 		}
 
 		base.hoverEffect = function ($this, vhover, index, position, options) {
 				// Bind hover effect to both hovered element and .vehicle
 				$this.add(vhover).bind('mouseenter', function() {
-					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+					vhover.stop(true).css({opacity: 0.0, top: position.top, left: position.left }).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 				 }).bind('mouseleave', function(){
 					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
 						$(this).hide();
