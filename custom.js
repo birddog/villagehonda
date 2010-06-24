@@ -1417,7 +1417,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 	
 			// Put your initialization code here
 			var vehicle = base.$el.find('.vehicle');
-			var baseDisplay = base.$el.css(display);
+			var baseDisplay = base.$el.css('display');
 
 			// Take base and display to obtain size and positions
 			base.$el.css({left:'-10000px'}).show();
