@@ -1427,7 +1427,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				var $this = $(this);
 				var position = $this.position();
 				var clone = $this.clone();
-
+				
 				base.createvHoverElement(base.$el, clone, index, base.options);
 
 				// Cache hover element in variable
@@ -1443,7 +1443,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
 				// Create hover element
-				showcase.find(options.showcasePane).append('<div id="vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
+				$('body').append('<div id="vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
 
 				clone.find('br:last').remove();
 				return clone.prependTo('#vhover-' + index +' .mid');
