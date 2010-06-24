@@ -757,7 +757,7 @@ jQuery(function($) {
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
-	$('#website .showcase-flyout').vHover({defaultLeft: '211.5px' });
+	$('#website .showcase-flyout').vHover({showcasePane: '.items', defaultLeft: '211.5px' });
 	$('#home-1 .showcase-slider').vHover({showcasePane: '.showcaseslider-pane'});
 	$('#slideout .dt-showcase').vHover();
 }); 
@@ -1428,7 +1428,12 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				var clone = $this.clone();
 
 				base.createvHoverElement(base.$el, clone, index, base.options);
-				base.hoverEffect($this, index, position, base.options);
+
+				// Cache hover element in variable
+				var vhover = $this.parent().find('#vhover-' + index);
+				vhover.css({top: position.top, left: position.left }).hide();
+
+				base.hoverEffect($this, vhover, index, position, base.options);
 
 				// Reset base to default state
 				base.$el.css({left: base.options.defaultLeft, display: baseDisplay });	
@@ -1443,11 +1448,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				return clone.prependTo('#vhover-' + index +' .mid');
 		}
 
-		base.hoverEffect = function ($this, index, position, options) {
-				// Cache hover element in variable
-				var vhover = $this.parent().find('#vhover-' + index);
-				vhover.css({top: position.top, left: position.left }).hide();
-
+		base.hoverEffect = function ($this, vhover, index, position, options) {
 				// Bind hover effect to both hovered element and .vehicle
 				$this.add(vhover).bind('mouseenter', function() {
 					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
@@ -1456,7 +1457,6 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 						$(this).hide();
 					});
 				});  
-
 		}
 
         // Run initializer
