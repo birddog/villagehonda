@@ -1417,12 +1417,13 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			base.options = $.extend({},$.vHover.defaultOptions, options);
 	
 			// Put your initialization code here
-			var vehicle = base.$el.find('.vehicle');
-			var baseDisplay = base.$el.css('display');
+			var vehicle = base.$el.find('.vehicle');				// the items to clone and make hovers out of
+			var baseDisplay = base.$el.css('display');	// Get current display setting of showcase to revert to
 
-			// Take base and display to obtain size and positions
+			// Take showcase and display off screen to obtain size and positions
 			base.$el.css({left:'-10000px'}).show();
 
+			// Loop through items to make clonese and set events
 			vehicle.each(function(index, value) {
 				var $this = $(this); // .vehicle
 				var position = $this.position();
@@ -1431,7 +1432,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				base.createvHoverElement(base.$el, clone, index, base.options);
 
 				// Cache hover element in variable
-				var vhover = $this.parent().find('#vhover-' + index);
+				var vhover = $this.parent().find('#vhover-' + showcase.attr('id') + index);
 				vhover.hide();
 
 				base.hoverEffect($this, vhover, index, position, base.options);
@@ -1443,7 +1444,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
 				// Create hover element
-				$('body').append('<div id="' + showcase.attr('id') + 'vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
+				$('body').append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
 
 				clone.find('br:last').remove();
 				return clone.prependTo('#vhover-' + index +' .mid');
