@@ -757,41 +757,9 @@ jQuery(function($) {
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
-	if($('#showcase-slideout .vehicle').length){
-		var vehicle = $('#showcase-slideout .vehicle');
-		var slideout = $('#footer #slideout');
-
-		// Display slideout to obtain dimentions of children
-		slideout.css({left: '-10000px'}).show();
-
-		vehicle.each(function(index, value) {
-			var $this = $(this);
-			var position = $this.position();
-			var clone = $this.clone();
-			var delay = 500;
-			// Create hover element
-			$('#showcase-slideout .showcase-pane').append('<div id="vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
-			clone.find('br:last').remove();
-			clone.prependTo('#vhover-' + index +' .mid');
-
-			// Cache hover element in variable
-			var vhover = $this.parent().find('#vhover-' + index);
-			vhover.css({top: position.top, left: position.left }).hide();
-
-			// Bind hover effect to both hovered element and .vehicle
-			$this.add(vhover).hover(function() {
-				vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, 'fast');
-			 }, function(){
-				vhover.stop(true).animate({ opacity: 0.0 }, 150, function(){
-					$(this).hide();
-				});
-			});
-		});
-
-	// Reset slideout to default state
-	slideout.css({left: 'auto'}).hide();
-	}
-
+	$('#website .showcase-flyout').vHover({defaultLeft: '211.5px' });
+	$('#home-1 .showcase-slider').vHover({showcasePane: '.showcaseslider-pane'});
+	$('#slideout .dt-showcase').vHover();
 }); 
 
 /**
@@ -1422,3 +1390,89 @@ function addLoadEvent(func)
 
 }
 addLoadEvent(initLightbox);	// run initLightbox onLoad
+
+/*!
+	* jQuery Showcase Hover
+	* http://www.bcccreative.com
+	*
+	* Copyright 2010, Chad Payne
+	*
+	* Date: June 24, 2010 11:21 AM
+*/ 
+(function($) {
+	$.vHover = function (el, options) {
+		// To avoid scope issues, use 'base' instead of 'this'
+		// to reference this class from internal events and functions.
+		var base = this;
+
+		// Access to jQuery and DOM versions of element
+		base.$el = $(el);
+		base.el = el;
+
+		// Add a reverse reference to the DOM object
+		base.$el.data("vHover", base);
+		
+		base.init = function() {
+			base.options = $.extend({},$.vHover.defaultOptions, options);
+	
+			// Put your initialization code here
+			var vehicle = base.$el.find('.vehicle');
+
+			// Take base and display to obtain size and positions
+			base.$el.css({left:'-10000px'}).show();
+
+			vehicle.each(function(index, value) {
+				var $this = $(this);
+				var position = $this.position();
+				var clone = $this.clone();
+
+				base.createvHoverElement(base.$el, clone, index, base.options);
+				base.hoverEffect($this, index, position, base.options);
+
+				// Reset base to default state
+				base.$el.css({left: base.options.defaultLeft});	
+			}); 
+		}
+
+		base.createvHoverElement = function(showcase, clone, index, options) {
+				// Create hover element
+				showcase.find(options.showcasePane).append('<div id="vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
+
+				clone.find('br:last').remove();
+				return clone.prependTo('#vhover-' + index +' .mid');
+		}
+
+		base.hoverEffect = function ($this, index, position, options) {
+				// Cache hover element in variable
+				var vhover = $this.parent().find('#vhover-' + index);
+				vhover.css({top: position.top, left: position.left }).hide();
+
+				// Bind hover effect to both hovered element and .vehicle
+				$this.add(vhover).bind('mouseenter', function() {
+					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+				 }).bind('mouseleave', function(){
+					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
+						$(this).hide();
+					});
+				});  
+
+		}
+
+        // Run initializer
+        base.init();
+	}
+
+    $.vHover.defaultOptions = {
+		fadeInSpeed:150,
+		fadeOutSpeed:150,
+		showcasePane: '.showcase-pane',
+		defaultLeft: 'auto'
+    }
+
+    $.fn.vHover = function(options){
+        return this.each(function(){
+            (new $.vHover(this, options));
+        });
+    };
+
+})(jQuery);
