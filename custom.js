@@ -1417,6 +1417,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 	
 			// Put your initialization code here
 			var vehicle = base.$el.find('.vehicle');
+			var baseDisplay = base.$el.css(display);
 
 			// Take base and display to obtain size and positions
 			base.$el.css({left:'-10000px'}).show();
@@ -1430,7 +1431,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				base.hoverEffect($this, index, position, base.options);
 
 				// Reset base to default state
-				base.$el.css({left: base.options.defaultLeft});	
+				base.$el.css({left: base.options.defaultLeft, display: baseDisplay });	
 			}); 
 		}
 
