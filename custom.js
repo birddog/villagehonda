@@ -1447,7 +1447,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				$('body').append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
 
 				clone.find('br:last').remove();
-				return clone.prependTo('#vhover-' + index +' .mid');
+				return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
 
 		base.hoverEffect = function ($this, vhover, index, options) {
