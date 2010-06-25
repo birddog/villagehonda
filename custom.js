@@ -1434,7 +1434,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 				// Cache hover element in variable
 				var vhover = $this.parent().find('#' + base.$el.attr('id') + '-vhover-' + index);
-				vhover.hide();
+				vhover.css({top: position.top, left: position.left }).hide();
 
 				base.hoverEffect($this, vhover, index, base.options);
 
@@ -1452,11 +1452,9 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		}
 
 		base.hoverEffect = function ($this, vhover, index, options) {
-				var top = $this.position().top;
-				var left = $this.position().top;
 				// Bind hover effect to both hovered element and .vehicle
 				$this.add(vhover).bind('mouseenter', function() {
-					vhover.stop(true).css({opacity: 0.0, top: top, left: left }).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 				 }).bind('mouseleave', function(){
 					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
 						$(this).hide();
