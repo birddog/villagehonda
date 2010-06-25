@@ -1419,18 +1419,18 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			// Put your initialization code here
 			var vehicle = base.$el.find('.vehicle');				// the items to clone and make hovers out of
 			var baseDisplay = base.$el.css('display');	// Get current display setting of showcase to revert to
+			var vis = base.$el.is(':visible');							// get objects ID
 
-			var vis = base.$el.is(':visible');
-			if(!vis)			
-				// Take showcase and display off screen to obtain size and positions
-				base.$el.show();
+			// if not visible display off screen for loop
+			if (!vis) 
+				base.$el.css({left:'-10000px'}).show();
+
 
 			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
-
-				var $this = $(this); // .vehicle
-				var position = $this.position();
-				var clone = $this.clone();
+				var $this = $(this); 											// .vehicle
+				var position = $this.position();						// current position of elements
+				var clone = $this.clone();								// cloned .vehicle
 
 				// Create hover elements at bottom of page
 				base.createvHoverElement(base.$el, clone, index, base.options);
@@ -1441,9 +1441,10 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 				base.hoverEffect($this, vhover, index, base.options);
 			});
- 
-			// Reset base to default state
-			base.$el.css({left: base.options.defaultLeft, display: baseDisplay });	
+ 			
+			// reset showcase to defaults after loop is done and items are created.
+			if (!vis) 
+				base.$el.css({left: base.options.defaultLeft, display: baseDisplay });	
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
@@ -1456,7 +1457,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 		base.hoverEffect = function ($this, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
-				if(base.el.attr('id') = 'showcase-flyout'){
+				if(base.$el.attr('id') = 'showcase-flyout'){
 					$this.add(vhover).add('#showcase-flyout').bind('mouseenter', function() {
 						vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 					 }).bind('mouseleave', function(){
