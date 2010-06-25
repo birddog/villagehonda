@@ -759,7 +759,7 @@ jQuery(function($) {
 //			Showcase Hover v2					  //
 //============================= //
 	$('#website .showcase-flyout').vHover({showcasePane: '.items', defaultLeft: '211.5px' });
-	$('#home-1 .showcase-slider').vHover({showcasePane: '.showcaseslider-pane'});
+	$('#home-content .showcase-slider').vHover({showcasePane: '.showcaseslider-pane', defaultLeft: 'auto' });
 	$('#slideout .dt-showcase').vHover();
 }); 
 
@@ -1429,6 +1429,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				var position = $this.position();
 				var clone = $this.clone();
 				
+				// Create hover elements at bottom of page
 				base.createvHoverElement(base.$el, clone, index, base.options);
 
 				// Cache hover element in variable
@@ -1451,9 +1452,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		}
 
 		base.hoverEffect = function ($this, vhover, index, options) {
+				var top = $this.position().top;
+				var left = $this.position().top;
 				// Bind hover effect to both hovered element and .vehicle
 				$this.add(vhover).bind('mouseenter', function() {
-					vhover.stop(true).css({opacity: 0.0, top: $this.position().top, left: $this.position().left }).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+					vhover.stop(true).css({opacity: 0.0, top: top, left: left }).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 				 }).bind('mouseleave', function(){
 					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
 						$(this).hide();
