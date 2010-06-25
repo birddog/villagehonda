@@ -1432,7 +1432,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				base.createvHoverElement(base.$el, clone, index, base.options);
 
 				// Cache hover element in variable
-				var vhover = $this.parent().find('#' + showcase.attr('id') + '-vhover-' + index);
+				var vhover = $this.parent().find('#' + base.$el.attr('id') + '-vhover-' + index);
 				vhover.hide();
 
 				base.hoverEffect($this, vhover, index, base.options);
