@@ -1420,8 +1420,10 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			var vehicle = base.$el.find('.vehicle');				// the items to clone and make hovers out of
 			var baseDisplay = base.$el.css('display');	// Get current display setting of showcase to revert to
 
-			// Take showcase and display off screen to obtain size and positions
-			base.$el.css({left:'-10000px'}).show();
+			var vis = base.$el.is(':visible');
+			if(!vis)			
+				// Take showcase and display off screen to obtain size and positions
+				base.$el.show();
 
 			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
@@ -1454,13 +1456,23 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 		base.hoverEffect = function ($this, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
-				$this.add(vhover).bind('mouseenter', function() {
-					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
-				 }).bind('mouseleave', function(){
-					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
-						$(this).hide();
-					});
-				});  
+				if(base.el.attr('id') = 'showcase-flyout'){
+					$this.add(vhover).add('#showcase-flyout').bind('mouseenter', function() {
+						vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+					 }).bind('mouseleave', function(){
+						vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
+							$(this).hide();
+						});
+					});  
+				} else {
+					$this.add(vhover).bind('mouseenter', function() {
+						vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+					 }).bind('mouseleave', function(){
+						vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
+							$(this).hide();
+						});
+					});  
+				}
 		}
 
         // Run initializer

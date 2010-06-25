@@ -10,7 +10,7 @@ body{
 	background-image:url('/wp-content/uploads/2010/03/bgWDR1.jpg');
 }
 body.page{padding:0;}
-body.logged-in{margin-top:12px;} /* adjusts layout to allow space for heat map */
+body.logged-in{padding-top:12px;} /* adjusts layout to allow space for heat map */
 
 a, a:active{color:#e21c22;outline:0;text-decoration:none;}
 a:hover, a:focus{color:#e21c22;outline:0;}
