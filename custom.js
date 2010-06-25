@@ -1420,11 +1420,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			var vehicle = base.$el.find('.vehicle');				// the items to clone and make hovers out of
 			var baseDisplay = base.$el.css('display');	// Get current display setting of showcase to revert to
 
-			// Take showcase and display off screen to obtain size and positions
-			base.$el.css({left:'-10000px'}).show();
-
 			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
+				// Take showcase and display off screen to obtain size and positions
+				base.$el.css({left:'-10000px'}).show();
+
 				var $this = $(this); // .vehicle
 				var position = $this.position();
 				var clone = $this.clone();
