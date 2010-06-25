@@ -1427,7 +1427,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			vehicle.each(function(index, value) {
 
 				var $this = $(this); // .vehicle
-				var position = $this.offset();
+				var position = $this.position();
 				var clone = $this.clone();
 
 				// Create hover elements at bottom of page

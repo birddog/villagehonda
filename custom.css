@@ -10,19 +10,22 @@ body{
 	background-image:url('/wp-content/uploads/2010/03/bgWDR1.jpg');
 }
 body.page{padding:0;}
+body.logged-in{margin-top:12px;} /* adjusts layout to allow space for heat map */
+
 a, a:active{color:#e21c22;outline:0;text-decoration:none;}
 a:hover, a:focus{color:#e21c22;outline:0;}
 
 p, .text, td,.textgridwidget{font-size:11px;font-weight:normal;text-align:left;color:#999;}
 p{margin:0 0 0.5em;}
+
 h1,h2,h3,h4,h5{color:#999;font-weight:bold;margin-bottom:0.75em;}
 h1{font-size:18px;}
 h2{font-size:16px;color:#e21c22;}
 h3{font-size:14px;}
 h4{font-size:13px;color:#222;}
 h5{font-size:12px;}
-ul,
-ol{color:#999;}
+
+ul, ol{color:#999;}
 td li{text-align:left;}
 hr{border:0;color:#999;background-color:#999;height:1px;width:100%;text-align:left;}
 .top{vertical-align:text-top;}
