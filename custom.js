@@ -1428,7 +1428,6 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 				var $this = $(this); // .vehicle
 				var position = $this.offset();
-				var left = position.left - (-10000);
 				var clone = $this.clone();
 
 				// Create hover elements at bottom of page
@@ -1436,7 +1435,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 				// Cache hover element in variable
 				var vhover = $('body').find('#' + base.$el.attr('id') + '-vhover-' + index);
-				vhover.css({top: position.top, left: left}).hide();
+				vhover.css({top: position.top, left: position.left}).hide();
 
 				base.hoverEffect($this, vhover, index, base.options);
 			});
