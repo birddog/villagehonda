@@ -1457,23 +1457,13 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 		base.hoverEffect = function ($this, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
-				if(base.$el.attr('id') == 'showcase-flyout'){
-					$this.add(vhover).add('#showcase-flyout').bind('mouseenter', function() {
-						vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
-					 }).bind('mouseleave', function(){
-						vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
-							$(this).hide();
-						});
-					});  
-				} else {
-					$this.add(vhover).bind('mouseenter', function() {
-						vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
-					 }).bind('mouseleave', function(){
-						vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
-							$(this).hide();
-						});
-					});  
-				}
+				$this.add(vhover).bind('mouseenter', function() {
+					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+				 }).bind('mouseleave', function(){
+					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
+						$(this).hide();
+					});
+				});  
 		}
 
         // Run initializer
