@@ -1428,7 +1428,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 				var $this = $(this); // .vehicle
 				var position = $this.offset();
-				var left = position.left - 10000;
+				var left = position.left - (-10000);
 				var clone = $this.clone();
 
 				// Create hover elements at bottom of page
