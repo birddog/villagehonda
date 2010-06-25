@@ -758,8 +758,8 @@ jQuery(function($) {
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
-	$('#website .showcase-flyout').vHover({showcasePane: '.items', defaultLeft: '211.5px' });
-	$('#home-content .showcase-slider').vHover({showcasePane: '.showcaseslider-pane', defaultLeft: 'auto' });
+	//$('#website .showcase-flyout').vHover({showcasePane: '.items', defaultLeft: '211.5px' });
+	//$('#home-content .showcase-slider').vHover({showcasePane: '.showcaseslider-pane', defaultLeft: 'auto' });
 	$('#slideout .dt-showcase').vHover();
 }); 
 
@@ -1429,7 +1429,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
 				var $this = $(this); 											// .vehicle
-				var position = $this.position();						// current position of elements
+				var position = $this.offset();							// current position of elements
 				var clone = $this.clone();								// cloned .vehicle
 
 				// Create hover elements at bottom of page
@@ -1439,6 +1439,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				var vhover = $('body').find('#' + base.$el.attr('id') + '-vhover-' + index);
 				vhover.css({top: position.top, left: position.left}).hide();
 
+				//  Bind hovers to elements
 				base.hoverEffect($this, vhover, index, base.options);
 			});
  			
