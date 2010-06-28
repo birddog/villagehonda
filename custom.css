@@ -362,6 +362,14 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	width:94px;
 	margin:0 auto 5px;
 }
+/* temp vhover for slider and flyout */
+.dt-widgets.showcasesliderwidget .showcase-slider .scrollable .items .item .trims {
+	background-color:#eee;	
+}
+.dt-widgets.showcasesliderwidget .showcase-slider .scrollable .items .item .trims a {
+	display:block;
+	font-size:10px;
+}
 
 /***************
 /*	trim hover
