@@ -33,7 +33,7 @@ hr{border:0;color:#999;background-color:#999;height:1px;width:100%;text-align:le
 /**************************************
 * General Layout Regions
 **************************************/
-#website{background-color:#fff;position:relative;}
+#website{background-color:#fff;}
 #website .page{padding:10px 0 0;}
 #header{padding:0;}
 #header #header-zones{background:url('/wp-content/uploads/2010/03/header-bg.png') no-repeat;border-bottom:1px solid #999;height:77px;}
