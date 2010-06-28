@@ -1420,23 +1420,24 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			var vehicle = base.$el.find('.vehicle');				// the items to clone and make hovers out of
 			var baseDisplay = base.$el.css('display');	// Get current display setting of showcase to revert to
 			var vis = base.$el.is(':visible');							// Showcase visiblity
+			var id = base.$el.attr('id');									// Get showcase ID
 
 			// if not visible display off screen for loop
-			if (!vis) 
-				base.$el.css({left:'-10000px'}).show();
+			if (!vis && id == 'showcase-slideout') 
+				base.$el.parent().parent().css({left:'-10000px'}).show();
 
 
 			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
 				var $this = $(this); 											// .vehicle
-				var position = $this.position();							// current position of elements
+				var position = $this.position();						// current position of elements
 				var clone = $this.clone();								// cloned .vehicle
 
 				// Create hover elements at bottom of page
 				base.createvHoverElement(base.$el, clone, index, base.options);
 
 				// Cache hover element in variable
-				var vhover = $('body').find('#' + base.$el.attr('id') + '-vhover-' + index);
+				var vhover = $('body').find('#' + id + '-vhover-' + index);
 				vhover.css({top: position.top, left: position.left}).hide();
 
 				//  Bind hovers to elements
@@ -1444,8 +1445,8 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			});
  			
 			// reset showcase to defaults after loop is done and items are created.
-			if (!vis) 
-				base.$el.css({left: base.options.defaultLeft, display: baseDisplay });	
+			if (!vis && id == 'showcase-slideout') 
+				base.$el.parent().parent().css({left: base.options.defaultLeft, display: 'none' });	
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
