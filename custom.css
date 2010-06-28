@@ -366,6 +366,9 @@ hr.blue{border-bottom:1px solid #e21c22;}
 .dt-widgets.showcasesliderwidget .showcase-slider .scrollable .items .item .trims {
 	background-color:#eee;	
 }
+.dt-widgets.showcasesliderwidget .showcase-slider .scrollable .items .item .trims br {
+	display:none;	
+}
 .dt-widgets.showcasesliderwidget .showcase-slider .scrollable .items .item .trims a {
 	display:block;
 	font-size:10px;
