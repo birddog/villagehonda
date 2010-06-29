@@ -1431,7 +1431,6 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			if (!vis && id == 'showcase-slideout') 
 				base.$el.parent().parent().css({left:'-10000px'}).show();
 
-
 			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
 				var $this = $(this); 											// .vehicle
