@@ -549,7 +549,7 @@ jQuery(function($) {
       );*/
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
-    $('.page-item-151').hover(function(){
+    $('.page-item-151').add('#website > .vhover').hover(function(){
       $('#showcase-flyout').show();
     });
     $('#menubar .page_item').hover(function(){
@@ -1496,7 +1496,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 	}
 
     $.vHover.defaultOptions = {
-		fadeInSpeed:150,
+		fadeInSpeed:200,
 		fadeOutSpeed:150,
 		showcasePane: '.showcase-pane',
 		defaultLeft: 'auto'
