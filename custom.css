@@ -1032,7 +1032,7 @@ div.p3 span{font-size:10px;}
 /*************************************/
 .tubepress_container {}
 .tubepress_container .tubepress_normal_embedded_wrapper,
-.tubepress_container .tubepress_thumbnail_area{float:left;}
+.tubepress_container .tubepress_thumbnail_area{float:left;width:340px;}
 
 /**********************************************/
 /* Lightbox
