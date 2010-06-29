@@ -552,8 +552,11 @@ jQuery(function($) {
     $('.page-item-151').hover(function(){
       $('#showcase-flyout').show();
     });
-    $('#menubar .page_item').hover(function(){if($(this).attr('class')!='page_item page-item-151')$('#showcase-flyout').hide();});
-    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
+    $('#menubar .page_item').hover(function(){
+			if($(this).attr('class')!='page_item page-item-151')
+				$('#showcase-flyout').hide();
+	});
+    $('#showcase-flyout').add('#website > .vhover').hover(function(){}, function(){$('#showcase-flyout').hide();});
   }
 
 
@@ -1477,20 +1480,12 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		base.hoverEffect = function (showcase, $this, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
 				$this.add(vhover).bind('mouseenter', function() {
-					if(showcase.attr('id') == 'showcase-flyout'){
-						showcase.show();
-					}
 					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 				 }).bind('mouseleave', function(){
 					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
 						$(this).hide();
 					});
-				});  
-				if(showcase.attr('id') == 'showcase-flyout'){
-					showcase.bind('mouseout', function() {
-						$(this).hide();											   
-				   });
-				}
+				}); 
 		}
 
         // Run initializer
