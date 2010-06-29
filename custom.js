@@ -549,17 +549,11 @@ jQuery(function($) {
       );*/
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
-    $('.page-item-151').add('#showcase-flyout, #website > .vhover').hover(function(){
-		if($(this).attr('class')!='page_item page-item-151'){
-			$('#showcase-flyout').hide();
-		} else {
-      		$('#showcase-flyout').show();
-		}
-    }, function() {
-		$('#showcase-flyout').hide();
-	});
+    $('.page-item-151').hover(function(){
+		$('#showcase-flyout').show();
+    });
 	
-   // $('#menubar .page_item').hover(function(){
+//	$('#menubar .page_item').hover(function(){
 //		if($(this).attr('class')!='page_item page-item-151')
 //			$('#showcase-flyout').hide();
 //	});
@@ -1489,7 +1483,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 		base.hoverEffect = function (showcase, $this, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
-				$this.add(vhover).bind('mouseenter', function() {
+				$this.add(vhover).add('#' + showcase.attr('id')).bind('mouseenter', function() {
 					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 				 }).bind('mouseleave', function(){
 					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
