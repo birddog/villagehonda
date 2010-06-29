@@ -756,12 +756,12 @@ jQuery(function($) {
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
-	//$('#website .showcase-flyout').vHover({showcasePane: '.items', defaultLeft: '211.5px' });
+	$('#website .showcase-flyout').vHover({showcasePane: '.items', defaultLeft: '211.5px' });
 	//$('#home-content .showcase-slider').vHover({showcasePane: '.showcaseslider-pane', defaultLeft: 'auto' });
-	$('#slideout .dt-showcase').vHover();
-	$('#dt-showcase').vHover();
+	$('#slideout .dt-showcase').vHover(); 	// slideout
+	$('#dt-showcase').vHover();					// showcase page
 	
-	$('.vehicle').hover(function() {
+	$('#showcase-flyout .vehicle').hover(function() {
 			$(this).find('.trims').show();
 	}, function() {
 			$(this).find('.trims').hide();
