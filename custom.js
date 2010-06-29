@@ -764,9 +764,9 @@ jQuery(function($) {
 	$('#dt-showcase').vHover();
 	
 	$('#showcase-flyout .vehicle').hover(function() {
-			$(this + '.trims').show();
+			$(this).find('.trims').show();
 	}, function() {
-			$(this + '.trims').hide();
+			$(this).find('.trims').hide();
 	});
 }); 
 
