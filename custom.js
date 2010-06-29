@@ -763,7 +763,7 @@ jQuery(function($) {
 	$('#slideout .dt-showcase').vHover();
 	$('#dt-showcase').vHover();
 	
-	$('#showcase-flyout .vehicle').hover(function() {
+	$('.vehicle').hover(function() {
 			$(this).find('.trims').show();
 	}, function() {
 			$(this).find('.trims').hide();
