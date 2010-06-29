@@ -283,6 +283,7 @@ body.logged-in #showcase-flyout {top:124px;}
 #showcase-flyout{
 	position:	absolute;
 	top:112px;
+	left:211.5px;
 	overflow:hidden;
 	width:840px;
 	height:95px;

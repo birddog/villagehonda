@@ -537,7 +537,6 @@ jQuery(function($) {
       $('#slideout .dt-showcase').clone().insertAfter('#submenu')
         .attr('id','showcase-flyout')
         .attr('class','showcase-flyout')
-        .center()
         .hide();
       $('#showcase-flyout .showcase-pane').wrapInner('<div class="items"/>');
       $('#showcase-flyout .showcase-pane').prepend('<div class="showcase-prev"></div>');
