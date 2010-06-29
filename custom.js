@@ -1452,7 +1452,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				vhover.css({top: position.top, left: position.left}).hide();
 
 				//  Bind hovers to elements
-				base.hoverEffect($this, vhover, index, base.options);
+				base.hoverEffect(base.$el, $this, vhover, index, base.options);
 			});
  			
 			// reset showcase to defaults after loop is done and items are created.
@@ -1474,9 +1474,12 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
 
-		base.hoverEffect = function ($this, vhover, index, options) {
+		base.hoverEffect = function (showcase, $this, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
 				$this.add(vhover).bind('mouseenter', function() {
+					if(showcase.attr('id') == 'showcase-flyout'){
+						showcase.show();
+					}
 					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 				 }).bind('mouseleave', function(){
 					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
