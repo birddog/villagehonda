@@ -556,7 +556,7 @@ jQuery(function($) {
 			if($(this).attr('class')!='page_item page-item-151')
 				$('#showcase-flyout').hide();
 	});
-    $('#showcase-flyout').add('#website > .vhover').hover(function(){}, function(){$('#showcase-flyout').hide();});
+    $('#showcase-flyout').add('.vhover').hover(function(){}, function(){$('#showcase-flyout').hide();});
   }
 
 
