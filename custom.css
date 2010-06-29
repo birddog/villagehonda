@@ -304,7 +304,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 /***************/
 .showcase-pane {position:relative;}
 #showcase-slideout .vehicle, #dt-showcase .vehicle {
-	float:left!important;
+	float:left;
 	display:block!important;
 	padding:5px!important;
 	position:relative;
@@ -329,7 +329,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	padding:0!important;
 	margin:0!important;
 	text-align:left!important;
-	float:none !important;
+	float:none!important;
 	background:none repeat scroll 0 0 transparent!important;
 }
 .vhover .vehicle .image {
