@@ -1027,6 +1027,13 @@ div.p3 span{font-size:10px;}
 .pika_navigation a:hover{text-decoration:underline;}
 .pika_navigation{padding-top:10px;clear:both;text-align:center;}
 
+/*************************************/
+/* TubePress
+/*************************************/
+.tubepress_container {}
+.tubepress_container .tubepress_normal_embedded_wrapper,
+.tubepress_container .tubepress_thumbnail_area{float:left;}
+
 /**********************************************/
 /* Lightbox
 /**********************************************/

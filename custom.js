@@ -755,7 +755,10 @@ jQuery(function($) {
   if ($('.detail .photos a.photo').length) {
     $('.bird_dog .detail .photos .photo').attr('rel','lightbox');
   }
-
+//============================= //
+//			TUBE PRESS								  //
+//============================= //
+$('.tubepress_container, .tubepress_thumbnail_area .tubepress_thumbs').after('<div class="clear"></div>');
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
