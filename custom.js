@@ -1486,6 +1486,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 						$(this).hide();
 					});
 				});  
+				if(showcase.attr('id') == 'showcase-flyout'){
+					showcase.mouseout(function() {
+						$(this).hide();											   
+				   });
+				}
 		}
 
         // Run initializer
