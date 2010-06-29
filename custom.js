@@ -549,14 +549,21 @@ jQuery(function($) {
       );*/
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
-    $('.page-item-151').add('#website > .vhover').hover(function(){
-      $('#showcase-flyout').show();
-    });
-    $('#menubar .page_item').hover(function(){
-			if($(this).attr('class')!='page_item page-item-151')
-				$('#showcase-flyout').hide();
+    $('.page-item-151').add('#showcase-flyout, #website > .vhover').hover(function(){
+		if($(this).attr('class')!='page_item page-item-151'){
+			$('#showcase-flyout').hide();
+		} else {
+      		$('#showcase-flyout').show();
+		}
+    }, function() {
+		$('#showcase-flyout').hide();
 	});
-    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
+	
+   // $('#menubar .page_item').hover(function(){
+//		if($(this).attr('class')!='page_item page-item-151')
+//			$('#showcase-flyout').hide();
+//	});
+//    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
   }
 
 
