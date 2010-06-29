@@ -538,7 +538,6 @@ jQuery(function($) {
         .attr('id','showcase-flyout')
         .attr('class','showcase-flyout')
         .center()
-        .css({top:'112px'})
         .hide();
       $('#showcase-flyout .showcase-pane').wrapInner('<div class="items"/>');
       $('#showcase-flyout .showcase-pane').prepend('<div class="showcase-prev"></div>');
