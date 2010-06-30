@@ -356,8 +356,8 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	text-align:center!important;
 	margin:0 0 0 19px!important;
 }
-#website > .vhover .vehicle .image img{
-	margin:-10px 0 0 -23px;
+#menubar .vhover .vehicle .image img{
+	margin:-10px 0 0 1px;
 }
 .vhover .vehicle .name {
 	color:#E21C22!important;
