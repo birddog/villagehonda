@@ -280,10 +280,11 @@ hr.blue{border-bottom:1px solid #e21c22;}
 * Widgets showcase flyout
 **************************************/
 body.logged-in #showcase-flyout {top:124px;}
+.nav .page-item-151:hover #showcase-flyout,
+.nav .page-item-151.sfhover #showcase-flyout{left: auto;}
 #showcase-flyout{
 	position:	absolute;
-	top:112px;
-	left:211.5px;
+	left:-999em;
 	overflow:hidden;
 	width:838px;
 	height:95px;

@@ -537,7 +537,7 @@ jQuery(function($) {
       $('#slideout .dt-showcase').clone().appendTo('#menubar .page-item-151')
         .attr('id','showcase-flyout')
         .attr('class','showcase-flyout')
-        .hide().css({position: 'absolute', left: '-999em'});
+        .hide();
       $('#showcase-flyout .showcase-pane').wrapInner('<div class="items"/>');
       $('#showcase-flyout .showcase-pane').prepend('<div class="showcase-prev"></div>');
       $('#showcase-flyout .showcase-pane').append('<div class="showcase-next"></div>');
@@ -564,6 +564,19 @@ jQuery(function($) {
 	});
     $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});*/
   }
+
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
 
 
   /* quick find test drive */
