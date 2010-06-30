@@ -534,7 +534,7 @@ jQuery(function($) {
   */
   if ($('.page-item-151').length) {
     if (!$('#showcase-flyout').length && $('.dt-showcase').length) {
-      $('#slideout .dt-showcase').clone().insertAfter('#submenu')
+      $('#slideout .dt-showcase').clone().appendTo('#menubar .page-item-151')
         .attr('id','showcase-flyout')
         .attr('class','showcase-flyout')
         .hide();
@@ -1453,8 +1453,6 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				case 2:
 					base.$el.show();
 					break;
-				case 3:
-					break;
 			}
 				
 			// Loop through items to make clones and set events
@@ -1469,19 +1467,13 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 					case 2:
 						var position = $this.offset();	// current position of elements
 						break;
-					case 3:
-						break;
 				}				
 
 				// Create hover elements at bottom of page
 				base.createvHoverElement(base.$el, clone, index, base.options);
 
-				// Cache hover element in variable
-				var vhover = $('body').find('#' + id + '-vhover-' + index);
-				vhover.css({top: position.top, left: position.left}).hide();
-
 				//  Bind hovers to elements
-				base.hoverEffect(base.$el, $this, vhover, index, base.options);
+				base.hoverEffect(base.$el, $this, index, base.options);
 			});
  			
 			// reset showcase to defaults after loop is done and items are created.
@@ -1491,8 +1483,6 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 					break;
 				case 2:
 					base.$el.hide();
-					break;
-				case 3:
 					break;
 			}
 		}
@@ -1504,23 +1494,32 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 					break;
 				case 2: 
 					$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
-					break;	
-				case 3: 
 					break;		
 			}
 			clone.find('br:last').remove();
 			return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
 
-		base.hoverEffect = function (showcase, vehicle, vhover, index, options) {
-				// Bind hover effect to both hovered element and .vehicle
-				vehicle.add(vhover).bind('mouseenter', function() {
-					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
-				 }).bind('mouseleave', function(){
-					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
-						$(this).hide();
-					});
-				}); 
+		base.hoverEffect = function (showcase, vehicle, position, index, options) {
+			// Cache hover element in variable
+			var vhover = $('body').find('#' + id + '-vhover-' + index);
+			vhover.css({top: position.top, left: position.left}).hide();
+				
+			switch(options.mode){
+				case 1:
+					// Bind hover effect to both hovered element and .vehicle
+					vehicle.add(vhover).bind('mouseenter', function() {
+						vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+					 }).bind('mouseleave', function(){
+						vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
+							$(this).hide();
+						});
+					}); 
+					break;
+				case 2:
+				
+					break;
+			}
 		}
 
         // Run initializer
@@ -1528,11 +1527,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 	}
 
     $.vHover.defaultOptions = {
-		mode: 1,
-		fadeInSpeed:200,
-		fadeOutSpeed:150,
-		showcasePane: '.showcase-pane',
-		defaultLeft: 'auto'
+		mode: 1, 													// mode 1 = grid, mode 2 = slider
+		fadeInSpeed:200,									// Animation Speed
+		fadeOutSpeed:200,									// Animation Speed
+		showcasePane: '.showcase-pane',		// Container vehicles are in. Used for grid
+		defaultLeft: 'auto'										// Default left value if needed to be set.
     }
 
     $.fn.vHover = function(options){
