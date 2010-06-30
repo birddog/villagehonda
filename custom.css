@@ -1036,7 +1036,7 @@ div.p3 span{font-size:10px;}
 	margin-top:0;
 }
 .tubepress_thumbs {float:none;margin-top:1em;}
-.tubepress_thumb {overflow:visible;margin:0 2px 2px 0;width:105px;}
+.tubepress_thumb {overflow:visible;margin:0 2px 5px 0;width:105px;}
 /**********************************************/
 /* Lightbox
 /**********************************************/
