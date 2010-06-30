@@ -1471,7 +1471,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 				// Create hover elements at bottom of page
 				base.createvHoverElement(base.$el, clone, index, base.options);
-
+					
+				// Cache hover element in variable
+				var vhover = $('body').find('#' + id + '-vhover-' + index);
+				vhover.css({top: position.top, left: position.left}).hide();
+			
 				//  Bind hovers to elements
 				base.hoverEffect(base.$el, $this, index, base.options);
 			});
@@ -1500,26 +1504,15 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
 
-		base.hoverEffect = function (showcase, vehicle, position, index, options) {
-			// Cache hover element in variable
-			var vhover = $('body').find('#' + id + '-vhover-' + index);
-			vhover.css({top: position.top, left: position.left}).hide();
-				
-			switch(options.mode){
-				case 1:
-					// Bind hover effect to both hovered element and .vehicle
-					vehicle.add(vhover).bind('mouseenter', function() {
-						vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
-					 }).bind('mouseleave', function(){
-						vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
-							$(this).hide();
-						});
-					}); 
-					break;
-				case 2:
-				
-					break;
-			}
+		base.hoverEffect = function (showcase, vehicle, index, options) {
+			// Bind hover effect to both hovered element and .vehicle
+			vehicle.add(vhover).bind('mouseenter', function() {
+				vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
+			 }).bind('mouseleave', function(){
+				vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
+					$(this).hide();
+				});
+			}); 
 		}
 
         // Run initializer
