@@ -1437,7 +1437,8 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			var baseDisplay = base.$el.css('display');	// Get current display setting of showcase to revert to
 			var id = base.$el.attr('id');									// Get showcase ID
 
-			switch(options.mode) {
+			// Display element off screen to obtain positioning for vhover
+			switch(base.options.mode) {
 				case 1: 
 					base.$el.parent().parent().css({left:'-10000px'}).show();
 					break;
@@ -1453,7 +1454,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				var $this = $(this); 											// .vehicle
 				var clone = $this.clone();								// cloned .vehicle
 				
-				switch(options.mode) {
+				switch(base.options.mode) {
 					case 1: 
 						var position = $this.position();	// current position of elements
 						break;
@@ -1476,31 +1477,31 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			});
  			
 			// reset showcase to defaults after loop is done and items are created.
-				switch(options.mode) {
-					case 1: 
-						base.$el.parent().parent().css({left: base.options.defaultLeft, display: 'none' });	
-						break;
-					case 2:
-						base.$el.hide();
-						break;
-					case 3:
-						break;
-				}
+			switch(base.options.mode) {
+				case 1: 
+					base.$el.parent().parent().css({left: base.options.defaultLeft, display: 'none' });	
+					break;
+				case 2:
+					base.$el.hide();
+					break;
+				case 3:
+					break;
+			}
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
 			switch(options.mode) {
 				case 1: 
-						showcase.find(options.showcasePane).append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
-						break;
+					showcase.find(options.showcasePane).append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
+					break;
 				case 2: 
-						$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
-						break;	
+					$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
+					break;	
 				case 3: 
-						break;		
+					break;		
 			}
-				clone.find('br:last').remove();
-				return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
+			clone.find('br:last').remove();
+			return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
 
 		base.hoverEffect = function (showcase, vehicle, vhover, index, options) {
