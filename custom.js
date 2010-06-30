@@ -1459,15 +1459,14 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			vehicle.each(function(index, value) {
 				var $this = $(this); 											// .vehicle
 				var clone = $this.clone();								// cloned .vehicle
+				var position = $this.position();	// current position of elements	
 				
 				switch(base.options.mode) {
 					case 1: 
-						var position = $this.position();	// current position of elements
 						var left = position.left;
 						var top = position.top;
 						break;
 					case 2:
-						var position = $this.offset();	// current position of elements
 						var left = position.left - (-10000);
 						var top = '47px';
 						break;
