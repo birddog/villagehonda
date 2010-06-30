@@ -549,17 +549,15 @@ jQuery(function($) {
       );*/
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
-	$('.page-item-151').add('#showcase-flyout').add('.vhover').hover(function(){
+	$('.page-item-151').hover(function(){
 		$('#showcase-flyout').show();
-	} , function() {
-		$('#showcase-flyout').hide();
 	});
 	
-//	$('#menubar .page_item').hover(function(){
-//		if($(this).attr('class')!='page_item page-item-151')
-//			$('#showcase-flyout').hide();
-//	});
-//    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
+	$('#menubar .page_item').hover(function(){
+		if($(this).attr('class')!='page_item page-item-151')
+			$('#showcase-flyout').hide();
+	});
+    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
   }
 
 
