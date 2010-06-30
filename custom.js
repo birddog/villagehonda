@@ -1506,11 +1506,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			if(options.mode == 2){
 				var prev = $('#showcase-flyout .showcase-prev');
 				var next = $('#showcase-flyout .showcase-next');
-				prev.click(function() {
+				prev.bind('click.vhover', function() {
 					var left = vhover.css('left') + 163;
 					vhover.css({left: left});
 				});
-				next.click(function() {
+				next.bind('click.vhover', function() {
 					var left = vhover.css('left') - 163;
 					vhover.css({left: left});				
 				});				
