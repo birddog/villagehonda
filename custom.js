@@ -549,9 +549,9 @@ jQuery(function($) {
       );*/
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
-    $('.page-item-151').add('#showcase-flyout').hover(function(){
+	$('.page-item-151').add('#showcase-flyout').hover(function(){
 		$('#showcase-flyout').show();
-    } , function() {
+	} , function() {
 		$('#showcase-flyout').hide();
 	});
 	
