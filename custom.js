@@ -1468,7 +1468,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 						break;
 					case 2:
 						var left = position.left;
-						var top = '47px';
+						var top = '34px';
 						break;
 				}				
 
