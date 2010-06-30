@@ -1504,8 +1504,8 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		base.hoverEffect = function (showcase, vehicle, vhover, index, options) {
 			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
 			if(options.mode == 2){
-				var prev = $('#showcase-flyout .showcase-prev');
-				var next = $('#showcase-flyout .showcase-next');
+				var prev = showcase.find('.showcase-prev');
+				var next = showcase.find('.showcase-next');
 				prev.live('click', function(e) {
 					var left = vhover.css('left') + 163;
 					$('#nav .page-item-151').find(vhover).css({left: left});
