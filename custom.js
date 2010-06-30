@@ -1506,11 +1506,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			if(options.mode == 2){
 				var prev = $('#showcase-flyout .showcase-prev');
 				var next = $('#showcase-flyout .showcase-next');
-				prev.bind('click.vhover', function() {
+				prev.live('click', function(e) {
 					var left = vhover.css('left') + 163;
 					$('#nav .page-item-151').find(vhover).css({left: left});
 				});
-				next.bind('click.vhover', function() {
+				next.live('click', function(e) {
 					var left = vhover.css('left') - 163;
 					$('#nav .page-item-151').find(vhover).css({left: left});				
 				});				
