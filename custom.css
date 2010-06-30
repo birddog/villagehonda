@@ -1035,7 +1035,7 @@ div.p3 span{font-size:10px;}
 .tubepress_container .tubepress_thumbnail_area{
 	margin-top:0;
 }
-.tubepress_thumbs {float:none;margin-top:0;padding:4px 5px 0;}
+.tubepress_thumbs {float:none;margin-top:0;padding:0;}
 .tubepress_thumb {overflow:visible;margin:0 2px 5px 0;width:105px;}
 /**********************************************/
 /* Lightbox
