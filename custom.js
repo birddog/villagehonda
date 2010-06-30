@@ -1508,11 +1508,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				var next = $('#showcase-flyout .showcase-next');
 				prev.bind('click.vhover', function() {
 					var left = vhover.css('left') + 163;
-					vhover.css({left: left});
+					$('#nav .page-item-151').find(vhover).css({left: left});
 				});
 				next.bind('click.vhover', function() {
 					var left = vhover.css('left') - 163;
-					vhover.css({left: left});				
+					$('#nav .page-item-151').find(vhover).css({left: left});				
 				});				
 			}			
 			// Bind hover effect to both hovered element and .vehicle
