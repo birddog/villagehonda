@@ -537,7 +537,7 @@ jQuery(function($) {
       $('#slideout .dt-showcase').clone().appendTo('#menubar .page-item-151')
         .attr('id','showcase-flyout')
         .attr('class','showcase-flyout')
-        .hide();
+        .hide().css({position: 'absolute', left: '-999em'});
       $('#showcase-flyout .showcase-pane').wrapInner('<div class="items"/>');
       $('#showcase-flyout .showcase-pane').prepend('<div class="showcase-prev"></div>');
       $('#showcase-flyout .showcase-pane').append('<div class="showcase-next"></div>');
@@ -550,9 +550,9 @@ jQuery(function($) {
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
 	
-	$('.page-item-151').hover(function(){
+/*	$('.page-item-151').hover(function(){
 		$('#showcase-flyout').show();
-	});
+	});*/
 	
 /*	original flyout display code 
 	$('.page-item-151').hover(function(){
