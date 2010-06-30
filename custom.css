@@ -1031,8 +1031,8 @@ div.p3 span{font-size:10px;}
 /* TubePress
 /*************************************/
 .tubepress_container {}
-.tubepress_container .tubepress_normal_embedded_wrapper,
-.tubepress_container .tubepress_thumbnail_area{float:left;width:340px;margin-left:5px;}
+.tubepress_container .tubepress_normal_embedded_wrapper{float:left;}
+.tubepress_container .tubepress_thumbnail_area{width:340px;margin-left:5px;}
 .tubepress_thumb {overflow:visible;margin:0 2px 2px 0;width:105px;}
 /**********************************************/
 /* Lightbox
