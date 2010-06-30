@@ -549,14 +549,16 @@ jQuery(function($) {
       );*/
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
-	$('.page-item-151').hover(function(){
+	$('.page-item-151, .vhover, .vehicle, #showcase-flyout').hover(function(){
 		$('#showcase-flyout').show();
+	}, function() {
+		$('#showcase-flyout').hide();	
 	});
 	
-	$('#menubar .page_item').hover(function(){
+/*	$('#menubar .page_item').hover(function(){
 		if($(this).attr('class')!='page_item page-item-151')
 			$('#showcase-flyout').hide();
-	});
+	});*/
     $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
   }
 
