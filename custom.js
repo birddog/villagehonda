@@ -546,7 +546,7 @@ jQuery(function($) {
       $('#showcase-flyout .showcase-pane').wrapInner('<div class="items"/>');
       $('#showcase-flyout .showcase-pane').prepend('<div class="showcase-prev"></div>');
       $('#showcase-flyout .showcase-pane').append('<div class="showcase-next"></div>');
-      $('#showcase-flyout .showcase-pane').scrollable({speed:100, size:5, clickable:false, items:'.items', next:'.showcase-next', prev:'.showcase-prev', item:'.vehicle'});
+      $('#showcase-flyout .showcase-pane').scrollable({speed:100, size:5, clickable:false, items:'.items', next:'.showcase-next', prev:'.showcase-prev', item:'.vehicle, .vhover'});
 /*      Commented out so jQuery vHover plugin takes over.
 	$('#showcase-flyout .showcase-pane .vehicle').hover(
         function(){ $(this).children('.trims').show(); },
