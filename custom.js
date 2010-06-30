@@ -1467,9 +1467,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				switch(base.options.mode) {
 					case 1: 
 						var position = $this.position();	// current position of elements
+						var left = position.left;
 						break;
 					case 2:
 						var position = $this.offset();	// current position of elements
+						var left = position.left - 10000;
 						break;
 				}				
 
@@ -1478,7 +1480,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 					
 				// Cache hover element in variable
 				var vhover = $('body').find('#' + id + '-vhover-' + index);
-				vhover.css({top: position.top, left: position.left}).hide();
+				vhover.css({top: position.top, left: left}).hide();
 			
 				//  Bind hovers to elements
 				base.hoverEffect(base.$el, $this, index, base.options);

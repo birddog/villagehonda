@@ -283,7 +283,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 .nav .page-item-151.sfhover #showcase-flyout{left: auto;}
 #showcase-flyout{
 	position:	absolute;
-	left:-999em;
+	left:-10000px;
 	overflow:hidden;
 	width:838px;
 	height:95px;
