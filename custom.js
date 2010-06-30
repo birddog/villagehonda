@@ -1504,7 +1504,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		base.hoverEffect = function (showcase, vehicle, left, vhover, index, options) {
 			// Bind hover effect to both hovered element and .vehicle
 			vehicle.add(vhover).bind('mouseenter', function() {
-				var currentLeft = $(showcase).find(vehicle).position().left;
+				var currentLeft = $(showcase).find(vehicle).position().left + 5;
 				if(currentLeft != left && options.mode == 2){
 					left = $(this).position().left + 5;
 					vhover.css({left: left}).stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
