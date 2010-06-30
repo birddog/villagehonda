@@ -1471,7 +1471,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 						break;
 					case 2:
 						var position = $this.offset();	// current position of elements
-						var left = position.left - 10000;
+						var left = position.left - (-10000);
 						break;
 				}				
 
