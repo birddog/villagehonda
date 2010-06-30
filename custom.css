@@ -1031,7 +1031,7 @@ div.p3 span{font-size:10px;}
 /* TubePress
 /*************************************/
 .tubepress_container {}
-.tubepress_container .tubepress_normal_embedded_wrapper{float:left;margin-bottom:10px;}
+.tubepress_container .tubepress_normal_embedded_wrapper{float:left;margin:0 5px 5px 0;}
 .tubepress_container .tubepress_thumbnail_area{
 	margin-top:0;
 }
