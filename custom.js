@@ -556,8 +556,8 @@ jQuery(function($) {
 /*	$('#menubar .page_item').hover(function(){
 		if($(this).attr('class')!='page_item page-item-151')
 			$('#showcase-flyout').hide();
-	});
-    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});*/
+	});*/
+    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
   }
 
 
