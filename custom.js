@@ -549,15 +549,20 @@ jQuery(function($) {
       );*/
       $('#showcase-flyout .showcase-tabs').tabs('#showcase-flyout > .showcase-pane');
     }
+	
 	$('.page-item-151').hover(function(){
 		$('#showcase-flyout').show();
-	}, function() {});
+	});
 	
-/*	$('#menubar .page_item').hover(function(){
+/*	original flyout display code 
+	$('.page-item-151').hover(function(){
+		$('#showcase-flyout').show();
+	});
+	$('#menubar .page_item').hover(function(){
 		if($(this).attr('class')!='page_item page-item-151')
 			$('#showcase-flyout').hide();
-	});*/
-    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});
+	});
+    $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});*/
   }
 
 
