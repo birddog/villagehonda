@@ -19,11 +19,11 @@ p, .text, td,.textgridwidget{font-size:11px;font-weight:normal;text-align:left;c
 p{margin:0 0 0.5em;}
 
 h1,h2,h3,h4,h5{color:#999;font-weight:bold;margin-bottom:0.75em;}
-h1{font-size:18px;}
-h2{font-size:16px;color:#e21c22;}
-h3{font-size:14px;}
-h4{font-size:13px;color:#222;}
-h5{font-size:12px;}
+h1{font-size:16px;color:#e21c22;}
+h2{font-size:14px;color:#222;}
+h3{font-size:13px;}
+h4{font-size:12px;color:#222;}
+h5{font-size:11px;}
 
 ul, ol{color:#999;}
 td li{text-align:left;}
@@ -1035,7 +1035,7 @@ div.p3 span{font-size:10px;}
 .tubepress_container .tubepress_thumbnail_area{
 	margin-top:0;
 }
-.tubepress_thumbs {float:none;margin-top:1em;}
+.tubepress_thumbs {float:none;margin-top:26px;}
 .tubepress_thumb {overflow:visible;margin:0 2px 5px 0;width:105px;}
 /**********************************************/
 /* Lightbox
