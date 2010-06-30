@@ -64,7 +64,7 @@ body.page-parent #home-content{position:relative;top:-15px;z-index:30;}
 **************************************/
 #menubar{width:960px;height:34px;padding-left:0;position:relative;z-index:50;}
 #menubar .nav li{}
-#menubar .nav li a{display:block;background-image:url('/wp-content/uploads/menubar-nav-bg.png');padding:6px 0 0 7px;height:28px;font-size:12px;}
+#menubar .nav li > a{display:block;background-image:url('/wp-content/uploads/menubar-nav-bg.png');padding:6px 0 0 7px;height:28px;font-size:12px;}
 #menubar .nav li a:hover,
 #menubar .nav li a .current-page{color:#e21c22;}
 #menubar .nav li.page-item-149 a{background-position:left 0;width:65px;padding-left:11px;}
@@ -78,11 +78,11 @@ body.page-parent #home-content{position:relative;top:-15px;z-index:30;}
 #menubar .nav li.page-item-165 a{background-position:-735px 0;width:71px;}
 #menubar .nav li.last{background-image:url('/wp-content/uploads/menubar-nav-bg.png');background-position:-814px 0;width:147px;height:34px;}/* menubar overrides */
 #menubar .nav ul li a{font:inherit;}
-.nav li a,
-.nav li a:visited .nav li li a,
-.nav li li a:visited,
-.nav li li a:hover,
-.nav li li a:active{margin:0;position:inherit;float:none;}
+.nav li > a,
+.nav li > a:visited,
+.nav li > li a:visited,
+.nav li > li a:hover,
+.nav li > li a:active{margin:0;position:inherit;float:none;}
 
 /**************************************
 * Footer
