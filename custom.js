@@ -767,10 +767,13 @@ $('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
-	$('#website .showcase-flyout').vHover({mode: 2, showcasePane: '.items', defaultLeft: '211.5px' });
-	//$('#home-content .showcase-slider').vHover({showcasePane: '.showcaseslider-pane', defaultLeft: 'auto' });
-	$('#slideout .dt-showcase').vHover(); 			// slideout
-	$('#dt-showcase').vHover();											// showcase page
+	$('#website .showcase-flyout').vHover({
+																	  mode: 2, 
+																	  showcasePane: '.items', 
+																	  defaultLeft: '211.5px' 
+															});		// flyout 
+	$('#slideout .dt-showcase').vHover(); 	// slideout
+	$('#dt-showcase').vHover();					// new vehicle page
 	
 	$('#showcase-flyout .vehicle').hover(function() {
 			$(this).find('.trims').show();
