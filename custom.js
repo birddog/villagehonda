@@ -552,7 +552,7 @@ jQuery(function($) {
     $('.page-item-151').add('.vhover').hover(function(){
 		$('#showcase-flyout').show();
     } , function() {
-		$('#showcase-flyout').show();
+		$('#showcase-flyout').hide();
 	});
 	
 //	$('#menubar .page_item').hover(function(){
