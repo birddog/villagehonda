@@ -761,7 +761,7 @@ jQuery(function($) {
 //============================= //
 $('.tubepress_container, .tubepress_thumbnail_area .tubepress_thumbs').after('<div class="clear"></div>');
 $('.tubepress_thumbnail_area .tubepress_thumbs').append('<div class="clear"></div>');
-$('.tubepress_embedded_title').wrap('<h1></h1>');
+$('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>');
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
