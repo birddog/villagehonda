@@ -551,9 +551,7 @@ jQuery(function($) {
     }
 	$('.page-item-151').hover(function(){
 		$('#showcase-flyout').show();
-	}, function() {
-		$('#showcase-flyout').hide();	
-	});
+	}, function() {});
 	
 /*	$('#menubar .page_item').hover(function(){
 		if($(this).attr('class')!='page_item page-item-151')
