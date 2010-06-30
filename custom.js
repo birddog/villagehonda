@@ -1,3 +1,5 @@
+
+
 /*  9/28/2009
 		PikaChoose
  	  Jquery plugin for photo galleries
@@ -370,6 +372,9 @@ jQuery.fn.PikaChoose = jQuery.iPikaChoose.build;
  Custom JS functions for Bird Dog
 ******************************************************************************/
 jQuery(function($) {
+	if ($('#menubar').length)
+		$('#menubar .nav ul').attr('id', 'nav');
+
 
   $.fn.log = function (msg) {
     console.log("%s: %o", msg, this);
@@ -564,20 +569,6 @@ jQuery(function($) {
 	});
     $('#showcase-flyout').hover(function(){}, function(){$('#showcase-flyout').hide();});*/
   }
-
-sfHover = function() {
-	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
-	for (var i=0; i<sfEls.length; i++) {
-		sfEls[i].onmouseover=function() {
-			this.className+=" sfhover";
-		}
-		sfEls[i].onmouseout=function() {
-			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
-		}
-	}
-}
-if (window.attachEvent) window.attachEvent("onload", sfHover);
-
 
   /* quick find test drive */
   $(".frm-btn-new-test-drive").click(function(){
@@ -1547,3 +1538,16 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
     };
 
 })(jQuery);
+
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
