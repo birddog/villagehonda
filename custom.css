@@ -356,6 +356,9 @@ body.logged-in #showcase-flyout {top:124px;}
 	text-align:center!important;
 	margin:0 0 0 19px!important;
 }
+.vhover .vehicle .image img{
+	margin:-10px 0 0 -23px;
+}
 .vhover .vehicle .name {
 	color:#E21C22!important;
 	text-align:center!important;
