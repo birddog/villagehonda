@@ -762,13 +762,15 @@ jQuery(function($) {
 $('.tubepress_container, .tubepress_thumbnail_area .tubepress_thumbs').after('<div class="clear"></div>');
 $('.tubepress_thumbnail_area .tubepress_thumbs').append('<div class="clear"></div>');
 $('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>');
+
+
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
-	$('#website .showcase-flyout').vHover({showcasePane: '.items', defaultLeft: '211.5px' });
+	$('#website .showcase-flyout').vHover({mode: 2, showcasePane: '.items', defaultLeft: '211.5px' });
 	//$('#home-content .showcase-slider').vHover({showcasePane: '.showcaseslider-pane', defaultLeft: 'auto' });
-	$('#slideout .dt-showcase').vHover(); 	// slideout
-	$('#dt-showcase').vHover();					// showcase page
+	$('#slideout .dt-showcase').vHover(); 			// slideout
+	$('#dt-showcase').vHover();											// showcase page
 	
 	$('#showcase-flyout .vehicle').hover(function() {
 			$(this).find('.trims').show();
@@ -1433,25 +1435,34 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			// Put your initialization code here
 			var vehicle = base.$el.find('.vehicle');				// the items to clone and make hovers out of
 			var baseDisplay = base.$el.css('display');	// Get current display setting of showcase to revert to
-			var vis = base.$el.is(':visible');							// Showcase visiblity
 			var id = base.$el.attr('id');									// Get showcase ID
 
-			// if not visible display off screen for loop
-			if (!vis && id == 'showcase-slideout') {
-				base.$el.parent().parent().css({left:'-10000px'}).show();
-			} else if (!vis && id == 'showcase-flyout') {
-				base.$el.show();
+			switch(options.mode) {
+				case 1: 
+					base.$el.parent().parent().css({left:'-10000px'}).show();
+					break;
+				case 2:
+					base.$el.show();
+					break;
+				case 3:
+					break;
 			}
 				
 			// Loop through items to make clones and set events
 			vehicle.each(function(index, value) {
 				var $this = $(this); 											// .vehicle
 				var clone = $this.clone();								// cloned .vehicle
-				if(id == 'showcase-flyout'){
-					var position = $this.offset();						// current position of elements
-				}else {
-					var position = $this.position();					// current position of elements
-				}
+				
+				switch(options.mode) {
+					case 1: 
+						var position = $this.position();	// current position of elements
+						break;
+					case 2:
+						var position = $this.offset();	// current position of elements
+						break;
+					case 3:
+						break;
+				}				
 
 				// Create hover elements at bottom of page
 				base.createvHoverElement(base.$el, clone, index, base.options);
@@ -1465,27 +1476,36 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			});
  			
 			// reset showcase to defaults after loop is done and items are created.
-			if (!vis && id == 'showcase-slideout') {
-				base.$el.parent().parent().css({left: base.options.defaultLeft, display: 'none' });	
-			} else if(!vis && id == 'showcase-flyout'){
-				base.$el.hide();
-			}
+				switch(options.mode) {
+					case 1: 
+						base.$el.parent().parent().css({left: base.options.defaultLeft, display: 'none' });	
+						break;
+					case 2:
+						base.$el.hide();
+						break;
+					case 3:
+						break;
+				}
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
-				if(showcase.attr('id') == 'showcase-flyout') {
-					$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
-				} else {
-					showcase.find(options.showcasePane).append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');
-				}
-				
+			switch(options.mode) {
+				case 1: 
+						showcase.find(options.showcasePane).append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
+						break;
+				case 2: 
+						$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
+						break;	
+				case 3: 
+						break;		
+			}
 				clone.find('br:last').remove();
 				return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
 
-		base.hoverEffect = function (showcase, $this, vhover, index, options) {
+		base.hoverEffect = function (showcase, vehicle, vhover, index, options) {
 				// Bind hover effect to both hovered element and .vehicle
-				$this.add(vhover).bind('mouseenter', function() {
+				vehicle.add(vhover).bind('mouseenter', function() {
 					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
 				 }).bind('mouseleave', function(){
 					vhover.stop(true).animate({ opacity: 0.0 }, options.fadeOutSpeed, function(){
@@ -1499,6 +1519,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 	}
 
     $.vHover.defaultOptions = {
+		mode: 1,
 		fadeInSpeed:200,
 		fadeOutSpeed:150,
 		showcasePane: '.showcase-pane',
