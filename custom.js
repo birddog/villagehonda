@@ -1506,13 +1506,12 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			if(options.mode == 2){
 				var prev = showcase.find('.showcase-prev');
 				var next = showcase.find('.showcase-next');
+				var newLeft = vhover.css('left')
 				prev.live('click', function(e) {
-					var left = vhover.css('left') + 163;
-					$('#nav .page-item-151').find(vhover).css({left: left});
+					$('#nav .page-item-151').find(vhover).css({left: (newLeft + 163)});
 				});
 				next.live('click', function(e) {
-					var left = vhover.css('left') - 163;
-					$('#nav .page-item-151').find(vhover).css({left: left});				
+					$('#nav .page-item-151').find(vhover).css({left: (newLeft - 163)});				
 				});				
 			}			
 			// Bind hover effect to both hovered element and .vehicle
