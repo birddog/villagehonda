@@ -1504,15 +1504,15 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		base.hoverEffect = function (showcase, vehicle, vhover, index, options) {
 			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
 			if(options.mode == 2){
-				var vhover2 = $('body').find('#' + id + '-vhover-' + index);
+				
 				var prev = showcase.find('.showcase-prev');
 				var next = showcase.find('.showcase-next');
-				var newLeft = vhover2.css('left');
+				var newLeft = vhover.css('left');
 				prev.bind('click', function() {
-					vhover2.css({left: (newLeft + 163)});
+					vhover.css({left: (newLeft + 163)});
 				});
 				next.bind('click', function() {
-					vhover2.css({left: (newLeft - 163)});				
+					vhover.css({left: (newLeft - 163)});				
 				});				
 			}			
 			// Bind hover effect to both hovered element and .vehicle
