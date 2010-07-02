@@ -1488,12 +1488,12 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				var prev = showcase.find('.showcase-prev');
 				var next = showcase.find('.showcase-next');
 				vhover.each(function() {
-									 
+					var left = $(this).css('left'); 
 					prev.bind('click', function() {
-						$(this).css({left: ($(this).css('left') + 163)});
+						$(this).css({left: (left+ 163)});
 					});
 					next.bind('click', function() {
-						$(this).css({left: ($(this).css('left') - 163)});				
+						$(this).css({left: (left - 163)});				
 					});
 					
 				});
