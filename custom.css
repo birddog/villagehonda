@@ -405,7 +405,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 }
 .dt-widgets.showcasesliderwidget .showcase-slider .scrollable .showcasesliderwidget-prev {
 background:url("/wp-content/plugins/dealertrend-widgets/images/arrow-left.png") no-repeat scroll center center white;
-float:right;
+float:left;
 }
 /***************
 /*	trim hover
