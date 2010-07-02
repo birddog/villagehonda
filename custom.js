@@ -1507,15 +1507,17 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				
 				var prev = showcase.find('.showcase-prev');
 				var next = showcase.find('.showcase-next');
-				showcase.parent().scrollable({speed:100, size:5, clickable:false, items:'.page-item-151', next:next, prev:prev, item:'.vhover'});
-				
-/*				var newLeft = vhover.css('left');
-				prev.bind('click', function() {
-					vhover.css({left: (newLeft + 163)});
+				vhover.each(function() {
+									 
+					prev.bind('click', function() {
+						$(this).css({left: ($(this).css('left') + 163)});
+					});
+					next.bind('click', function() {
+						$(this).css({left: ($(this).css('left') - 163)});				
+					});
+					
 				});
-				next.bind('click', function() {
-					vhover.css({left: (newLeft - 163)});				
-				});	*/			
+				
 			}			
 			// Bind hover effect to both hovered element and .vehicle
 			vehicle.add(vhover).bind('mouseenter', function() {
