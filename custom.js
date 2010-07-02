@@ -1483,10 +1483,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				base.hoverEffect(base.$el, $this, vhover, index, base.options);
 			});
 			
-/*			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
-			if(options.mode == 2){
-				var prev = showcase.find('.showcase-prev');
-				var next = showcase.find('.showcase-next');
+/*			
+			var prev = showcase.find('.showcase-prev');
+			var next = showcase.find('.showcase-next');
+			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
+			if(options.mode == 2 && prev.length && next.length){
 				vhover.each(function() {
 					var left = $(this).css('left'); 
 					prev.bind('click', function() {
