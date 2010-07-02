@@ -546,7 +546,7 @@ jQuery(function($) {
       $('#showcase-flyout .showcase-pane').wrapInner('<div class="items"/>');
       $('#showcase-flyout .showcase-pane').prepend('<div class="showcase-prev"></div>');
       $('#showcase-flyout .showcase-pane').append('<div class="showcase-next"></div>');
-      $('#showcase-flyout .showcase-pane').scrollable({speed:100, size:5, clickable:false, items:'.items', next:'.showcase-next', prev:'.showcase-prev', item:'.vehicle, .vhover'});
+      $('#showcase-flyout .showcase-pane').scrollable({speed:100, size:5, clickable:false, items:'.items', next:'.showcase-next', prev:'.showcase-prev', item:'.vehicle'});
 /*      Commented out so jQuery vHover plugin takes over.
 	$('#showcase-flyout .showcase-pane .vehicle').hover(
         function(){ $(this).children('.trims').show(); },
@@ -1504,16 +1504,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		base.hoverEffect = function (showcase, vehicle, vhover, index, options) {
 			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
 			if(options.mode == 2){
-				
-				var prev = showcase.find('.showcase-prev');
-				var next = showcase.find('.showcase-next');
-				var newLeft = vhover.css('left');
-				prev.bind('click', function() {
-					vhover.css({left: (newLeft + 163)});
-				});
-				next.bind('click', function() {
-					vhover.css({left: (newLeft - 163)});				
-				});				
+				showcase.parent().find('.vhover').scrollable({speed:100, size:5, clickable:false, items:'.page-item-151', next:'.showcase-next', prev:'.showcase-prev', item:'.vhover'});
 			}			
 			// Bind hover effect to both hovered element and .vehicle
 			vehicle.add(vhover).bind('mouseenter', function() {
