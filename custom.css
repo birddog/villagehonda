@@ -399,7 +399,14 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	display:block;
 	font-size:10px;
 }
-
+.dt-widgets.showcasesliderwidget .showcase-slider .scrollable .showcasesliderwidget-next {
+	background:url("/wp-content/plugins/dealertrend-widgets/images/arrow-right.png") no-repeat scroll center center white;
+	float:right;
+}
+.dt-widgets.showcasesliderwidget .showcase-slider .scrollable .showcasesliderwidget-prev {
+background:url("/wp-content/plugins/dealertrend-widgets/images/arrow-left.png") no-repeat scroll center center white;
+float:right;
+}
 /***************
 /*	trim hover
 /***************/

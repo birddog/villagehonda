@@ -1477,11 +1477,27 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 					
 				// Cache hover element in variable
 				var vhover = $('body').find('#' + id + '-vhover-' + index);
-				vhover.css({top: top, left: left}).hide();
+				vhover.css({top: top, left: left}).hide();					
 			
 				//  Bind hovers to elements
 				base.hoverEffect(base.$el, $this, vhover, index, base.options);
 			});
+			
+			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
+			if(options.mode == 2){
+				var prev = showcase.find('.showcase-prev');
+				var next = showcase.find('.showcase-next');
+				vhover.each(function() {
+									 
+					prev.bind('click', function() {
+						$(this).css({left: ($(this).css('left') + 163)});
+					});
+					next.bind('click', function() {
+						$(this).css({left: ($(this).css('left') - 163)});				
+					});
+					
+				});
+			}	
  			
 			// reset showcase to defaults after loop is done and items are created.
 			switch(base.options.mode) {
@@ -1502,23 +1518,6 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		}
 
 		base.hoverEffect = function (showcase, vehicle, vhover, index, options) {
-			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
-			if(options.mode == 2){
-				
-				var prev = showcase.find('.showcase-prev');
-				var next = showcase.find('.showcase-next');
-				vhover.each(function() {
-									 
-					prev.bind('click', function() {
-						$(this).css({left: ($(this).css('left') + 163)});
-					});
-					next.bind('click', function() {
-						$(this).css({left: ($(this).css('left') - 163)});				
-					});
-					
-				});
-				
-			}			
 			// Bind hover effect to both hovered element and .vehicle
 			vehicle.add(vhover).bind('mouseenter', function() {
 					vhover.stop(true).css({opacity: 0.0}).show().animate({ opacity: 1.0 }, options.fadeInSpeed);
