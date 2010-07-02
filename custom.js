@@ -1483,14 +1483,14 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				base.hoverEffect(base.$el, $this, vhover, index, base.options);
 			});
 			
-			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
+/*			// for flyout slider showcase and slider showcase we have to move vhovers on scroll of the showcase.
 			if(options.mode == 2){
 				var prev = showcase.find('.showcase-prev');
 				var next = showcase.find('.showcase-next');
 				vhover.each(function() {
 					var left = $(this).css('left'); 
 					prev.bind('click', function() {
-						$(this).css({left: (left+ 163)});
+						$(this).css({left: (left + 163)});
 					});
 					next.bind('click', function() {
 						$(this).css({left: (left - 163)});				
@@ -1498,7 +1498,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 					
 				});
 			}	
- 			
+*/
 			// reset showcase to defaults after loop is done and items are created.
 			switch(base.options.mode) {
 				case 1: 
