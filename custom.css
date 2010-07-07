@@ -1064,6 +1064,7 @@ div.p3 span{font-size:10px;}
 #overlay{background-image:url(/wp-content/themes/dt-bird-dog/javascripts/lightbox/overlay.png);}
 * html #overlay{background-color:#333;back\ground-color:transparent;background-image:url(/wp-content/themes/dt-bird-dog/javascripts/lightbox/blank.gif);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/wp-content/themes/dt-bird-dog/javascripts/lightbox/overlay.png",sizingMethod="scale");}
 
+#photo-gallery-overlay { z-index:200; position:absolute; top:0; left:0; background:black; opacity:0.75; width:100%; }
 #photo-gallery { position:fixed; width:780px; height:660px; background:#eee; border-radius:7px; padding:10px 5px; z-index:201; }
 #photo-gallery #close-gallery { position:absolute; right:5px; top:5px; cursor:pointer; }
 #photo-gallery .photos { text-align: center; }
