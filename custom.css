@@ -1063,3 +1063,15 @@ div.p3 span{font-size:10px;}
 #overlay img{border:none;}
 #overlay{background-image:url(/wp-content/themes/dt-bird-dog/javascripts/lightbox/overlay.png);}
 * html #overlay{background-color:#333;back\ground-color:transparent;background-image:url(/wp-content/themes/dt-bird-dog/javascripts/lightbox/blank.gif);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/wp-content/themes/dt-bird-dog/javascripts/lightbox/overlay.png",sizingMethod="scale");}
+
+#photo-gallery { position:fixed; width:780px; height:660px; background:#eee; border-radius:7px; padding:10px 5px; z-index:201; }
+#photo-gallery #close-gallery { position:absolute; right:5px; top:5px; cursor:pointer; }
+#photo-gallery .photos { text-align: center; }
+#photo-gallery .photos .photo img {width:770px;margin:0 auto;}
+#photo-gallery .thumbnails{position:absolute;bottom:0;width:775px;height:70px;margin:2px;}
+#photo-gallery .thumbnails .scrollable{display:inline-block;position:relative;overflow:hidden;width:699px;height:66px;padding:0;}
+#photo-gallery .thumbnails .scrollable .items{width:30000em;position:absolute;text-align:center;}
+#photo-gallery .thumbnails .scrollable .items .item{float:left;text-align:center;}
+#photo-gallery .thumbnails .scrollable .items .item img{height:55px;width:75px;margin:5px 5px 5px 5px;padding:0px;border:1px solid #999;}
+#photo-gallery .thumbnails .prev{display:inline-block;width:34px;height:68px;cursor:pointer;background:url(http://assets1.dealertrend.com/images/themes/vehicle_inventory/bird_dog/thumbnails-begin.png) no-repeat;}
+#photo-gallery .thumbnails .next{display:inline-block;width:36px;height:68px;cursor:pointer;background:url(http://assets2.dealertrend.com/images/themes/vehicle_inventory/bird_dog/thumbnails-end.png) no-repeat;}

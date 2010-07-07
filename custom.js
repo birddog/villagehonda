@@ -450,11 +450,31 @@ jQuery(function($) {
     });
   }
 
-  jQuery.fn.center = function () {
-    this.css("position","absolute");
-    this.css("top", ( $(window).height() - this.height() ) / 2+$(window).scrollTop() + "px");
-    this.css("left", ( $(window).width() - this.width() ) / 2+$(window).scrollLeft() + "px");
-    return this;
+  /* Better center code */
+  if (!$.center) {
+    $.fn.center = function(options) {
+      var pos = {
+        sTop : function() {
+          return window.pageYOffset || document.documentElement && document.documentElement.scrollTop ||	document.body.scrollTop;
+        },
+        wHeight : function() {
+          return window.innerHeight || document.documentElement && document.documentElement.clientHeight || document.body.clientHeight;
+        }
+      };
+      return this.each(function(index) {
+        if (index == 0) {
+          var $this = $(this);
+          var elHeight = $this.outerHeight();
+          var elTop = pos.sTop() + (pos.wHeight() / 2) - (elHeight / 2);
+          $this.css({
+            position: 'absolute',
+            margin: '0',
+            top: elTop,
+            left: (($(window).width() - $this.outerWidth()) / 2) + 'px'
+          });
+        }
+      });
+    };
   }
 
   /* Bumpup boxes on homepages */
@@ -762,9 +782,59 @@ jQuery(function($) {
 
 
   /* Detail page Lightbox */
-  if ($('.detail .photos a.photo').length) {
-    $('.bird_dog .detail .photos .photo').attr('rel','lightbox');
+  // if ($('.detail .photos a.photo').length) {
+  //   $('.bird_dog .detail .photos .photo').attr('rel','lightbox');
+  // }
+  if ($('.detail .photos').length && $('.detail .thumbnails').length) {
+    /* Lightbox Photo copy */
+    $('.bird_dog .detail .photos .photo').click(function(){
+      /* Dark background overlay */
+    	$("body").append("<div id='overlay'></div>");
+    	$("#overlay").css({
+    	  height:$(document).height()
+    	}).fadeIn();
+
+      /* Photo Gallery Box */
+      $("body").append("<div id='photo-gallery'></div>");
+      $("#photo-gallery").center().fadeIn();
+
+      /* Close button */
+      $('#photo-gallery').append(
+        "<img id='close-gallery' src='http://www.woodridgeford.com/wp-content/themes/dt-bird-dog/javascripts/lightbox/close.gif' alt='X'/>"
+      );
+
+      /* Clone photo and thumbs */
+      $('.bird_dog .detail .photos').clone().appendTo('#photo-gallery');
+      $('.bird_dog .detail .thumbnails').clone().appendTo('#photo-gallery');
+
+      /* Use large photo */
+      $('#photo-gallery .photos .photo img').attr(
+        'src', $('#photo-gallery .photos .photo').attr('href')
+      );
+
+      /* Scrollable for thumbs */
+      $('#photo-gallery .thumbnails .scrollable').scrollable({size:8, clickable:false});
+
+      /* Detail thumb to photo replacement */
+      $('#photo-gallery .thumbnails .items .item').click(
+        function(){
+          $('#photo-gallery .photos .photo').attr('href', $(this).attr('href'));
+          $('#photo-gallery .photos .photo img').attr('src', $(this).attr('href'));
+          return false;
+        }
+      );
+
+      /* Close LB */
+    	$("#overlay, #close-gallery").click(function(){
+    		$("#photo-gallery").fadeOut().remove();
+    		$("body #overlay").fadeOut().remove();
+    	});
+
+      return false;
+    });
   }
+
+
 //============================= //
 //			TUBE PRESS								  //
 //============================= //
