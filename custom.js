@@ -826,8 +826,8 @@ jQuery(function($) {
 
       /* Close LB */
     	$("#overlay, #close-gallery").click(function(){
-    		$("#photo-gallery").fadeOut().remove();
-    		$("body #photo-gallery-overlay").fadeOut().remove();
+    		$("#photo-gallery").remove();
+    		$("#photo-gallery-overlay").remove();
     	});
 
       return false;
