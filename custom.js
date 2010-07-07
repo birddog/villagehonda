@@ -789,10 +789,7 @@ jQuery(function($) {
     /* Lightbox Photo copy */
     $('.bird_dog .detail .photos .photo').click(function(){
       /* Dark background overlay */
-    	$("body").append("<div id='overlay'></div>");
-    	$("#overlay").css({
-    	  height:$(document).height()
-    	}).fadeIn();
+    	$("#overlay").fadeIn();
 
       /* Photo Gallery Box */
       $("body").append("<div id='photo-gallery'></div>");
@@ -827,7 +824,7 @@ jQuery(function($) {
       /* Close LB */
     	$("#overlay, #close-gallery").click(function(){
     		$("#photo-gallery").fadeOut().remove();
-    		$("body #overlay").fadeOut().remove();
+    		$("body #overlay").fadeOut();
     	});
 
       return false;
