@@ -38,9 +38,9 @@ body{font:normal 11px helvetica; padding:0; margin:0 auto;}
 * Navigation *
 ************************************************/
 /*Menu Background*/
-.nav{position:relative;}
+/*.nav{position:relative;}
 .nav ul{float:left;list-style:none;margin:0px;padding:0px;}
-.nav li{float:left;list-style:none;margin:0px;padding:0px;}
+.nav li{float:left;list-style:none;margin:0px;padding:0px;}*/
 /*Menu Foreground*/
 /*.nav li a,
 .nav li a:visited
