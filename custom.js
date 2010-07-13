@@ -846,15 +846,17 @@ $('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>
 //============================= //
 //			Showcase Hover v2					  //
 //============================= //
-	$('#nav .showcase-flyout').vHover({mode: 2, showcasePane: '.items', defaultLeft: '211.5px'});	// flyout 
-	$('#slideout .dt-showcase').vHover(); 	// slideout
+	//$('#nav .showcase-flyout').vHover({mode: 2, showcasePane: '.items', defaultLeft: '211.5px'});	// flyout 
+
+	$('#slideout .dt-showcase').vHover(); 										// slideout
 	$('#post-43 #dt-showcase').vHover({mode: 3});					// new vehicle page
 	
-/*	$('#showcase-flyout .vehicle').hover(function() {
+	$('#showcase-flyout .vehicle').hover(function() {
 			$(this).find('.trims').show();
 	}, function() {
 			$(this).find('.trims').hide();
-	});*/
+	});
+	
 }); 
 
 /**
