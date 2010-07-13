@@ -1488,7 +1488,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 
 /*!
 	* jQuery Showcase Hover
-	* http://www.bcccreative.com
+	* http://www.chadpayne.ca
 	*
 	* Copyright 2010, Chad Payne
 	*
@@ -1531,13 +1531,9 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			vehicle.each(function(index, value) {
 				var $this = $(this); 											// .vehicle
 				var clone = $this.clone();								// cloned .vehicle
-				var position = $this.position();	// current position of elements	
+				var position = $this.position();						// current position of elements	
 				
 				switch(base.options.mode) {
-					case 1: 
-						var left = position.left;
-						var top = position.top;
-						break;
 					case 2:
 						var left = position.left + 5;
 						var top = '34px';
@@ -1587,7 +1583,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
-			if(options.mode == (1 || 3)) {
+			if(options.mode == 1 || options.mode == 3) {
 					showcase.find(options.showcasePane).append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
 			} else {
 					$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');			
