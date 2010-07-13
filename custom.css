@@ -328,9 +328,10 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	display:block!important;
 	padding:0!important;
 	position:relative;
+	width:160px!important;
 }
 #page-43 #dt-showcase .vehicle {
-	margin:5px!important;	
+	margin:0 5px 10px 0!important;	
 }
 .vehicle .trims {display:none;}
 .vehicle .name {
