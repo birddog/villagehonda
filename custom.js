@@ -1588,7 +1588,11 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			} else {
 					$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');			
 			}
+			// remove rogue line breaks
 			clone.find('br').remove();
+			// force small image 
+			clone.find('.image img').attr({width:'130px', height:'80px'});
+			// add clone into created vhover element.
 			return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
 
