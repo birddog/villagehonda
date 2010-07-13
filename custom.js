@@ -848,7 +848,7 @@ $('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>
 //============================= //
 	$('#nav .showcase-flyout').vHover({mode: 2, showcasePane: '.items', defaultLeft: '211.5px'});	// flyout 
 	$('#slideout .dt-showcase').vHover(); 	// slideout
-	$('#dt-showcase').vHover();					// new vehicle page
+	$('#dt-showcase').vHover({mode: 1, showcasePane: '.showcase-pane'});					// new vehicle page
 	
 /*	$('#showcase-flyout .vehicle').hover(function() {
 			$(this).find('.trims').show();
@@ -1523,6 +1523,8 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				case 2:
 					base.$el.show();
 					break;
+				case 3:
+					break
 			}
 				
 			// Loop through items to make clones and set events
@@ -1539,6 +1541,10 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 					case 2:
 						var left = position.left + 5;
 						var top = '34px';
+						break;
+					default:
+						var left = position.left;
+						var top = position.top;
 						break;
 				}				
 
@@ -1579,7 +1585,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 		}
 
 		base.createvHoverElement = function(showcase, clone, index, options) {
-			if(options.mode == 1) {
+			if(options.mode == (1 || 2)) {
 					showcase.find(options.showcasePane).append('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');				
 			} else {
 					$('#' + showcase.attr('id')).after('<div id="' + showcase.attr('id') + '-vhover-' + index + '" class="vhover"><div class="mid"><div class="actions"><a href="/new-used-vehicles/new-vehicles/test-drive/"><img src="/wp-content/uploads/btn-testdrive.png" width="94" height="18" /></a><a href="/new-used-vehicles/pre-owned-vehicles/trade-in-evaluation/"><img src="/wp-content/uploads/btn-tradein.png" width="94" height="18" /></a><a href="/contact-us/"><img src="/wp-content/uploads/btn-contact.png" width="94" height="19" /></a></div></div><div class="bot">&nbsp;</div></div>');			
@@ -1605,7 +1611,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 	}
 
     $.vHover.defaultOptions = {
-		mode: 1, 													// mode 1 = grid, mode 2 = slider
+		mode: 1, 													// mode 1 = quickfindGrid, mode 2 = slider, mode 3 = grid
 		fadeInSpeed:200,									// Animation Speed
 		fadeOutSpeed:200,									// Animation Speed
 		showcasePane: '.showcase-pane',		// Container vehicles are in. Used for grid
