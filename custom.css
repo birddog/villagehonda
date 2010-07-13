@@ -330,7 +330,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	width:160px!important;
 }
 #page-43 #dt-showcase .vehicle {
-	margin:0 5px 10px 0!important;	
+	margin:0 10px 10px 0!important;	
 }
 .vehicle .trims {display:none;}
 .vehicle .name {
@@ -347,6 +347,12 @@ hr.blue{border-bottom:1px solid #e21c22;}
 }
 .vhover .bot{background:url(/wp-content/uploads/vhover-bg-bot.png) no-repeat 0 bottom transparent!important;}
 .vhover .mid{background:url(/wp-content/uploads/vhover-bg-mid.png) repeat-y 0 0 transparent!important;margin-top:10px;}
+/*.lrg {
+	width:177px!important;
+	background:url(/wp-content/uploads/vhover-large-bg-top.png) no-repeat 0 top transparent!important;
+}
+.lrg .bot{background:url(/wp-content/uploads/vhover-lrg-bg-bot.png) no-repeat 0 bottom transparent!important;}
+.lrg .mid{background:url(/wp-content/uploads/vhover-lrg-bg-mid.png) repeat-y 0 0 transparent!important;margin-top:10px;}*/
 
 .vhover .vehicle {
 	padding:0!important;

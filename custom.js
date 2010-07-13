@@ -852,9 +852,9 @@ $('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>
 	$('#post-43 #dt-showcase').vHover({mode: 3});					// new vehicle page
 	
 	$('#showcase-flyout .vehicle').hover(function() {
-			$(this).find('.trims').show();
+			$(this).css({left: 0}).find('.trims').show();
 	}, function() {
-			$(this).find('.trims').hide();
+			$(this).css({left:'-10000px'}).find('.trims').hide();
 	});
 	
 }); 
