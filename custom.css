@@ -329,6 +329,9 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	padding:0!important;
 	position:relative;
 }
+#page-43 #dt-showcase .vehicle {
+	margin:0!important;	
+}
 .vehicle .trims {display:none;}
 .vehicle .name {
 	font-weight:bold;
