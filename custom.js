@@ -1581,6 +1581,8 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 				case 1: 
 					base.$el.parent().parent().css({left: base.options.defaultLeft, display: 'none' });	
 					break;
+				default:
+					break;
 			}
 		}
 
