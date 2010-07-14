@@ -1595,7 +1595,7 @@ addLoadEvent(initLightbox);	// run initLightbox onLoad
 			// remove rogue line breaks
 			clone.find('br').remove();
 			// force small image 
-			clone.find('.image img').attr({width: '130', height: '80'});
+			//clone.find('.image img').attr({width: '130', height: '80'});
 			// add clone into created vhover element.
 			return clone.prependTo('#' + showcase.attr('id') + '-vhover-' + index + ' .mid');
 		}
