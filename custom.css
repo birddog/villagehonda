@@ -330,8 +330,12 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	list-style-type:none;
 	background:#ccc;
 	color:#222;
+	width:auto;
 }
-#showcase-flyout .showcse-pane .trims .trim {height:14px;}
+#showcase-flyout .showcse-pane .trims .trim {
+	height:14px!important;
+	background-image:none;
+}
 /***************
 /*	showcase hover
 /***************/
