@@ -330,6 +330,12 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	background:#ccc;
 	color:#222;
 	width:auto;
+	position:absolute;
+	left:15%;
+	top:15%;
+}
+#showcase-flyout .showcse-pane .trims {
+	text-align:left;	
 }
 #showcase-flyout .showcse-pane .trims .trim {
 	height:14px!important;
