@@ -64,7 +64,7 @@ body.page-parent #home-content{position:relative;top:-15px;z-index:30;}
 **************************************/
 #menubar{width:960px;height:34px;padding-left:0;position:relative;z-index:50;}
 #menubar .nav > li{position:relative;}
-#menubar .nav > ul li > a{
+#menubar #nav > li > a{
 	display:block;
 	background-image:url('/wp-content/uploads/menubar-nav-bg.png');
 	padding:6px 0 0 7px;
