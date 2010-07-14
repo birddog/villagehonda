@@ -851,10 +851,15 @@ $('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>
 	$('#slideout .dt-showcase').vHover(); 										// slideout
 	$('#post-43 #dt-showcase').vHover({mode: 3});					// new vehicle page
 	
-	$('#showcase-flyout .vehicle').hover(function() {
-			$(this).css({left: 0}).find('.trims').show();
+	$('#nav .page-item-151 a').hover(function() {
+			$(this).css({left: 0});
 	}, function() {
-			$(this).css({left:'-10000px'}).find('.trims').hide();
+			$(this).css({left:'-10000px'});
+	});
+	$('#nav .showcase-flyout .vehicle').hover(function() {
+		$(this).find('.trims').show();
+	}, function() {
+		$(this).find('.trims').hide();
 	});
 	
 }); 
