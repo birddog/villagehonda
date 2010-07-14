@@ -561,8 +561,8 @@ jQuery(function($) {
     if (!$('#showcase-flyout').length && $('.dt-showcase').length) {
       $('#slideout .dt-showcase').clone().appendTo('#menubar .page-item-151')
         .attr('id','showcase-flyout')
-        .attr('class','showcase-flyout')
-        .hide();
+        .attr('class','showcase-flyout');
+        /* .hide(); */
       $('#showcase-flyout .showcase-pane').wrapInner('<div class="items"/>');
       $('#showcase-flyout .showcase-pane').prepend('<div class="showcase-prev"></div>');
       $('#showcase-flyout .showcase-pane').append('<div class="showcase-next"></div>');
@@ -851,11 +851,6 @@ $('.tubepress_embedded_title').prependTo('.tubepress_container').wrap('<h1></h1>
 	$('#slideout .dt-showcase').vHover(); 										// slideout
 	$('#post-43 #dt-showcase').vHover({mode: 3});					// new vehicle page
 	
-	$('#nav .page-item-151 a').hover(function() {
-			$(this).css({left: 0});
-	}, function() {
-			$(this).css({left:'-10000px'});
-	});
 	$('#nav .showcase-flyout .vehicle').hover(function() {
 		$(this).find('.trims').show();
 	}, function() {
