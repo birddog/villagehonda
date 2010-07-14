@@ -63,7 +63,7 @@ body.page-parent #home-content{position:relative;top:-15px;z-index:30;}
 * Menubar
 **************************************/
 #menubar{width:960px;height:34px;padding-left:0;position:relative;z-index:50;}
-#menubar .nav > li{position:relative;}
+#menubar #nav > li {position:relative;}
 #menubar #nav > li > a{
 	display:block;
 	background-image:url('/wp-content/uploads/menubar-nav-bg.png');
@@ -72,24 +72,24 @@ body.page-parent #home-content{position:relative;top:-15px;z-index:30;}
 	color:#fff;
 	font-family:inherit;
 }
-#menubar .nav > li > a:hover,
-#menubar .nav > li > a .current-page{color:#e21c22;}
-#menubar .nav > ul li.page-item-149 a{background-position:left 0;width:65px;padding-left:11px;}
-#menubar .nav > ul li.page-item-151 a{background-position:-76px 0;width:99px;}
-#menubar .nav > ul li.page-item-153 a{background-position:-182px 0;width:144px;}
-#menubar .nav > ul li.page-item-155 a{background-position:-333px 0;width:81px}
-#menubar .nav > ul li.page-item-157 a{background-position:-421px 0;width:95px;}
-#menubar .nav > ul li.page-item-159 a{background-position:-523px 0;width:65px}
-#menubar .nav > ul li.page-item-161 a{background-position:-595px 0;width:133px}
-#menubar .nav > ul li.page-item-163 a{background-position:-735px 0;width:140px;}
-#menubar .nav > ul li.page-item-165 a{background-position:-735px 0;width:71px;}
-#menubar .nav > ul li.last{background-image:url('/wp-content/uploads/menubar-nav-bg.png');background-position:-814px 0;width:147px;height:34px;}/* menubar overrides */
-.nav > li > a,
-.nav > li > a:visited,
-.nav > li > li a:visited,
-.nav > li > li a:hover,
-.nav > li > li a:active{margin:0;position:inherit;float:none;}
-.nav > ul li a .subtext {text-transform:uppercase;font-size:8pt;}
+#menubar #nav > li  > a:hover,
+#menubar #nav > li  > a .current-page{color:#e21c22;}
+#menubar #nav > li.page-item-149 a{background-position:left 0;width:65px;padding-left:11px;}
+#menubar #nav > li.page-item-151 a{background-position:-76px 0;width:99px;}
+#menubar #nav > li.page-item-153 a{background-position:-182px 0;width:144px;}
+#menubar #nav > li.page-item-155 a{background-position:-333px 0;width:81px}
+#menubar #nav > li.page-item-157 a{background-position:-421px 0;width:95px;}
+#menubar #nav > li.page-item-159 a{background-position:-523px 0;width:65px}
+#menubar #nav > li.page-item-161 a{background-position:-595px 0;width:133px}
+#menubar #nav > li.page-item-163 a{background-position:-735px 0;width:140px;}
+#menubar #nav > li.page-item-165 a{background-position:-735px 0;width:71px;}
+#menubar #nav > li.last{background-image:url('/wp-content/uploads/menubar-nav-bg.png');background-position:-814px 0;width:147px;height:34px;}/* menubar overrides */
+#nav > li  > a,
+#nav > li  > a:visited,
+#nav > li  > li a:visited,
+#nav > li  > li a:hover,
+#nav > li  > li a:active{margin:0;position:inherit;float:none;}
+#nav > li a .subtext {text-transform:uppercase;font-size:8pt;}
 
 /**************************************
 * Footer
