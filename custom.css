@@ -388,6 +388,9 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	text-align:center!important;
 	margin:0 0 0 19px!important;
 }
+.lrg .vehicle .image {
+	margin:0 0 0 10px!important;	
+}
 #menubar .vhover .vehicle .image img{
 	margin:-10px 0 0 -2px;
 }
