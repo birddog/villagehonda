@@ -326,7 +326,12 @@ hr.blue{border-bottom:1px solid #e21c22;}
 /*#showcase-flyout .showcase-pane .items .vehicle .trims{position:relative;top:10px!important;border:solid 1px #999;background:#eee;border-radius:7px;padding:10px;z-index:190;text-align:left;}
 #showcase-flyout .showcase-pane .items .vehicle .trims a{width:100px!important;}
 #showcase-flyout .showcase-pane .vehicle .trims{display:none;position:absolute;top:5px;width:auto;}*/
-
+#showcase-flyout .showcase-pane .trims {
+	list-style-type:none;
+	background:#ccc;
+	color:#222;
+}
+#showcase-flyout .showcse-pane .trims .trim {height:14px;}
 /***************
 /*	showcase hover
 /***************/
