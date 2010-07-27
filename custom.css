@@ -97,12 +97,21 @@ body.page-parent #home-content{}
 #footer-bottom {
 	
 }
+#footer-bottom a{
+	color:#222;
+	font-weight:bold;
+	line-height:12px;
+}
 #footer-bottom .footer-row {
 	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom #fff;	
 	height:167px;
 }
 #footer-bottom ul {
 	float:left;
+	padding:0 0 0 1.5em;
+}
+#footer-bottom #dealership-links {
+		text-align:center;
 }
 
 
