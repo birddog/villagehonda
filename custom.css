@@ -23,7 +23,7 @@ h1{font-size:16px;color:#e21c22;}
 h2{font-size:14px;color:#222;}
 h3{font-size:13px;}
 h4{font-size:12px;color:#222;}
-h5{font-size:11px;}
+h5{font-size:14px;color:#e21c22; font-weight:bold;}
 
 ul, ol{color:#999;}
 td li{text-align:left;}
@@ -94,74 +94,13 @@ body.page-parent #home-content{}
 /**************************************
 * Footer
 **************************************/
-td#quicklinksWrap{text-align:center;height:205px;}
-div#quicklinks{text-align:left;height:195px;margin:0 auto;padding:10px 0 0 0;background:url('/wp-content/uploads/2010/03//quickmenu_line_horizontal.jpg') 0 38px repeat-x;}
-div.quicklinksItem{position:relative;float:left;height:195px;padding:0 20px;background:url('/wp-content/uploads/2010/03//quickmenu_line_vertical.jpg') bottom left no-repeat;}
-div.quicklinksItem div.quicklinksTitle{margin:0 0 14px 0;padding:10px 0 0 0;}
-div.quicklinksItem ul{float:left;margin:0;padding:0;}
-div.quicklinksItem ul li{list-style-type:none;font-size:11px;color:#69696B;margin:0;padding:3px 0 3px 10px;background:url('/wp-content/uploads/quick-find-bullet.png') 0 7px no-repeat;}
-div.quicklinksItem ul a:link,
-div.quicklinksItem ul a:visited{color:#797979;font-weight:normal;text-decoration:none;}
-div.quicklinksItem ul a:hover,
-div.quicklinksItem ul a:focus,
-div.quicklinksItem ul a:active{color:#e21c22;font-weight:normal;text-decoration:none;}
-div.quicklinksItem ul.first{width:190px;}
-div.quicklinksItem ul.last{width:140px;}
-div.quicklinksItem div.img{position:absolute;}
-div#quickmenu{width:330px;}
-div#quicktools{width:288px;}
-div#quicktools ul.first{width:150px;}
-div#quicktools ul.last{width:135px;}
-div#quicktools ul li{background-image:url('/wp-content/uploads/quick-find-bullet.png');}
-div#quickhours{position:relative;width:250px;padding-right:0;}
-div#quickhours div.quicklinksTitle{height:24px;padding:0 0 0 10px;}
-div#quickhours ul{margin:0;padding:0 0 0 10px;}
-div#quickhours ul li{list-style-type:none;font-size:11px;padding:3px 0;background:none;}
-div#quickhours ul li span{display:block;float:left;width:70px;}
-div#quicknews{position:relative;width:250px;padding-right:0;}
-div#quicknews div.quicklinksTitle{}
-div#quicknews div.quicklinksSubtitle{margin:0 0 10px 0;}
-div#quicknews ul li{background-image:url('/wp-content/uploads/quick-find-bullet.png');}
-td#footer{color:#666;text-align:center;padding:20px 0 0 0;background:#1d1d1d;width:100%;}
-td#footer div#footerWrap{text-align:left;width:970px;overflow:hidden;margin:0 auto;padding:0 5px 20px 5px;}
-body.quicklinksbody td#footer div#footerWrap{background:none;}
-td#footer p{margin:0 0 10px 0;color:#666;}
-td#footer a:link,
-td#footer a:visited{color:#666;font-weight:bold;text-decoration:none;}
-td#footer a:hover,
-td#footer a:focus,
-td#footer a:active{color:#444;font-weight:bold;text-decoration:none;}
-td#footer div.footeritem{float:left;height:138px;overflow:hidden;padding:0 20px 0 10px;border-left:1px #232323 solid;}
-td#footer div#footersects.footeritem{width:280px;}
-td#footer div.footeritem div.title{margin:0 0 10px 0;}
-td#footer div.footeritem ul{float:left;margin:0;padding:0;}
-td#footer div.footeritem ul.first{margin-right:20px;}
-td#footer div.footeritem ul li{list-style-type:none;font-size:11px;line-height:16px;margin:0;padding:0 0 0 8px;background:url(/wp-content/uploads/quick-find-bullet.png) 0 5px no-repeat;}
-td#footer div.footeritem a:link,
-td#footer div.footeritem a:visited,
-td#footer div.footeritem a:hover,
-td#footer div.footeritem a:focus,
-td#footer div.footeritem a:active{font-weight:normal;}
-td#footer div#footercontact{padding-right:0;}
-td#footer div#footercontact ul li{color:#666;padding:0;background:none;}
-td#footer div#footercontact ul li.special{width:150px;border-top:1px #333 solid;}
-td#footer div#footerdisclaimersWrap{clear:both;overflow:hidden;padding:20px 0;background:#222;border-top:1px #444 solid;}
-body.quicklinksbody td#footer div#footerdisclaimersWrap{padding-top:0;background:none;border:none;}
-td#footer div#footerdisclaimers{text-align:left;width:970px;overflow:hidden;margin:0 auto;padding:0 5px;}
-body.quicklinksbody td#footer div#footerWrap{-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:transparent none repeat scroll 0 0;}
-body.quicklinksbody td#footer div#footerdisclaimersWrap{-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:transparent none repeat scroll 0 0;border:medium none;padding-top:0;}
-div.quicklinksitem ul a:link,
-div.quicklinksItem ul a:visited{color:#666666;font-weight:normal;text-decoration:none;}
-div.quicklinksitem ul a:hover,
-div.quicklinksItem ul a:visited:hover{color:#e21c22;font-weight:normal;text-decoration:none;}
-td#footer div.footeritem a:link,
-td#footer div.footeritem a:visited,
-td#footer div.footeritem a:hover,
-td#footer div.footeritem a:focus,
-td#footer div.footeritem a:active{font-weight:normal;}
-td#footer a:link,
-td#footer a:visited{color:#666666;font-weight:bold;text-decoration:none;}
-td#footer a:hover{color:#e21c22;font-weight:bold;text-decoration:none;}
+#footer-bottom {
+	
+}
+#footer-bottom ul {
+	float:left;
+}
+
 
 /**************************************
 * Slideshow Widget
