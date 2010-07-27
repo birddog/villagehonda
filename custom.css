@@ -98,9 +98,12 @@ body.page-parent #home-content{}
 	
 }
 #footer-bottom a{
-	color:#222;
+	color:#555;
 	font-weight:bold;
-	line-height:12px;
+	line-height:14px;
+}
+#footer-bottom h5 a {
+	color:#e21c22;
 }
 #footer-bottom .footer-row {
 	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom #fff;	
