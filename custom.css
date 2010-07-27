@@ -103,6 +103,7 @@ body.page-parent #home-content{}
 	font-weight:bold;
 	line-height:14px;
 }
+#footer-bottom a:hover{color:#e21c22;}
 #footer-bottom h5 a {
 	color:#e21c22;
 }
