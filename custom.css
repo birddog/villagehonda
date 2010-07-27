@@ -113,7 +113,8 @@ body.page-parent #home-content{}
 	border-top:1px solid #ccc;
 	padding:10px 0 0 0;
 }
-#footer-bottom .footer-row div {margin:0 0 0 10px;border-right:1px solid #ccc;}
+#footer-bottom .footer-row div {margin:0 0 0 10px;border-left:1px solid #ccc;}
+#footer-bottom .footer-row div.alpha {border:none;}
 #footer-bottom ul {
 	float:left;
 	padding:0 0 0 1.5em;
