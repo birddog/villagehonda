@@ -33,7 +33,7 @@ jQuery(function($) {
         newDivs[name]
           .attr('id', name + '_clone')
           .css({ position: "absolute", cursor: "pointer",
-            top:elTop, left:elLeft,width:elWidth, height:elHeight,zIndex:100,
+            top:elTop, left:elLeft,width:elWidth, height:elHeight,zIndex:10000,
             opacity:0.0, background:'#eee url(/wp-content/uploads/whatsInStore.jpg) bottom left no-repeat'
           }).children('ul.menu').css('display','block');
 
@@ -69,7 +69,7 @@ jQuery(function($) {
         newDivs[name]
           .attr('id', name + '_clone')
           .css({ position: "absolute", cursor: "pointer", opacity:0,
-            top:elTop, left:elLeft,width:elWidth, height:elHeight,zIndex:100
+            top:elTop, left:elLeft,width:elWidth, height:elHeight,zIndex:10000
           }).click(function(){
             if ($('#' + this.id + ' a').attr('target') == '_blank')
               window.open($('#' + this.id + ' a').attr('href'), $('#' + this.id + ' a').html());
