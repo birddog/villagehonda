@@ -13,10 +13,11 @@
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer") ) : ?><?php endif; ?>
         <div style="clear:both"></div>
       </div>
+        <div id="breakout-footer">
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("breakout-footer") ) : ?><?php endif; ?>
+        </div>              
     </div>
-    <div id="breakout-footer">
-      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("breakout-footer") ) : ?><?php endif; ?>
-    </div>
+
     <?php dt_custom_javascript(); ?>
     <?php dt_google_analytics(); ?>
     <?php wp_footer(); ?>

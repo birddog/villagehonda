@@ -94,7 +94,7 @@ body.page-parent #home-content{}
 /**************************************
 * Footer
 **************************************/
-td#quicklinksWrap{text-align:center;height:205px;background:#1d1d1d url('/wp-content/uploads/2010/03//footer_bg2.jpg') 0 0 repeat-x;}
+td#quicklinksWrap{text-align:center;height:205px;}
 div#quicklinks{text-align:left;width:970px;height:195px;margin:0 auto;padding:10px 0 0 0;background:url('/wp-content/uploads/2010/03//quickmenu_line_horizontal.jpg') 0 38px repeat-x;}
 div.quicklinksItem{position:relative;float:left;height:195px;padding:0 20px;background:url('/wp-content/uploads/2010/03//quickmenu_line_vertical.jpg') bottom left no-repeat;}
 div.quicklinksItem div.quicklinksTitle{margin:0 0 14px 0;padding:10px 0 0 0;}
