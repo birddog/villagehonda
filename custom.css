@@ -117,7 +117,7 @@ body.page-parent #home-content{}
 #footer-bottom ul {
 	float:left;
 	padding:0 0 0 1.5em;
-	list-style-image:url(wp-content/uploads/quick-find-bullet.png)!important;	
+	list-style-image:url(/wp-content/uploads/quick-find-bullet.png)!important;	
 }
 #footer-bottom ul li {
 	color:#555!important;	
