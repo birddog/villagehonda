@@ -101,7 +101,7 @@ body.page-parent #home-content{}
 #footer-bottom a{
 	color:#555;
 	font-weight:bold;
-	line-height:14px;
+	
 }
 #footer-bottom a:hover{color:#e21c22;}
 #footer-bottom h5 a {
@@ -123,7 +123,7 @@ body.page-parent #home-content{}
 	color:#555!important;	
 	font-weight:bold;
 	font-size:12px;
-
+	line-height:14px;
 }
 #footer-bottom #dealership-links {
 		text-align:center;
