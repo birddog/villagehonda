@@ -95,7 +95,7 @@ body.page-parent #home-content{}
 * Footer
 **************************************/
 #footer-bottom {
-	
+	border-left:1px solid #ccc;
 }
 #footer-bottom a{
 	color:#555;
@@ -108,6 +108,7 @@ body.page-parent #home-content{}
 #footer-bottom .footer-row {
 	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom #fff;	
 	height:167px;
+	border-top:1px solid #ccc;
 }
 #footer-bottom ul {
 	float:left;
