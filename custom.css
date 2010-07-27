@@ -127,6 +127,9 @@ body.page-parent #home-content{}
 	font-size:11px;
 	line-height:15px;
 }
+#footer-bottom ul li.special {
+	border-top:1px solid #ccc;	
+}
 #footer-bottom #dealership-links {
 		text-align:center;
 		padding:10px 0;
