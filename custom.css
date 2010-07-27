@@ -111,9 +111,11 @@ body.page-parent #home-content{}
 	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat-x 0 bottom #fff;	
 	height:167px;
 	border-top:1px solid #ccc;
+	overflow:hidden;
 }
-#footer-bottom .footer-row div {margin:0 0 0 10px;padding:10px 0 0 0;height:167px;border-left:1px solid #ccc;}
+#footer-bottom .footer-row div {margin:0 0 0 10px;padding:10px 0 0 0;height:157px;border-left:1px solid #ccc;}
 #footer-bottom .footer-row div.alpha {border:none;}
+#footer-bottom .footer-row div.grid_3 {width:210px;}
 #footer-bottom ul {
 	float:left;
 	padding:0 0 0 1.5em;
