@@ -169,7 +169,7 @@ td#footer a:hover{color:#e21c22;font-weight:bold;text-decoration:none;}
 .slideshowwidget{width:960px;height:350px!important;margin-left:-10px;background:#fff;position:relative;z-index:500;overflow:hidden;}/* set all but first banner hidden */
 .slideshowwidget .slideshowwidget-slides{height:350px!important;}
 .slideshowwidget .slideshowwidget-prev,
-.slideshowwidget .slideshowwidget-next{position:absolute!important;width:44px!important;height:90px!important;color:transparent!important;background-color:transparent!important;background-image:url('/wp-content/uploads/2010/03/prev-next-sprite.png')!important;z-index:100!important;cursor:pointer!important;overflow:hidden!important;border:none!important;}/* cont'd on line 291 */
+.slideshowwidget .slideshowwidget-next{position:absolute!important;width:44px!important;height:90px!important;color:transparent!important;background-color:transparent!important;background-image:url('/wp-content/uploads/2010/03/prev-next-sprite.png')!important;z-index:100!important;cursor:pointer!important;overflow:hidden!important;border:none!important;text-indent:-999em;}/* cont'd on line 291 */
 .slideshowwidget .slideshowwidget-prev{background-position:190px 6px!important;left:5px;top:150px!important;}
 .slideshowwidget .slideshowwidget-next{background-position:00px 6px!important;right:5px;top:150px!important;}
 .slideshowwidget a.slideshowwidget-prev:hover{color:transparent!important;background-position:-184px 2px!important;}
