@@ -97,6 +97,9 @@ body.page-parent #home-content{}
 #footer-bottom {
 	
 }
+#footer-bottom div {
+	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 0 #fff;	
+}
 #footer-bottom ul {
 	float:left;
 }
