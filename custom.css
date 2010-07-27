@@ -268,7 +268,7 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	overflow:hidden;
 	width:838px;
 	height:95px;
-	z-index:100;
+	z-index:10000;
 	border:1px solid #999;
 	border-top:0;
 	background:#fff;
