@@ -119,6 +119,7 @@ body.page-parent #home-content{}
 }
 #footer-bottom ul li {
 	color:#555!important;	
+	font-weight:bold;
 }
 #footer-bottom #dealership-links {
 		text-align:center;
