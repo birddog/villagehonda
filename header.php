@@ -24,7 +24,6 @@
         <div class="clear"></div>
       </div>
 
-      <?php if (!is_front_page()) : ?>
       <?php $dm_page = get_page_by_title('Directory Menu'); ?>
       <div id="menubar" class="grid_12 alpha omega">
         <div class='nav'>
@@ -33,7 +32,6 @@
           </ul>
         </div>
       </div>
-      <?php endif; ?>
 
       <div class="clear"></div>
 
