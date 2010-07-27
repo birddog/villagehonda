@@ -407,11 +407,17 @@ jQuery(function($) {
             opacity:0.0, background:'#eee url(/wp-content/uploads/whatsInStore.jpg) bottom left no-repeat'
           }).children('ul.menu').css('display','block');
 
-        el.hover(function(){ cPos = $('.bumpupmenuwidget#'+name).position().top; newDivs[name].stop().css({top:cPos, height:'140px'}); });
-        newDivs[name].hover(
-          function(){ cPos = $('.bumpupmenuwidget#'+name).position().top; $(this).stop().css('top',cPos).animate({opacity:1.0, top:cPos-140, height:'280px'}, "fast"); },
-          function(){ cPos = $('.bumpupmenuwidget#'+name).position().top; $(this).stop().animate({top:cPos, height:'140px', opacity:0.0}, "fast"); }
-        );
+        el.hover(function(){ 
+			cPos = $('.bumpupmenuwidget#'+name).position().top; 
+			newDivs[name].stop().css({top:cPos, height:'140px'}); 
+		});
+        newDivs[name].hover(function(){ 
+			  cPos = $('.bumpupmenuwidget#'+name).position().top; 
+			  $(this).stop().css('top',cPos).animate({opacity:1.0, top:cPos-140, height:'280px'}, "fast"); 
+		  }, function(){ 
+		  	cPos = $('.bumpupmenuwidget#'+name).position().top; 
+			$(this).stop().animate({top:cPos, height:'140px', opacity:0.0}, "fast"); 
+		});
       }
     });
   }
