@@ -96,7 +96,7 @@ body.page-parent #home-content{}
 **************************************/
 #footer-bottom {
 	border-left:1px solid #ccc;
-	color:#555;
+	
 }
 #footer-bottom a{
 	color:#555;
@@ -116,6 +116,9 @@ body.page-parent #home-content{}
 #footer-bottom ul {
 	float:left;
 	padding:0 0 0 1.5em;
+}
+#footer-bottom ul li {
+	color:#555!important;	
 }
 #footer-bottom #dealership-links {
 		text-align:center;
