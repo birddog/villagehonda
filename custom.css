@@ -109,6 +109,7 @@ body.page-parent #home-content{}
 	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom #fff;	
 	height:167px;
 	border-top:1px solid #ccc;
+	padding:10px;
 }
 #footer-bottom ul {
 	float:left;
