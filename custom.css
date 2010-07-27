@@ -106,10 +106,10 @@ body.page-parent #home-content{}
 	color:#e21c22;
 }
 #footer-bottom .footer-row {
-	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom #fff;	
+	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat-x 0 bottom #fff;	
 	height:167px;
 	border-top:1px solid #ccc;
-	padding:10px 5px 0 0;
+	padding:10px 0 0 0;
 }
 #footer-bottom ul {
 	float:left;
