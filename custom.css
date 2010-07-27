@@ -120,6 +120,7 @@ body.page-parent #home-content{}
 #footer-bottom ul li {
 	color:#555!important;	
 	font-weight:bold;
+	list-style-image:url(wp-content/uploads/quick-find-bullet.png);
 }
 #footer-bottom #dealership-links {
 		text-align:center;
