@@ -131,6 +131,7 @@ body.page-parent #home-content{}
 	border-top:1px solid #ccc;	
 }
 #footer-bottom #dealership-links {
+		border-top:1px solid #ccc;
 		text-align:center;
 		padding:10px 0;
 		font-size:12px;
