@@ -110,7 +110,7 @@ body.page-parent #home-content{}
 	border:1px solid #ccc;
 	overflow:hidden;
 }
-#footer-bottom .footer-row div {margin:0 0 0 10px;padding:10px 0 10px 10px;height:157px;border-left:1px solid #ccc;}
+#footer-bottom .footer-row div {margin:0 0 0 10px;padding:10px 0 10px 10px;height:157px;}
 #footer-bottom .footer-row div.alpha {border:none;}
 #footer-bottom .footer-row div.grid_3 {width:210px;}
 #footer-bottom ul {
