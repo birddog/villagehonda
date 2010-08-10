@@ -132,9 +132,11 @@ jQuery(function($) {
     }
   });
 
-	if($("#menubar .nav ul").length){
-	 $("#menubar .nav ul").append("<li class='last'></li>");
-	}
+	/* Menubar Sub-text */
+	$('#menubar .nav ul li a').each(function(){
+		subtext = $(this).attr('title');
+		$(this).attr('title','').append('<div class="subtext">'+subtext+'</div>');
+	})
 
   /* Quick Find bar links */
   $('#quick-find .jump-to-tab').click(function(){
