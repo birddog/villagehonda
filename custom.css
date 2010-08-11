@@ -45,7 +45,7 @@ hr{border:0;color:#999;background-color:#999;height:1px;width:100%;text-align:le
 #header #phone-numbers{color:#999;text-align:right;padding-top:5px;}
 #header #phone-numbers table{width:100%;}
 #header #phone-numbers table td{text-align:right;}
-#header #phone-numbers strong{font-size:11pt;font-weight:bold;color:#e21c22;}
+#header #phone-numbers strong{font-size:11px;font-weight:bold;color:#e21c22;}
 #site-content{margin:0;}
 body.page-parent #home-content{}
 #home-1.widget-zones{margin:0;}
