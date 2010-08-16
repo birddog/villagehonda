@@ -817,11 +817,11 @@ body.page-id-43 .dt-showcase .detail .tabs{left:-1px;}
 /**************************************
 * Bios'
 **************************************/
-.staff{width:720px;}
+.staff{}
 .staff .person{
 	position:relative;
 	float:left;
-	width:230px;
+	width:250px;
 	font:normal 11px arial;
 	color:#999;
 	background:url(/wp-content/uploads/2010/03/bioBg2.jpg) no-repeat;
