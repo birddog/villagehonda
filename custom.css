@@ -822,15 +822,14 @@ body.page-id-43 .dt-showcase .detail .tabs{left:-1px;}
 	position:relative;
 	float:left;
 	width:250px;
-	font:normal 11px arial;
 	color:#999;
 	background:url(/wp-content/uploads/2010/03/bioBg2.jpg) no-repeat;
 	margin:5px 5px 30px;
 }
 .staff .person p br{display:none;}
 .staff .person .photo{float:left;margin-right:10px;padding:0;}
-.staff .person .name{font-size:14px;}
-.staff .person .title{font-size:11px;}
+.staff .person .name{font-size:14px;display:block;}
+.staff .person .title{font-size:11px;display:block;}
 .staff .person .phone{font-size:13px;color:#e21c22;}
 .staff .person .email{display:block;padding:15px 0;}
 .staff .person .toggle{display:block;}
