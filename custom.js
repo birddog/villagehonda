@@ -2,9 +2,6 @@
  Custom JS functions for Bird Dog
 ******************************************************************************/
 jQuery(function($) {
-	if ($('#menubar').length)
-		$('#menubar .nav ul').attr('id', 'nav');
-
 
   $.fn.log = function (msg) {
     console.log("%s: %o", msg, this);
@@ -131,12 +128,6 @@ jQuery(function($) {
       $(this).attr('value', '').css('color', '#999999');
     }
   });
-
-	/* Menubar Sub-text */
-	$('#menubar .nav ul li a').each(function(){
-		subtext = $(this).attr('title');
-		$(this).attr('title','').append('<div class="subtext">'+subtext+'</div>');
-	})
 
   /* Quick Find bar links */
   $('#quick-find .jump-to-tab').click(function(){
