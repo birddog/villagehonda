@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=8" />
     <meta name="Copyright" content="DealerTrend Framework Theme: Copyright (c) 2010 DealerTrend, Inc., All Rights Reserved." />
     <?php dt_google_site_verify(); ?>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/960-12.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <?php wp_head(); ?>
