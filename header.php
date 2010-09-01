@@ -26,13 +26,9 @@
 
       <?php $dm_page = get_page_by_title('Directory Menu'); ?>
       <div id="menubar" class="grid_12 alpha omega">
-        <div class='nav'>
-          <ul>
           <?php
             //wp_list_pages('child_of='.$dm_page->ID.'&depth=1&title_li=&sort_column=menu_order');
             wp_nav_menu(array('sort_column' => 'menu_order', 'container_class' => 'menu-navigation' ) );
           ?>
-          </ul>
-        </div>
       </div>
       <div class="clear"></div>
