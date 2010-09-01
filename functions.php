@@ -38,6 +38,9 @@ function dt_header() {
   }
 }
 
+# Enable custom menu Support for WP3.x
+add_theme_support('menus');
+
 # Google
 function dt_google_analytics() {
   $dt_google_analytics = get_option('dt_google_analytics');
