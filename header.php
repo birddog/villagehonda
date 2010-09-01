@@ -28,7 +28,10 @@
       <div id="menubar" class="grid_12 alpha omega">
         <div class='nav'>
           <ul>
-          <?php wp_list_pages('child_of='.$dm_page->ID.'&depth=1&title_li=&sort_column=menu_order'); ?>
+          <?php
+            //wp_list_pages('child_of='.$dm_page->ID.'&depth=1&title_li=&sort_column=menu_order');
+            wp_nav_menu(array('sort_column' => 'menu_order', 'container_class' => 'nav' ) );
+          ?>
           </ul>
         </div>
       </div>
