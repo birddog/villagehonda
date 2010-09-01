@@ -78,7 +78,7 @@ body.page-parent #home-content{}
 #menubar #nav > li.menu-item-3862 a{background-position:-182px 0;width:119px;}
 #menubar #nav > li.menu-item-3863 a{background-position:right top;width:110px;}
 
-#menubar #menu-navigation >li >a:hover{color:#fff!important; background-position:-182px bottom!important;}
+#menubar #menu-navigation >li >a:hover{color:#fff; background-position:-182px bottom}
 #menubar #menu-item-3856 >a:hover{background-position:left bottom!important}
 #menubar #menu-item-3863 >a:hover{background-position:right bottom!important}
 
