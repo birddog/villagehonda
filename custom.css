@@ -67,17 +67,8 @@ body.page-parent #home-content{}
 * Menubar
 **************************************/
 #menubar{width:960px;height:34px;padding-left:0;position:relative;z-index:50;}
-#menubar #nav > li {position:relative;}
-#menubar #nav > li > a{
-	display:block;
-	background-image:url('/wp-content/uploads/menubar-nav-bg.png');
-	padding:6px 0 0 7px;
-	height:28px;
-	color:#fff;
-	font-family:inherit;
-}
-#menubar #nav > li > a:hover,
-#menubar #nav > li > a .current-page{color:#e21c22;}
+#menubar #nav > li {}
+#menubar #nav > li > a{display:block; background-image:url(/wp-content/uploads/menubar-nav-bg.png); padding:6px 0 0 7px; height:28px; line-height:20px; font-size:11px; text-transform:uppercase}
 #menubar #nav > li.menu-item-3856 a{background-position:left 0;width:65px;padding-left:11px;}
 #menubar #nav > li.menu-item-3857 a{background-position:-182px 0;width:129px;}
 #menubar #nav > li.menu-item-3858 a{background-position:-182px 0;width:144px;}
@@ -85,16 +76,24 @@ body.page-parent #home-content{}
 #menubar #nav > li.menu-item-3860 a{background-position:-182px 0;width:100px;}
 #menubar #nav > li.menu-item-3861 a{background-position:-182px 0;width:100px;}
 #menubar #nav > li.menu-item-3862 a{background-position:-182px 0;width:119px;}
-#menubar #nav > li.menu-item-3863 a{
-	background-position:right top;
-	width:110px;
-}
-#nav > li  > a,
-#nav > li  > a:visited,
-#nav > li  > li a:visited,
-#nav > li  > li a:hover,
-#nav > li  > li a:active{margin:0;position:inherit;float:none;}
-#nav > li a .subtext {text-transform:uppercase;font-size:8pt;}
+#menubar #nav > li.menu-item-3863 a{background-position:right top;width:110px;}
+
+#menubar #menu-navigation >li >a:hover{color:#fff; background-position:-182px bottom}
+#menubar #menu-item-3856 >a:hover{background-position:left bottom!important}
+#menubar #menu-item-3863 >a:hover{background-position:right bottom!important}
+
+#menu-navigation li a, 
+#menu-navigation li a:visited .nav li li a, 
+#menu-navigation li li a:visited, 
+#menu-navigation li li a:hover, 
+#menu-navigation li li a:active{margin:0; position:inherit; float:none}
+
+#menubar #menu-navigation li .sub-menu{background-color:#222; padding-bottom:5px; -moz-border-radius-bottomleft:8px; -webkit-border-bottom-left-radius:8px; -moz-border-radius-bottomright:8px; -webkit-border-bottom-right-radius:8px; border-left:1px solid #BABABA; border-right:1px solid #BABABA; border-bottom:1px solid #BABABA; -moz-box-shadow:2px 2px 3px #222; -webkit-box-shadow:2px 2px 3px #222; box-shadow:2px 2px 3px #222}
+#menubar #menu-navigation li.menu-item-2998 .sub-menu{width:109px}
+#menubar #menu-navigation li.menu-item-2998 .sub-menu a{width:auto}
+#menubar #menu-navigation li .sub-menu >li{float:none}
+#menubar #menu-navigation li .sub-menu >li a{background:none 0 0 #222; font-size:11px; padding:3px 0 3px 7px}
+#menubar #menu-navigation li .sub-menu >li a:hover{background-color:#e21c22; color:#fff}
 
 /**************************************
 * Footer
