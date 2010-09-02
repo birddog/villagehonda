@@ -50,6 +50,7 @@ body{font:normal 11px helvetica; padding:0; margin:0 auto;}
 /*Menu Dropdown Position*/
 .nav li ul{z-index:8888;position:absolute;left:-999em;}
 .nav li ul li ul{position:static;}
+.nav li ul ul {margin: -1em 0 0 10em;}
 /*Menu Dropdown Background*/
 .nav li ul li.page_item{background:black;margin:0px !important;}
 /*Menu Dropdown Foreground*/
