@@ -108,7 +108,7 @@ body.page-parent #home-content{}
 #menubar #menu-navigation li.menu-item-3863 .sub-menu{width:109px}
 #menubar #menu-navigation li.menu-item-3863 .sub-menu a{width:auto}
 #menubar #menu-navigation li .sub-menu >li{float:none}
-#menubar #menu-navigation li .sub-menu >li a{background:none 0 0 #222; font-size:11px; padding:3px 0 3px 7px}
+#menubar #menu-navigation li .sub-menu >li a{background:none 0 0 #222; font-size:11px; color:#fff;padding:3px 0 3px 7px}
 #menubar #menu-navigation li .sub-menu >li a:hover{background-color:#e21c22; color:#fff}
 
 /**************************************
