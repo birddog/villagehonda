@@ -100,16 +100,16 @@ body.page-parent #home-content{}
 	-moz-box-shadow:2px 2px 3px #222;
 	-webkit-box-shadow:2px 2px 3px #222;	
 	box-shadow:2px 2px 3px #222;
+
 }
 #menubar #menu-navigation li .sub-menu li > .sub-menu {
 	-moz-border-radius: 8px!important;
 	-webkit-border-radius: 8px!important;
 	border:1px solid #BABABA!important;
+	-webkit-background-clip:padding-box;
+	-moz-background-clip:padding-box;	
 }
-#menubar #menu-navigation li .sub-menu li > .sub-menu li:first {
-	-moz-border-radius: 8px!important;
-	-webkit-border-radius: 8px!important;	
-}
+
 #menubar #menu-navigation li.menu-item-3860 .sub-menu{width:140px;}
 #menubar #menu-navigation li.menu-item-3860 .sub-menu a{width:auto;}
 #menubar #menu-navigation li.menu-item-3862 .sub-menu {width:120px;}
