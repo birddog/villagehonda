@@ -101,7 +101,7 @@ body.page-parent #home-content{}
 	-webkit-box-shadow:2px 2px 3px #222;	
 	box-shadow:2px 2px 3px #222;
 }
-#menubar #menu-navigation li .sub-menu > .sub-menu {
+#menubar #menu-navigation li .sub-menu li > .sub-menu {
 	-moz-border-radius: 8px!important;
 	-webkit-border-radius: 8px!important;
 	border:1px solid #BABABA!important;
