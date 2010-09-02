@@ -65,7 +65,7 @@ body.page-parent #home-content{}
 /**************************************
 * Menubar
 **************************************/
-#menubar{width:960px;height:34px;padding-left:0;position:relative;z-index:50;}
+#menubar{width:960px;height:34px;padding-left:0;position:relative;z-index:500;}
 #menubar #menu-navigation > li {}
 #menubar #menu-navigation > li > a{display:block; background-image:url(/wp-content/uploads/menubar-nav-bg.png); padding:6px 0 0 7px; height:28px; line-height:20px; font-size:11px; text-transform:uppercase}
 #menubar #menu-item-3856 a{background-position:left 0;width:65px;padding-left:11px;}
@@ -156,7 +156,7 @@ body.page-parent #home-content{}
 /**************************************
 * Slideshow Widget
 **************************************/
-.slideshowwidget{width:960px;height:350px!important;margin-left:-10px;background:#fff;position:relative;overflow:hidden;}/* set all but first banner hidden */
+.slideshowwidget{width:960px;height:350px!important;margin-left:-10px;background:#fff;position:relative;overflow:hidden;z-index:400;}/* set all but first banner hidden */
 .slideshowwidget .slideshowwidget-slides{height:350px!important;}
 .slideshowwidget .slideshowwidget-prev,
 .slideshowwidget .slideshowwidget-next{position:absolute!important;width:44px!important;height:90px!important;color:transparent!important;background-color:transparent!important;background-image:url('/wp-content/uploads/2010/03/prev-next-sprite.png')!important;z-index:100!important;cursor:pointer!important;overflow:hidden!important;border:none!important;text-indent:-999em;}/* cont'd on line 291 */
