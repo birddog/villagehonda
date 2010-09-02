@@ -103,7 +103,8 @@ body.page-parent #home-content{}
 }
 #menubar #menu-navigation li.menu-item-3860 .sub-menu{width:140px;}
 #menubar #menu-navigation li.menu-item-3860 .sub-menu a{width:auto;}
-#menubar #menu-navigation li.menu-item-3862 .sub-menu {width:130px;}
+#menubar #menu-navigation li.menu-item-3862 .sub-menu {width:120px;}
+#menubar #menu-navigation li.menu-item-3862 .sub-menu a{width:auto;}
 #menubar #menu-navigation li.menu-item-3863 .sub-menu{width:109px}
 #menubar #menu-navigation li.menu-item-3863 .sub-menu a{width:auto}
 #menubar #menu-navigation li .sub-menu >li{float:none}
