@@ -105,7 +105,10 @@ body.page-parent #home-content{}
 	-moz-border-radius: 8px!important;
 	-webkit-border-radius: 8px!important;
 	border:1px solid #BABABA!important;
-
+}
+#menubar #menu-navigation li .sub-menu li > .sub-menu li:first {
+	-moz-border-radius: 8px!important;
+	-webkit-border-radius: 8px!important;	
 }
 #menubar #menu-navigation li.menu-item-3860 .sub-menu{width:140px;}
 #menubar #menu-navigation li.menu-item-3860 .sub-menu a{width:auto;}
