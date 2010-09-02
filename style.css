@@ -34,56 +34,86 @@ body{font:normal 11px helvetica; padding:0; margin:0 auto;}
 /************************************************
 * Navigation *
 ************************************************/
-/*Menu Background*/
-.nav{position:relative;}
-.nav ul{float:left;list-style:none;margin:0px;padding:0px;line-height: 1;}
-.nav li{float:left;list-style:none;margin:0px;padding:0px;}
-/*Menu Foreground*/
-.nav li a,
-.nav li a:visited
-.nav li li a,
-.nav li li a:visited,
-.nav li li a:hover,
-.nav li li a:active{color:white;display:block;text-decoration:none;float:left;margin:10px 4px 0;position:relative;}
-/*Menu Highlight*/
-.nav li a:hover{color:black;}
-/*Menu Dropdown Position*/
-.nav li ul,
-.nav li ul li ul{z-index:8888;position:absolute;left:-999em;}
-/*.nav li ul li ul{position:static;}*/
-.nav li ul ul {margin: -1.2em 0 0 10em;}
-/*Menu Dropdown Background*/
-.nav li ul li.page_item{background:black;margin:0px !important;}
-/*Menu Dropdown Foreground*/
-.nav li ul li.page_item a{color:white;}
-.nav li ul li ul li.page_item a{color:white;padding-left:20px;width:156px;}
-/*Menu Dropdown Highlight*/
-.nav li ul li.page_item a:hover{color:inherit;}
-.nav li ul a{width:170px;}
-
-.nav li:hover ul ul,
-.nav li:hover ul ul ul,
-.nav li.sfhover ul ul,
-.nav li.sfhover ul ul ul{left:-999em;}
-
-.nav li:hover ul,
-.nav li li:hover ul,
-.nav li li li:hover ul,
-.nav li.sfhover ul,
-.nav li li.sfhover ul,
-.nav li li li.sfhover ul{left:auto;}
-
-
-.nav li:hover ul, .nav li li:hover ul,
-.nav li.sfhover ul, .nav li li.sfhover ul {
+#nav, #nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1;
+}
+#nav a {
+    display: block;
+}
+#nav li {
+    float: left;
+}
+#nav li ul {
+	position: absolute;
+	left: -999em;
+}
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+}
+#nav li:hover ul, #nav li.sfhover ul {
 	left: auto;
 }
+#nav li:hover ul, #nav li li:hover ul,
+#nav li.sfhover ul, #nav li li.sfhover ul {
+	left: auto;
+}
+#nav li ul ul {
+	margin: -1em 0 0 10em;
+}
 
-.nav li:hover,
-.nav li.sfhover{position:static;}
-
-.nav li:hover ul ul,
-.nav li.sfhover ul ul {left: -999em;}
+/*/*Menu Background*/*/
+/*.nav{position:relative;}*/
+/*.nav ul{list-style:none;margin:0px;padding:0px;line-height: 1;}*/
+/*.nav li{list-style:none;margin:0px;padding:0px;}*/
+/*/*Menu Foreground*/*/
+/*.nav li a,*/
+/*.nav li a:visited*/
+/*.nav li li a,*/
+/*.nav li li a:visited,*/
+/*.nav li li a:hover,*/
+/*.nav li li a:active{color:white;display:block;text-decoration:none;float:left;margin:10px 4px 0;position:relative;}*/
+/*/*Menu Highlight*/*/
+/*.nav li a:hover{color:black;}*/
+/*/*Menu Dropdown Position*/*/
+/*.nav li ul,*/
+/*.nav li ul li ul{z-index:8888;position:absolute;left:-999em;}*/
+/*/*.nav li ul li ul{position:static;}*/*/
+/*.nav li ul ul {margin: -1.2em 0 0 10em;}*/
+/*/*Menu Dropdown Background*/*/
+/*.nav li ul li.page_item{background:black;margin:0px !important;}*/
+/*/*Menu Dropdown Foreground*/*/
+/*.nav li ul li.page_item a{color:white;}*/
+/*.nav li ul li ul li.page_item a{color:white;padding-left:20px;width:156px;}*/
+/*/*Menu Dropdown Highlight*/*/
+/*.nav li ul li.page_item a:hover{color:inherit;}*/
+/*.nav li ul a{width:170px;}*/
+/**/
+/*.nav li:hover ul ul,*/
+/*.nav li:hover ul ul ul,*/
+/*.nav li.sfhover ul ul,*/
+/*.nav li.sfhover ul ul ul{left:-999em;}*/
+/**/
+/*.nav li:hover ul,*/
+/*.nav li li:hover ul,*/
+/*.nav li li li:hover ul,*/
+/*.nav li.sfhover ul,*/
+/*.nav li li.sfhover ul,*/
+/*.nav li li li.sfhover ul{left:auto;}*/
+/**/
+/**/
+/*.nav li:hover ul, .nav li li:hover ul,*/
+/*.nav li.sfhover ul, .nav li li.sfhover ul {*/
+/*	left: auto;*/
+/*}*/
+/**/
+/*.nav li:hover,*/
+/*.nav li.sfhover{position:static;}*/
+/**/
+/*.nav li:hover ul ul,*/
+/*.nav li.sfhover ul ul {left: -999em;}*/
 
 
 
