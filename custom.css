@@ -88,7 +88,21 @@ body.page-parent #home-content{}
 #menu-navigation li li a:hover, 
 #menu-navigation li li a:active{margin:0; position:inherit; float:none}
 
-#menubar #menu-navigation li .sub-menu{background-color:#222; padding-bottom:5px; -moz-border-radius-bottomleft:8px; -webkit-border-bottom-left-radius:8px; -moz-border-radius-bottomright:8px; -webkit-border-bottom-right-radius:8px; border-left:1px solid #BABABA; border-right:1px solid #BABABA; border-bottom:1px solid #BABABA; -moz-box-shadow:2px 2px 3px #222; -webkit-box-shadow:2px 2px 3px #222; box-shadow:2px 2px 3px #222}
+#menubar #menu-navigation li .sub-menu{
+	background-color:#222;
+	padding-bottom:5px;
+	border-left:1px solid #BABABA;
+	border-right:1px solid #BABABA;
+	border-bottom:1px solid #BABABA;
+	-moz-border-radius-bottomleft:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomright:8px;
+	-webkit-border-bottom-right-radius:8px;	
+	-moz-box-shadow:2px 2px 3px #222;
+	-webkit-box-shadow:2px 2px 3px #222;	
+	box-shadow:2px 2px 3px #222;
+	width:140px;
+}
 #menubar #menu-navigation li.menu-item-3863 .sub-menu{width:109px}
 #menubar #menu-navigation li.menu-item-3863 .sub-menu a{width:auto}
 #menubar #menu-navigation li .sub-menu >li{float:none}
