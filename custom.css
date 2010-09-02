@@ -102,8 +102,8 @@ body.page-parent #home-content{}
 	box-shadow:2px 2px 3px #222;
 }
 #menubar #menu-navigation li .sub-menu > .sub-menu {
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px!important;
+	-webkit-border-radius: 8px!important;
 
 }
 #menubar #menu-navigation li.menu-item-3860 .sub-menu{width:140px;}
