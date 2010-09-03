@@ -15,7 +15,7 @@
       </div>
     </div>
     
-    <div id="breakout-footer" class="container_12">
+    <div id="breakout-footer">
     	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("breakout-footer") ) : ?><?php endif; ?>
     </div>      
     <?php dt_custom_javascript(); ?>

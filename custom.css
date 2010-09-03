@@ -122,7 +122,10 @@ body.page-parent #home-content{}
 /**************************************
 * Footer
 **************************************/
-#footer-bottom {border-top:1px solid #ccc;background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom transparent;	}
+#footer-bottom {
+	border-top:1px solid #ccc;
+	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom transparent;
+}
 #footer-bottom a{
 	color:#555;
 	font-weight:bold;
@@ -135,6 +138,7 @@ body.page-parent #home-content{}
 	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat-x 0 bottom #fff;	
 	height:167px;
 	overflow:hidden;
+	margin:0 auto;
 }
 #footer-bottom .footer-row div {margin:0 0 0 10px;padding:10px 0 10px 10px;height:157px;border-left:1px solid #ccc;}
 #footer-bottom .footer-row div.alpha {border:none;}
