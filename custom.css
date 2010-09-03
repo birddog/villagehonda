@@ -134,7 +134,6 @@ body.page-parent #home-content{}
 #footer-bottom .footer-row {
 	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat-x 0 bottom #fff;	
 	height:167px;
-	border:1px solid #ccc;
 	overflow:hidden;
 }
 #footer-bottom .footer-row div {margin:0 0 0 10px;padding:10px 0 10px 10px;height:157px;border-left:1px solid #ccc;}
