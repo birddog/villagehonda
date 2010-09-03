@@ -122,7 +122,7 @@ body.page-parent #home-content{}
 /**************************************
 * Footer
 **************************************/
-#footer-bottom {}
+#footer-bottom {border-top:1px solid #ccc;background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom transparent;	}
 #footer-bottom a{
 	color:#555;
 	font-weight:bold;
