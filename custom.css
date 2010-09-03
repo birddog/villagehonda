@@ -124,7 +124,7 @@ body.page-parent #home-content{}
 **************************************/
 #footer-bottom {
 	border-top:1px solid #ccc;
-	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 bottom transparent;
+	background:url(/wp-content/uploads/footer-bottom-background.gif) repeat 0 top transparent;
 }
 #footer-bottom a{
 	color:#555;
