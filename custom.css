@@ -451,44 +451,11 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	background:url("/wp-content/plugins/dealertrend-widgets/images/arrow-left.png") no-repeat scroll center center white;
 	float:left;
 }
-/***************
-/*	trim hover
-/***************/
-/*.dt-showcase .trims, .showcase-slider .trims, #showcase-flyout .trims {
-	display:none;
-	position:absolute!important;
-	top:0!important;
-	left:70px;	
-	background:none repeat scroll 0 0 #ccc!important;
-	border:solid 1px #aaa;
-	text-align:left!important;
-	padding:0 10px!important;
-	z-index:400;
-	white-space:nowrap;
-	width:300px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	-moz-column-count:2;
-	-webkit-column-count:2;	
-}
-.dt-showcase .trims a, .showcase-slider .trims a, #showcase-flyout .trims a{
-	display:block;
-	font-size:10px!important;	
-	color:#666!important;
-	background-image:url("/wp-content/uploads/red_arrow_scroller.png");
-	background-position:left 5px!important;
-	background-repeat:no-repeat!important;
-	padding:2px 0 0 10px!important;
-}
-.dt-showcase .trims br, .showcase-slider .trims br, #showcase-flyout .trims br {
-	display:none;	
-}
-*/
 
 /**************************************
 * News Ticker
 **************************************/
-#news-ticker{background:white;height:140px;border:solid 1px #aaa;-webkit-border-top-left-radius:7px;-moz-border-radius:7px 0 0 0;}
+#news-ticker{background:white;height:140px;border:solid 1px #aaa;border-top-right-radius:7px;-moz-border-radius-topright:7px;-webkit-border-top-right-radius:7px;border-top-left-radius:7px;-moz-border-radius-topleft:7px;-webkit-border-top-left-radius:7px;}
 #news-ticker .scrollable{position:relative;overflow:hidden;height:140px;padding:0;}
 #news-ticker .scrollable .items{width:30000em;position:absolute;text-align:center;}
 #news-ticker .scrollable .item{float:left;margin-left:7px;text-align:center;}
