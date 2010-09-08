@@ -287,7 +287,15 @@ hr.blue{border-bottom:1px solid #e21c22;}
 .showcase-slider .showcaseslider-tabs li{border:none;margin:0 5px!important;text-align:center;list-style:none;display:inline-block;margin:0;padding:0;}
 .showcase-slider .showcaseslider-tabs li a{display:block;background-image:url('/wp-content/uploads/2010/03/tab-inverted.png');background-repeat:no-repeat;height:19px;width:75px;color:#fff;border:none;font-size:12px;}
 .showcase-slider .showcaseslider-tabs li .current{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;}
-.showcase-slider .header{text-transform:uppercase;background:#f1f1f1;color:#e21c22;font-size:14px;font-weight:bold;height:22px;padding:2px 15px;position:relative;}
+.showcase-slider .header{
+	color:#222222;
+	font-size:12px;
+	height:22px;
+	line-height:22px;
+	padding:0 15px !important;
+	position:relative;
+	text-transform:uppercase;
+}
 .showcase-slider .header ul.showcaseslider-tabs a:hover,
 .showcase-slider .header ul.showcaseslider-tabs li a.current:hover{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;text-decoration:underline;}
 .showcase-slider .scrollable{position:relative;overflow:hidden;height:90px;padding:0;}
