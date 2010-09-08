@@ -17,7 +17,8 @@
     
     <div id="breakout-footer">
     	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("breakout-footer") ) : ?><?php endif; ?>
-    </div>      
+    </div>
+    <!-- BEGIN: SeeVolution --><img width=0 height=0 src="https://svlu.net/pixel.aspx"/><script type="text/javascript" src="https://svlu.net/JInitScript.js"></script><!-- END: SeeVolution  -->
     <?php dt_custom_javascript(); ?>
     <?php dt_google_analytics(); ?>
     <?php wp_footer(); ?>
