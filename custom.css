@@ -283,18 +283,18 @@ hr.blue{border-bottom:1px solid #e21c22;}
 	margin:5px -10px 0;
 	overflow:hidden;
 }
-.showcase-slider .showcaseslider-tabs{display:none!important;border:none;height:inherit;line-height:16px;position:relative;top:-2px;list-style:none;float:right;margin:0;padding:0;}
+.showcase-slider .showcaseslider-tabs{display:block!important;border:none;height:inherit;line-height:16px;position:absolute;top:2px;right:7px;list-style:none;float:right;margin:0;padding:0;}
 .showcase-slider .showcaseslider-tabs li{border:none;margin:0 5px!important;text-align:center;list-style:none;display:inline-block;margin:0;padding:0;}
 .showcase-slider .showcaseslider-tabs li a{display:block;background-image:url('/wp-content/uploads/2010/03/tab-inverted.png');background-repeat:no-repeat;height:19px;width:75px;color:#fff;border:none;font-size:12px;}
 .showcase-slider .showcaseslider-tabs li .current{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;}
 .showcase-slider .header{
-	color:#222222;
-	font-size:12px;
-	height:22px;
-	line-height:22px;
-	padding:0 15px !important;
-	position:relative;
 	text-transform:uppercase;
+	color:#222;
+	font-size:12px;
+	line-height:22px;
+	height:22px;
+	padding:0 15px!important;
+	position:relative;
 }
 .showcase-slider .header ul.showcaseslider-tabs a:hover,
 .showcase-slider .header ul.showcaseslider-tabs li a.current:hover{background:url('/wp-content/uploads/2010/03/tab-inverted-grey.png')!important;color:#fff!important;text-decoration:underline;}
@@ -303,10 +303,35 @@ hr.blue{border-bottom:1px solid #e21c22;}
 .showcase-slider .scrollable .item{position:relative!important;}
 .showcase-slider .scrollable a.prev,
 .showcase-slider .scrollable a.next{position:relative;z-index:50;width:38px;height:90px!important;cursor:pointer;margin-top:0!Important;}
-.showcase-slider .scrollable .prev{float:left;background:url('/wp-content/uploads/2010/02/small-gray-arrow-1.jpg') no-repeat center center;-webkit-border-bottom-left-radius:10px!important;-moz-border-radius-bottomleft:10px!important;}
-.showcase-slider .scrollable .next{float:right;margin-top:-90px;background:url('/wp-content/uploads/2010/02/small-gray-arrow-2.jpg') no-repeat center center;-webkit-border-bottom-right-radius:10px!important;-moz-border-radius-bottomright:10px!important;}
-.showcase-slider .scrollable .prev{float:left;background:url('/wp-content/uploads/2010/02/small-gray-arrow-1.jpg') no-repeat center center !important;-webkit-border-bottom-left-radius:10px;-moz-border-radius:0 0 0 10px;}
-.showcase-slider .scrollable .next{float:right;background:url('/wp-content/uploads/2010/02/small-gray-arrow-2.jpg') no-repeat center center !important;-webkit-border-bottom-right-radius:10px;-moz-border-radius:0 0 10px 0;}
+.showcase-slider .scrollable .prev{float:left;background:url('/wp-content/uploads/2010/02/small-gray-arrow-1.png') no-repeat center center;-webkit-border-bottom-left-radius:10px!important;-moz-border-radius-bottomleft:10px!important;}
+.showcase-slider .scrollable .next{float:right;margin-top:-90px;background:url('/wp-content/uploads/2010/02/small-gray-arrow-2.png') no-repeat center center #ffffff;-webkit-border-bottom-right-radius:10px!important;-moz-border-radius-bottomright:10px!important;}
+.showcase-slider .scrollable .prev{float:left;background:url('/wp-content/uploads/2010/02/small-gray-arrow-1.png') no-repeat center center !important;-webkit-border-bottom-left-radius:10px;-moz-border-radius:0 0 0 10px;}
+.showcase-slider .scrollable .next{float:right;background:url('/wp-content/uploads/2010/02/small-gray-arrow-2.png') no-repeat center center !important;-webkit-border-bottom-right-radius:10px;-moz-border-radius:0 0 10px 0;}
+
+.showcase-slider .trims {
+	-moz-column-count:1!important; /* I Hate this line. More so browser specific code that only works in one browser. Thanks for supporting IE... CP */
+	padding:5px 5px 5px 20px!important;
+	position:relative!important;
+	text-align:left!important;
+	top:-80px!important;
+	width:auto!important;
+	z-index:1000!important;
+	margin:0!important;
+	background-color:#fff!important;
+	list-style-image:url("/wp-content/uploads/quick-find-bullet.png") !important;
+}
+.showcase-slider .trims a{
+	font-size:10px!important;
+	height:12px;
+	overflow:hidden;
+	color:#1D4A9F!important;
+	display:block!important;
+	margin:0!important;
+	min-width:inherit!important;
+	padding:0!important;
+	text-align:left!important;
+	white-space:normal!important;
+}
 /***************
 /*	showcase hover
 /***************/
